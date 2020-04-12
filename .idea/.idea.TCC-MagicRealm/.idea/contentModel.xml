@@ -7,13 +7,17 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Unit.cs" t="Include" />
-          <e p="UnitController.cs" t="Include" />
-          <e p="UnitSelection.cs" t="Include" />
-          <e p="Utilities" t="Include">
-            <e p="UtilsClass.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="CameraController.cs" t="Include" />
           </e>
-          <e p="Utils.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="Unit.cs" t="Include" />
+            <e p="UnitController.cs" t="Include" />
+            <e p="UnitSelection.cs" t="Include" />
+          </e>
+          <e p="Utilities" t="Include">
+            <e p="Utils.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
