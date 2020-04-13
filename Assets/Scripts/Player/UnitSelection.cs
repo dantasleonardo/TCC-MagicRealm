@@ -28,8 +28,6 @@ public class UnitSelection : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             selectedUnits = new List<Unit>();
             startPosition = Input.mousePosition;
-            
-            TrySelect(Input.mousePosition);
         }
 
         if (Input.GetMouseButton(0)) {
@@ -37,7 +35,10 @@ public class UnitSelection : MonoBehaviour
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            ReleaseSelectionBox();
+            if(startPosition.Equals(Input.mousePosition))
+                TrySelect(Input.mousePosition);
+            else
+                ReleaseSelectionBox();
         }
     }
 
