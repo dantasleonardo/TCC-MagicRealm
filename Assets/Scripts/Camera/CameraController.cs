@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Vector3 zoomAmount;
     private Vector3 newZoom;
 
+    [Header("Limit of Camera")]
     [SerializeField] private Vector2 limitOfCamera;
     [SerializeField] private float limitMinZoom;
     [SerializeField] private float limitMaxZoom;
