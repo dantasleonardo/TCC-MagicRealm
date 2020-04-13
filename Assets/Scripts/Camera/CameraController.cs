@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    #region Variables
+
     [Header("Speed and Movement")]
     [SerializeField] private float normalSpeed = 0.1f;
     [SerializeField] private float fastSpeed = 0.25f;
@@ -23,13 +25,21 @@ public class CameraController : MonoBehaviour
 
     [Header("Zoom")] 
     [SerializeField] private Transform cameraTransform;
-    
+
+    [SerializeField][Range(25,100)] private float speedOfScroll;
     [SerializeField] private Vector3 zoomAmount;
     private Vector3 newZoom;
-    
-    
+
+    [SerializeField] private Vector2 limitOfCamera;
+    [SerializeField] private float limitMinZoom;
+    [SerializeField] private float limitMaxZoom;
+
     //Others
     private Vector3 newPosition;
+    
+    #endregion
+    
+    
 
     private void Start() {
         newPosition = transform.position;
@@ -39,12 +49,14 @@ public class CameraController : MonoBehaviour
 
     private void Update() {
         MouseInput();
+        LimitsOfCamera();
     }
 
     private void FixedUpdate() {
         MovementInput();
     }
 
+    #region MovementCamera
     private void MouseInput() {
         //Movement Camera
         if (Input.GetMouseButtonDown(2)) {
@@ -75,8 +87,8 @@ public class CameraController : MonoBehaviour
         }
         
         //Zoom Camera
-        if (Input.mouseScrollDelta.y != 0f)
-            newZoom += Input.mouseScrollDelta.y * zoomAmount;
+        newZoom += zoomAmount * (Input.mouseScrollDelta.y * speedOfScroll);
+        
     }
 
     private void MovementInput() {
@@ -118,4 +130,18 @@ public class CameraController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
         cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
     }
+    #endregion
+
+    #region LimitOfCamera
+
+    private void LimitsOfCamera() {
+        newPosition.x = Mathf.Clamp(newPosition.x, -limitOfCamera.x, limitOfCamera.x);
+        newPosition.z = Mathf.Clamp(newPosition.z, -limitOfCamera.y, limitOfCamera.y);
+        
+        //Limit of zoom
+        newZoom.y = Mathf.Clamp(newZoom.y, limitMinZoom, limitMaxZoom);
+        newZoom.z = Mathf.Clamp(newZoom.z,-limitMaxZoom, -limitMinZoom);
+    }
+
+    #endregion
 }

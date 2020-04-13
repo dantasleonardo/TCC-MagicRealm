@@ -1037,11 +1037,12 @@ MonoBehaviour:
   normalSpeedRotaion: 1
   fastSpeedRotation: 2.5
   rotationAmount: 1
-  newRotation: {x: 0, y: 0, z: 0, w: 0}
   cameraTransform: {fileID: 1828651994}
+  speedOfScroll: 75
   zoomAmount: {x: 0, y: -0.1, z: 0.1}
-  newZoom: {x: 0, y: 0, z: 0}
-  newPosition: {x: 0, y: 0, z: 0}
+  limitOfCamera: {x: 15, y: 15}
+  limitMinZoom: 2.5
+  limitMaxZoom: 15
 --- !u!4 &1019026952
 Transform:
   m_ObjectHideFlags: 0
