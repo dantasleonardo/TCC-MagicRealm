@@ -27,6 +27,7 @@ public class UnitSelection : MonoBehaviour
     }
 
     private void Update() {
+        //Mouse actions with left button.
         if (Input.GetMouseButtonDown(0)) {
             if (selectedUnits.Count > 0) {
                 DesactiveSelectionUnit();
@@ -44,9 +45,19 @@ public class UnitSelection : MonoBehaviour
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            ReleaseSelectionBox();
+            if (startPosition.Equals(Input.mousePosition))
+                TrySelect(Input.mousePosition);
+            else
+                ReleaseSelectionBox();
+        }
+
+        //Mouse actions with right button
+        if (Input.GetMouseButtonDown(1)) {
+            SetDestinationOfUnits();
         }
     }
+
+    #region Selection Unit
 
     private void UpdateSelectionBox(Vector2 currentMousePosition) {
         if (!selectionBox.gameObject.activeInHierarchy)
@@ -67,17 +78,16 @@ public class UnitSelection : MonoBehaviour
 
         float selectionAreaMinSize = 10f;
         float selectionAreaSize = math.distance(min, max);
-        
+
         if (selectionAreaSize < selectionAreaMinSize) {
             min = Input.mousePosition + new Vector3(-50, -50, 0);
             max = Input.mousePosition + new Vector3(50, 50, 0);
-            Debug.Log("entrou no if");
         }
-        
+
 
         unitController.units.ForEach(unit => {
             Vector3 screenPosition = mainCamera.WorldToScreenPoint(unit.transform.position);
-            
+
             if (screenPosition.x >= min.x && screenPosition.y >= min.y && screenPosition.x <= max.x &&
                 screenPosition.y <= max.y) {
                 unit.SelectionCircleIsActive(true);
@@ -87,6 +97,20 @@ public class UnitSelection : MonoBehaviour
         });
     }
 
+    private void TrySelect(Vector2 screenPosition) {
+        var ray = mainCamera.ScreenPointToRay(screenPosition);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100, unitLayerMask)) {
+            Unit unit = hit.collider.GetComponent<Unit>();
+            
+            selectedUnits.Add(unit);
+            forDesactiveUnits.Add(unit);
+            unit.SelectionCircleIsActive(true);
+        }
+    }
+
     private void DesactiveSelectionUnit() {
         foreach (var unit in forDesactiveUnits) {
             unit.SelectionCircleIsActive(false);
@@ -94,4 +118,23 @@ public class UnitSelection : MonoBehaviour
 
         forDesactiveUnits = new List<Unit>();
     }
+
+    #endregion
+
+    #region MoveUnits
+
+    private void SetDestinationOfUnits() {
+        var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit)) {
+            if (hit.collider.CompareTag("Ground")) {
+                foreach (var unit in selectedUnits) {
+                    unit.MoveTo(hit.point);
+                }
+            }
+        }
+    }
+
+    #endregion
 }

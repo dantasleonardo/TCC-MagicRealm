@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor.Rendering;
 using UnityEngine;
 
@@ -22,6 +23,10 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float fastSpeedRotation = 2.5f;
     [SerializeField] private float rotationAmount = 1f;
     private Quaternion newRotation;
+
+    private Vector3 startRotationPosition;
+    private Vector3 currentRotationPosition;
+    private bool isRotating;
 
     [Header("Zoom")] 
     [SerializeField] private Transform cameraTransform;
@@ -85,7 +90,9 @@ public class CameraController : MonoBehaviour
                     newPosition = transform.position + dragStartPosition - dragCurrentPosition;
                 }
             }
+            transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * 15f);
         }
+        
         
         //Zoom Camera
         newZoom += zoomAmount * (Input.mouseScrollDelta.y * speedOfScroll);
