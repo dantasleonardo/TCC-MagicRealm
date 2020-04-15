@@ -75,16 +75,7 @@ public class UnitSelection : MonoBehaviour
 
         Vector2 min = selectionBox.anchoredPosition - (selectionBox.sizeDelta / 2);
         Vector2 max = selectionBox.anchoredPosition + (selectionBox.sizeDelta / 2);
-
-        float selectionAreaMinSize = 10f;
-        float selectionAreaSize = math.distance(min, max);
-
-        if (selectionAreaSize < selectionAreaMinSize) {
-            min = Input.mousePosition + new Vector3(-50, -50, 0);
-            max = Input.mousePosition + new Vector3(50, 50, 0);
-        }
-
-
+        
         unitController.units.ForEach(unit => {
             Vector3 screenPosition = mainCamera.WorldToScreenPoint(unit.transform.position);
 
@@ -130,7 +121,7 @@ public class UnitSelection : MonoBehaviour
         if (Physics.Raycast(ray, out hit)) {
             if (hit.collider.CompareTag("Ground")) {
                 foreach (var unit in selectedUnits) {
-                    unit.MoveTo(hit.point);
+                    unit.Action(hit.point, hit.collider.gameObject);
                 }
             }
         }
