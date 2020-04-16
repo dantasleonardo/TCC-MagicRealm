@@ -9,8 +9,9 @@ public class Robot : Unit
     #region FunctionsOfUnit
 
     public override void Action(Vector3 target, GameObject targetObject) {
-        if(targetObject.CompareTag("Ground"))
+        if (targetObject.CompareTag("Ground")) {
             MoveTo(target);
+        }
     }
 
     #endregion

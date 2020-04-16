@@ -30,11 +30,21 @@ public class UnitSelection : MonoBehaviour
         //Mouse actions with left button.
         if (Input.GetMouseButtonDown(0)) {
             if (selectedUnits.Count > 0) {
-                DesactiveSelectionUnit();
-                selectedUnits = new List<Unit>();
+                if (Input.GetKey(KeyCode.LeftControl)) {
+                    
+                }
+                else {
+                    selectedUnits = new List<Unit>();
+                    DesactiveSelectionUnit();
+                }
             }
             else {
-                selectedUnits = new List<Unit>();
+                if (Input.GetKey(KeyCode.LeftControl)) {
+                    
+                }
+                else {
+                    selectedUnits = new List<Unit>();
+                }
             }
 
             startPosition = Input.mousePosition;
