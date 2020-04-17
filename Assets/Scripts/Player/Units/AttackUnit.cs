@@ -8,5 +8,6 @@ public class AttackUnit : Robot
     [SerializeField] private float firerateAttack;
 
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform spawnBulletPosition;
 
 }
