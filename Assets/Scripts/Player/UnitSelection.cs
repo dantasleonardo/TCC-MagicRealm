@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Unity.Mathematics;
+// using Unity.Mathematics;
 using UnityEditor.Rendering;
 using UnityEditorInternal.Profiling.Memory.Experimental.FileFormat;
 using UnityEngine;
@@ -30,11 +30,21 @@ public class UnitSelection : MonoBehaviour
         //Mouse actions with left button.
         if (Input.GetMouseButtonDown(0)) {
             if (selectedUnits.Count > 0) {
-                DesactiveSelectionUnit();
-                selectedUnits = new List<Unit>();
+                if (Input.GetKey(KeyCode.LeftControl)) {
+                    
+                }
+                else {
+                    selectedUnits = new List<Unit>();
+                    DesactiveSelectionUnit();
+                }
             }
             else {
-                selectedUnits = new List<Unit>();
+                if (Input.GetKey(KeyCode.LeftControl)) {
+                    
+                }
+                else {
+                    selectedUnits = new List<Unit>();
+                }
             }
 
             startPosition = Input.mousePosition;
@@ -75,16 +85,7 @@ public class UnitSelection : MonoBehaviour
 
         Vector2 min = selectionBox.anchoredPosition - (selectionBox.sizeDelta / 2);
         Vector2 max = selectionBox.anchoredPosition + (selectionBox.sizeDelta / 2);
-
-        float selectionAreaMinSize = 10f;
-        float selectionAreaSize = math.distance(min, max);
-
-        if (selectionAreaSize < selectionAreaMinSize) {
-            min = Input.mousePosition + new Vector3(-50, -50, 0);
-            max = Input.mousePosition + new Vector3(50, 50, 0);
-        }
-
-
+        
         unitController.units.ForEach(unit => {
             Vector3 screenPosition = mainCamera.WorldToScreenPoint(unit.transform.position);
 
@@ -126,11 +127,27 @@ public class UnitSelection : MonoBehaviour
     private void SetDestinationOfUnits() {
         var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
+        
         if (Physics.Raycast(ray, out hit)) {
             if (hit.collider.CompareTag("Ground")) {
+                var target = hit.point;
+                
+                int AxisZ = 0;
+                List<Vector3> listOfTargets = new List<Vector3>() {
+                    target,
+                    target - new Vector3(-1,0,0),
+                    target - new Vector3(1,0,0)
+                };
+
+                int count = 0;
+                
                 foreach (var unit in selectedUnits) {
-                    unit.MoveTo(hit.point);
+                    var desiredTarget = listOfTargets[count];
+                    desiredTarget.z -= AxisZ;
+                    unit.Action(desiredTarget, hit.collider.gameObject);
+                    count = (count + 1) % listOfTargets.Count;
+                    if (count == 0)
+                        AxisZ--;
                 }
             }
         }

@@ -11,8 +11,12 @@
             <e p="CameraController.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
-            <e p="Unit.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />
+            <e p="UnitS" t="Include">
+              <e p="AttackUnit.cs" t="Include" />
+              <e p="Robot.cs" t="Include" />
+              <e p="Unit.cs" t="Include" />
+            </e>
             <e p="UnitSelection.cs" t="Include" />
           </e>
           <e p="Utilities" t="Include">
