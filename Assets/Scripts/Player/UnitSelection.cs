@@ -127,11 +127,27 @@ public class UnitSelection : MonoBehaviour
     private void SetDestinationOfUnits() {
         var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
+        
         if (Physics.Raycast(ray, out hit)) {
             if (hit.collider.CompareTag("Ground")) {
+                var target = hit.point;
+                
+                int AxisZ = 0;
+                List<Vector3> listOfTargets = new List<Vector3>() {
+                    target,
+                    target - new Vector3(-1,0,0),
+                    target - new Vector3(1,0,0)
+                };
+
+                int count = 0;
+                
                 foreach (var unit in selectedUnits) {
-                    unit.Action(hit.point, hit.collider.gameObject);
+                    var desiredTarget = listOfTargets[count];
+                    desiredTarget.z -= AxisZ;
+                    unit.Action(desiredTarget, hit.collider.gameObject);
+                    count = (count + 1) % listOfTargets.Count;
+                    if (count == 0)
+                        AxisZ--;
                 }
             }
         }

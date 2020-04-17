@@ -6,14 +6,17 @@ using UnityEngine.AI;
 
 public class Unit : MonoBehaviour
 {
+    [Header("Unit Properties")] [SerializeField]
+    protected int life;
+    
+    
+    [Header("Components")]
     [SerializeField] protected GameObject unitSelectionCircle;
 
-    protected NavMeshAgent agent;
-
-    private void Start() {
+    public void Start() {
         unitSelectionCircle.SetActive(false);
         UnitController.Instance.AddUnitInList(this);
-        agent = GetComponent<NavMeshAgent>();
+        InitItems();
     }
 
     public void SelectionCircleIsActive(bool isActive) {
@@ -21,6 +24,10 @@ public class Unit : MonoBehaviour
     }
 
     public virtual void Action(Vector3 target, GameObject targetObject) {
+        
+    }
+
+    public virtual void InitItems() {
         
     }
 }

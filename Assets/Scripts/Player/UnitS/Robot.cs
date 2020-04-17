@@ -2,9 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Robot : Unit
 {
+    [Header("Robots Properties")]
+    [SerializeField] protected float speedMovement = 2.0f;
+    
+    protected NavMeshAgent agent;
 
     #region FunctionsOfUnit
 
@@ -12,6 +17,11 @@ public class Robot : Unit
         if (targetObject.CompareTag("Ground")) {
             MoveTo(target);
         }
+    }
+
+    public override void InitItems() {
+        agent = GetComponent<NavMeshAgent>();
+        agent.speed = speedMovement;
     }
 
     #endregion
