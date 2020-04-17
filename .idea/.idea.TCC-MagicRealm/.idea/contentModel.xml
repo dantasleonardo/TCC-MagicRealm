@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Bullet.cs" t="Include" />
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
@@ -14,6 +15,7 @@
             <e p="UnitController.cs" t="Include" />
             <e p="UnitS" t="Include">
               <e p="AttackUnit.cs" t="Include" />
+              <e p="BulletScript.cs" t="Include" />
               <e p="Robot.cs" t="Include" />
               <e p="Unit.cs" t="Include" />
             </e>
