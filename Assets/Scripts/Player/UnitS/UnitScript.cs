@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Unit : MonoBehaviour
+public class UnitScript : MonoBehaviour
 {
-    [Header("Unit Properties")] [SerializeField]
-    protected int life;
+    [Header("Unit Properties")] 
+    [SerializeField] protected int life;
     
     
     [Header("Components")]
