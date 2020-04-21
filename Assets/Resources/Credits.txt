@@ -1,0 +1,16 @@
+t:Producer
+lalala
+
+t:Programmers
+Gabriel Cassimiro
+
+t:3D Artist
+Tiago Cruz
+
+t:Game Designers
+Leonardo Dantas
+Tiago Cruz
+
+t:Level Designer
+Leonardo Dantas
+Tiago Cruz
