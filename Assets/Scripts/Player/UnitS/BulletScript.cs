@@ -34,4 +34,14 @@ public class BulletScript : MonoBehaviour
     private void FixedUpdate() {
         rigidbody.velocity = transform.forward * speed;
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Mages")) {
+            DamageInEnemy();
+        }
+    }
+
+    private void DamageInEnemy() {
+        Destroy(this.gameObject);
+    }
 }
