@@ -37,6 +37,7 @@
             <e p="Utils.cs" t="Include" />
           </e>
           <e p="WindowScripts" t="Include">
+            <e p="CreateBulletsUnitsWindow.cs" t="Include" />
             <e p="CreateUnitWindow.cs" t="Include" />
           </e>
         </e>

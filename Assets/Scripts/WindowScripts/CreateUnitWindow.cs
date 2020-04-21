@@ -9,7 +9,7 @@ public class CreateUnitWindow : EditorWindow
 {
     #region AttackUnit
 
-    private string name;
+    private string nameUnit;
     private int life = 0;
     private float speedMovement = 0.0f;
     private float attackDistace = 0.0f;
@@ -28,7 +28,7 @@ public class CreateUnitWindow : EditorWindow
 
     private void OnGUI() {
         GUILayout.Label("Create a Attack Unit", EditorStyles.boldLabel);
-        name = EditorGUILayout.TextField("Unit name", name);
+        nameUnit = EditorGUILayout.TextField("Unit name", nameUnit);
         life = EditorGUILayout.IntField("Life", life);
         attackDistace = EditorGUILayout.FloatField("Attack Distance", attackDistace);
         firerateAttack = EditorGUILayout.FloatField("Firerate", firerateAttack);
@@ -37,9 +37,9 @@ public class CreateUnitWindow : EditorWindow
         fileNameOfBullet = EditorGUILayout.TextField("File name of bullet", fileNameOfBullet);
 
         if (GUILayout.Button("Create Attack Unit")) {
-            if (name != null) {
+            if (nameUnit != null) {
                 var newAttackUnit = TryCreateAttackUnit();
-                AssetDatabase.CreateAsset(newAttackUnit, $"Assets/Units/Resources/{name}.asset");
+                AssetDatabase.CreateAsset(newAttackUnit, $"Assets/Units/Resources/{nameUnit}.asset");
             }
         }
     }
