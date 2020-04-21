@@ -6,8 +6,9 @@ using UnityEngine.AI;
 
 public class Robot : UnitScript
 {
-    [Header("Robots Properties")] [SerializeField]
-    protected float speedMovement = 2.0f;
+    [Header("Robots Properties")] 
+    [SerializeField] protected int life;
+    [SerializeField] protected float speedMovement = 2.0f;
 
     protected NavMeshAgent agent;
 

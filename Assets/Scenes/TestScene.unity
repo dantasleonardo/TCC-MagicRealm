@@ -2899,6 +2899,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.75, y: 5, z: 4.5}
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!1 &639641117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7308313363994609760, guid: ba592829ac51bc0498ec9515784a4f27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1142644659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &639641119
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639641117}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 539e13a264e52ef46a30edee9c497823, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &644005003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5295,6 +5320,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Water_Wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671550423576717352, guid: ba592829ac51bc0498ec9515784a4f27,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671550423576717352, guid: ba592829ac51bc0498ec9515784a4f27,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671550423576717352, guid: ba592829ac51bc0498ec9515784a4f27,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671550423576717352, guid: ba592829ac51bc0498ec9515784a4f27,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00000028088027
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671550423576717352, guid: ba592829ac51bc0498ec9515784a4f27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671550423576717352, guid: ba592829ac51bc0498ec9515784a4f27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 179.99998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba592829ac51bc0498ec9515784a4f27, type: 3}
