@@ -5,6 +5,7 @@ using TMPro;
 using UnityEditor.Rendering;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AttackUnit : Robot
 {
@@ -25,26 +26,25 @@ public class AttackUnit : Robot
 
     [Header("Animations")] [SerializeField]
     private float DistanceStopAnimationPlay = 0.2f;
+
     private Animator animator;
 
     private GameObject currentTarget;
     private float nextTimeToFire;
-    
-    [Header("Actions")]
-    public bool idle = true;
+
+    [Header("Actions")] public bool idle = true;
     public bool inMovement;
     public bool attacking = false;
-    
-    
+
 
     private void Awake() {
-        InitItem();
         animator = GetComponent<Animator>();
     }
 
-    private void InitItem() {
+    public override void InitItems() {
         bulletProperties = Resources.Load<Bullet>(fileNameOfBullet);
         attackUnitProperties = Resources.Load<AttackUnitScriptable>(fileNameOfUnit);
+        agent = GetComponent<NavMeshAgent>();
 
         if (bulletProperties != null) {
             bulletPrefab = bulletProperties.bulletPrefab;
@@ -64,10 +64,10 @@ public class AttackUnit : Robot
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
             ActiveMovement();
-            if(!WithinReach())
+            if (!WithinReach())
                 ActiveMovement();
         }
-        else if(targetObject.CompareTag("Ground")){
+        else if (targetObject.CompareTag("Ground")) {
             agent.stoppingDistance = 0.0f;
             attacking = false;
             currentTarget = null;
@@ -79,7 +79,7 @@ public class AttackUnit : Robot
     private void ActiveMovement() {
         idle = false;
         inMovement = true;
-        
+
         animator.SetBool("inMovement", inMovement);
         animator.SetBool("Idle", idle);
     }
@@ -93,13 +93,14 @@ public class AttackUnit : Robot
                 animator.SetBool("Idle", idle);
             }
         }
-        
+
         if (attacking) {
             // transform.LookAt(currentTarget.transform);
             var lookRotation = LookTarget();
-            
-            
-            if (Time.time > nextTimeToFire && Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 0.5f) {
+
+
+            if (Time.time > nextTimeToFire &&
+                Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 0.5f) {
                 var bullet = Instantiate(bulletPrefab, spawnBulletPosition.position, transform.rotation);
                 bullet.transform.forward = spawnBulletPosition.forward;
                 nextTimeToFire = Time.time + (1f / firerateAttack);
@@ -129,13 +130,13 @@ public class AttackUnit : Robot
     private bool WithinReach() {
         bool isTrue = Vector3.Distance(transform.position, agent.destination) <= attakDistance;
         return isTrue;
-    } 
+    }
 
     private Quaternion LookTarget() {
         Vector3 direction = (currentTarget.transform.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turningSpeed);
-        
+
         return lookRotation;
     }
 }

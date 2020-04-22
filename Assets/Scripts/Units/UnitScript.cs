@@ -16,12 +16,14 @@ public class UnitScript : MonoBehaviour
         UnitController.Instance.AddUnitInList(this);
         InitItems();
     }
+    
+    
 
-    public void SelectionCircleIsActive(bool isActive) {
+    public virtual void SelectionObjectIsActive(bool isActive) {
         unitSelectionObject.SetActive(isActive);
     }
 
-    public virtual void Action(Vector3 target, GameObject targetObject) {
+    public virtual void Action(Vector3 target, GameObject targetObject = null) {
         
     }
 

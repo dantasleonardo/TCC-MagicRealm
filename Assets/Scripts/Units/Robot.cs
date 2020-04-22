@@ -14,13 +14,7 @@ public class Robot : UnitScript
 
     #region FunctionsOfUnit
 
-    public override void InitItems() {
-        agent = GetComponent<NavMeshAgent>();
-        agent.speed = speedMovement;
-    }
-
     #endregion
-
 
     protected void MoveTo(Vector3 target) {
         agent.SetDestination(target);

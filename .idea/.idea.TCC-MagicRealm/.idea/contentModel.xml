@@ -4,6 +4,7 @@
     <e p="C:\Users\gdini\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\gdini\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TCC-MagicRealm.229587469.00" t="ExcludeRecursive" />
     <e p="D:\Projects\Unity\TCC-MagicRealm" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Animations" t="Include">
@@ -12,6 +13,23 @@
               <e p="CannonRobotAnimation.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="LeanTween" t="Include">
+          <e p="Editor" t="Include">
+            <e p="LeanTweenDocumentationEditor.cs" t="Include" />
+          </e>
+          <e p="Framework" t="Include">
+            <e p="LeanAudio.cs" t="Include" />
+            <e p="LeanSmooth.cs" t="Include" />
+            <e p="LeanTest.cs" t="Include" />
+            <e p="LeanTween.cs" t="Include" />
+            <e p="LeanTweenExt.cs" t="Include" />
+            <e p="LTDescr.cs" t="Include" />
+            <e p="LTDescrOptional.cs" t="Include" />
+            <e p="LTSeq.cs" t="Include" />
+          </e>
+          <e p="License.txt" t="Include" />
+          <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Resources" t="Include">
           <e p="Credits.txt" t="Include" />
@@ -31,10 +49,15 @@
             <e p="AttackUnitScriptable.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
           </e>
+          <e p="UI" t="Include">
+            <e p="FunctionsPanelMainBase.cs" t="Include" />
+            <e p="UnitItemButton.cs" t="Include" />
+          </e>
           <e p="UnitS" t="Include">
             <e p="AttackUnit.cs" t="Include" />
             <e p="Building.cs" t="Include" />
             <e p="BulletScript.cs" t="Include" />
+            <e p="MainBase.cs" t="Include" />
             <e p="Robot.cs" t="Include" />
             <e p="UnitScript.cs" t="Include" />
           </e>

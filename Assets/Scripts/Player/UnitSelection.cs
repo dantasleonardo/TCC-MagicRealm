@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using UnityEditor.Rendering;
-using UnityEditorInternal.Profiling.Memory.Experimental.FileFormat;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class UnitSelection : MonoBehaviour
 {
     [SerializeField] private RectTransform selectionBox;
     [SerializeField] private LayerMask unitLayerMask;
+    [SerializeField] private LayerMask uiLayerMask;
 
     [SerializeField] private List<UnitScript> selectedUnits = new List<UnitScript>();
     private List<UnitScript> forDesactiveUnits = new List<UnitScript>();
@@ -28,27 +26,33 @@ public class UnitSelection : MonoBehaviour
     private void Update() {
         //Mouse actions with left button.
         if (Input.GetMouseButtonDown(0)) {
-            if (selectedUnits.Count > 0) {
-                if (Input.GetKey(KeyCode.LeftControl)) {
-                }
-                else {
-                    selectedUnits = new List<UnitScript>();
-                    DesactiveSelectionUnit();
-                }
-            }
-            else {
-                if (Input.GetKey(KeyCode.LeftControl)) {
-                }
-                else {
-                    selectedUnits = new List<UnitScript>();
-                }
-            }
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-            startPosition = Input.mousePosition;
+            if (!EventSystem.current.IsPointerOverGameObject()) {
+                if (selectedUnits.Count > 0) {
+                    if (Input.GetKey(KeyCode.LeftControl)) {
+                    }
+                    else {
+                        selectedUnits = new List<UnitScript>();
+                        DesactiveSelectionUnit();
+                    }
+                }
+                else {
+                    if (Input.GetKey(KeyCode.LeftControl)) {
+                    }
+                    else {
+                        selectedUnits = new List<UnitScript>();
+                    }
+                }
+
+                startPosition = Input.mousePosition;
+            }
         }
 
         if (Input.GetMouseButton(0)) {
-            UpdateSelectionBox(Input.mousePosition);
+            if (!EventSystem.current.IsPointerOverGameObject())
+                UpdateSelectionBox(Input.mousePosition);
         }
 
         if (Input.GetMouseButtonUp(0)) {
@@ -88,7 +92,7 @@ public class UnitSelection : MonoBehaviour
 
             if (screenPosition.x >= min.x && screenPosition.y >= min.y && screenPosition.x <= max.x &&
                 screenPosition.y <= max.y) {
-                unit.SelectionCircleIsActive(true);
+                unit.SelectionObjectIsActive(true);
                 selectedUnits.Add(unit);
                 forDesactiveUnits.Add(unit);
             }
@@ -105,13 +109,13 @@ public class UnitSelection : MonoBehaviour
 
             selectedUnits.Add(unitScript);
             forDesactiveUnits.Add(unitScript);
-            unitScript.SelectionCircleIsActive(true);
+            unitScript.SelectionObjectIsActive(true);
         }
     }
 
     private void DesactiveSelectionUnit() {
         foreach (var unit in forDesactiveUnits) {
-            unit.SelectionCircleIsActive(false);
+            unit.SelectionObjectIsActive(false);
         }
 
         forDesactiveUnits = new List<UnitScript>();
@@ -132,7 +136,10 @@ public class UnitSelection : MonoBehaviour
             }
             else {
                 foreach (var unit in selectedUnits) {
-                    unit.Action(target, hit.collider.gameObject);
+                    if (unit.CompareTag("Unit"))
+                        unit.Action(target, hit.collider.gameObject);
+                    if (unit.CompareTag("Building"))
+                        unit.Action(target);
                 }
             }
         }
