@@ -59,6 +59,7 @@
             <e p="BulletScript.cs" t="Include" />
             <e p="MainBase.cs" t="Include" />
             <e p="Robot.cs" t="Include" />
+            <e p="UnitManager.cs" t="Include" />
             <e p="UnitScript.cs" t="Include" />
           </e>
           <e p="Utilities" t="Include">

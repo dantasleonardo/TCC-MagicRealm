@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 146825456}
   - component: {fileID: 146825455}
   - component: {fileID: 146825457}
+  - component: {fileID: 146825458}
   m_Layer: 0
   m_Name: UnitControl
   m_TagString: Untagged
@@ -598,6 +599,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   units: []
+--- !u!114 &146825458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146825454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973678be6f9fc3e4aa1b218843617f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allAttackUnits: []
+  ActiveAttackUnitsList: []
+  cannonRobotName: CannonRobotLvl
+  cannonRobotLevel: 1
+  soldierRobotName: SoldierRobotLvl
+  soldierRobotLevel: 1
 --- !u!1001 &153080111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11205,7 +11224,7 @@ PrefabInstance:
     - target: {fileID: 3022159314042227189, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}
       propertyPath: fileNameOfUnit
-      value: CannonRobot
+      value: CannonRobotLvl1
       objectReference: {fileID: 0}
     - target: {fileID: 3022159314042227189, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}

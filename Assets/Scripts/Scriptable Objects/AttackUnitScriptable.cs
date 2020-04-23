@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Attack Character", menuName = "Units/Attack Unit/Character")]
 public class AttackUnitScriptable : ScriptableObject
 {
-    [Header("Properties")]
+    [Header("Properties")] 
+    public string nameUnit;
     public int life;
     public float speedMovement;
     public float attackDistace;

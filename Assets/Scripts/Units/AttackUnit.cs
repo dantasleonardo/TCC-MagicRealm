@@ -59,7 +59,7 @@ public class AttackUnit : Robot
         }
     }
 
-    public override void Action(Vector3 target, GameObject targetObject) {
+    public override void Action(Vector3 target, GameObject targetObject = null) {
         if (targetObject.CompareTag("Mages")) {
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
