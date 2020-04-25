@@ -44,8 +44,8 @@ public class CreateUnitWindow : EditorWindow
         }
     }
 
-    private AttackUnitScriptable TryCreateAttackUnit() {
-        AttackUnitScriptable attackUnit = ScriptableObject.CreateInstance<AttackUnitScriptable>();
+    private AttackUnit TryCreateAttackUnit() {
+        AttackUnit attackUnit = ScriptableObject.CreateInstance<AttackUnit>();
         attackUnit.life = life;
         attackUnit.speedMovement = speedMovement;
         attackUnit.attackDistace = attackDistace;

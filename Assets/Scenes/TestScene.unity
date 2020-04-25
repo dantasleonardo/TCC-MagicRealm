@@ -139,7 +139,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -209,6 +209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
@@ -285,6 +290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &60038151 stripped
@@ -360,6 +370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &78415808 stripped
@@ -386,7 +401,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -408,10 +423,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &125410478
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125410476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &125807715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
@@ -430,10 +459,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &125807717
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125807715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &137380819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
@@ -452,10 +495,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &137380821
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137380819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &138467598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -611,12 +668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973678be6f9fc3e4aa1b218843617f93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allAttackUnits: []
-  ActiveAttackUnitsList: []
-  cannonRobotName: CannonRobotLvl
-  cannonRobotLevel: 1
-  soldierRobotName: SoldierRobotLvl
-  soldierRobotLevel: 1
 --- !u!1001 &153080111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,6 +734,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees3
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
@@ -795,6 +851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &174708413 stripped
@@ -821,7 +882,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -891,6 +952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
@@ -967,6 +1033,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &213791105 stripped
@@ -1042,6 +1113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
 --- !u!4 &228450323 stripped
@@ -1116,6 +1192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
@@ -1271,6 +1352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
@@ -1433,6 +1519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &345813444 stripped
@@ -1459,7 +1550,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -1529,6 +1620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -1605,6 +1701,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &364627430 stripped
@@ -1679,6 +1780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -1974,6 +2080,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &430975924 stripped
@@ -2000,10 +2111,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &447138169
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447138167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &478644248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2070,6 +2195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
@@ -2146,6 +2276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &483040964 stripped
@@ -2221,6 +2356,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &516240659 stripped
@@ -2295,6 +2435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
@@ -2402,10 +2547,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &536471400
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536471398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &537861890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
@@ -2424,10 +2583,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &537861892
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537861890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &557656082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 526779fad832a5640b6e4217a2bc7c96,
@@ -2446,7 +2619,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.006, y: 0.00001, z: 0.006}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
@@ -2597,6 +2770,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &577588461 stripped
@@ -2672,6 +2850,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &586640130 stripped
@@ -2698,10 +2881,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &597055217
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597055215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &599978263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2769,6 +2966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &599978264 stripped
@@ -2795,7 +2997,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -2849,7 +3051,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2a85b682f74cea945ae6be35268add3e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2a85b682f74cea945ae6be35268add3e,
         type: 3}
@@ -3057,6 +3259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &644005004 stripped
@@ -3212,6 +3419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &657651201 stripped
@@ -3238,10 +3450,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &670813848
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670813846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &692703449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3385,7 +3611,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -3407,10 +3633,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &698461736
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698461734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &703955066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3478,6 +3718,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &703955067 stripped
@@ -3504,10 +3749,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &731012032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731012030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &738725686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3574,6 +3833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
@@ -3643,10 +3907,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &751534543
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751534541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &758910422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3724,6 +4002,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 526779fad832a5640b6e4217a2bc7c96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 526779fad832a5640b6e4217a2bc7c96, type: 3}
 --- !u!4 &758910423 stripped
@@ -3750,10 +4033,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &764099917
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764099915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &767894675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -3772,10 +4069,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &767894677
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767894675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &769748004 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
@@ -3794,7 +4105,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -3865,6 +4176,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &786679275 stripped
@@ -3891,10 +4207,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &794449905
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794449903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &797220685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3961,6 +4291,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
@@ -4047,6 +4382,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 526779fad832a5640b6e4217a2bc7c96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 526779fad832a5640b6e4217a2bc7c96, type: 3}
 --- !u!4 &808706970 stripped
@@ -4122,6 +4462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &819302267 stripped
@@ -4196,6 +4541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
@@ -4376,7 +4726,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.006, y: 0.00001, z: 0.006}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
@@ -4398,10 +4748,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &858709687
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858709685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &859881172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -4420,10 +4784,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &859881174
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859881172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &865570919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4501,6 +4879,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 526779fad832a5640b6e4217a2bc7c96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 526779fad832a5640b6e4217a2bc7c96, type: 3}
 --- !u!4 &865570920 stripped
@@ -4576,6 +4959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
 --- !u!4 &873902771 stripped
@@ -4602,10 +4990,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &902678364
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902678362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &905495392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4672,6 +5074,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -4748,6 +5155,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
 --- !u!4 &1001770361 stripped
@@ -4793,6 +5205,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1011389293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: fb926852d267bd2499bc0f7156c992ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 1525397465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1011389294
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011389293}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.46, y: 0.75, z: 0.46}
+  m_MoveThreshold: 0
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.65, z: 0}
+  m_TimeToStationary: 0
+--- !u!136 &1011389295
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011389293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.46
+  m_Height: 1.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.65, z: 0}
+--- !u!114 &1011389296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011389293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ce64a36f589c34bb1fada199d889df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1019026950
 GameObject:
   m_ObjectHideFlags: 0
@@ -4868,10 +5328,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1051050818
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051050816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1060865359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
@@ -4890,7 +5364,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -5040,6 +5514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
@@ -5236,6 +5715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &1098493818 stripped
@@ -5310,6 +5794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
@@ -5516,7 +6005,7 @@ RectTransform:
   m_Children:
   - {fileID: 155408193}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5635,10 +6124,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1178022540
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178022538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1178035060 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -5657,10 +6160,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1178035062
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178035060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1200663834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,7 +6375,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -5880,10 +6397,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1227067520
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227067518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1243490830 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -5902,10 +6433,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1243490832
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243490830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1249113271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5973,6 +6518,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1249113272 stripped
@@ -5999,7 +6549,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -6021,10 +6571,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1299060350
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299060348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1301825646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
@@ -6043,7 +6607,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -6113,6 +6677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
@@ -6189,6 +6758,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1344146809 stripped
@@ -6264,6 +6838,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &1346836274 stripped
@@ -6290,10 +6869,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1351977376
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351977374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1355528948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6354,7 +6947,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2ea8d13dc35f2b940a35271da1de13f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2ea8d13dc35f2b940a35271da1de13f7,
         type: 3}
@@ -6505,6 +7098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1368942124 stripped
@@ -6531,10 +7129,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1378322741
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378322739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1394140399 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
@@ -6553,10 +7165,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1394140401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394140399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1404149826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6623,6 +7249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -6723,7 +7354,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.006, y: 0.00001, z: 0.006}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
@@ -6825,7 +7456,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -6896,6 +7527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &1431419229 stripped
@@ -6922,7 +7558,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -6993,6 +7629,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &1442530348 stripped
@@ -7019,10 +7660,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1444068899
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444068897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1474802895 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
@@ -7041,10 +7696,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1474802897
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474802895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1474996659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7192,6 +7861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
 --- !u!4 &1478842672 stripped
@@ -7218,10 +7892,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1489962541
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489962539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1520363503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7289,6 +7977,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1520363504 stripped
@@ -7297,6 +7990,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1520363503}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1525397465
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.994
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.021
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.612
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Resource_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fb926852d267bd2499bc0f7156c992ea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fb926852d267bd2499bc0f7156c992ea, type: 3}
 --- !u!1001 &1528907993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7374,6 +8141,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 526779fad832a5640b6e4217a2bc7c96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 526779fad832a5640b6e4217a2bc7c96, type: 3}
 --- !u!4 &1528907994 stripped
@@ -7400,10 +8172,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1532621788
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532621786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1542190652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -7422,10 +8208,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1542190654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542190652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1561734554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7492,6 +8292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -7567,6 +8372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
@@ -7707,7 +8517,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -7729,7 +8539,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -7880,6 +8690,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &1602283127 stripped
@@ -7906,10 +8721,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1603396911
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603396909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1619139953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -7928,10 +8757,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1619139955
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619139953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1620343538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7998,6 +8841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees3 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
@@ -8098,10 +8946,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1641280882
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641280880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1644936654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8168,6 +9030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -8294,7 +9161,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -8316,7 +9183,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -8338,7 +9205,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -8532,10 +9399,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1695651289
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695651287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1696255038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
@@ -8554,10 +9435,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1696255040
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696255038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1701614499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8624,6 +9519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -8699,6 +9599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -8806,10 +9711,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1723125022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723125020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1724912081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8956,6 +9875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
@@ -9112,6 +10036,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1759393172 stripped
@@ -9267,6 +10196,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
 --- !u!4 &1775141424 stripped
@@ -9342,6 +10276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &1781133518 stripped
@@ -9368,7 +10307,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.006, y: 0.00001, z: 0.006}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
@@ -9438,6 +10377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42ee9108ecc277549a718c4d76d9f270,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ee9108ecc277549a718c4d76d9f270, type: 3}
@@ -9593,6 +10537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trees1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
@@ -9784,6 +10733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &1833541961 stripped
@@ -9859,6 +10813,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1849725257 stripped
@@ -9885,10 +10844,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1861775127
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861775125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1873179829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
@@ -9907,7 +10880,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -9977,6 +10950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
@@ -10053,6 +11031,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &1890363205 stripped
@@ -10079,7 +11062,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -10150,6 +11133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efcc8c16701598d48a5925f76b58c177, type: 3}
 --- !u!4 &1899847706 stripped
@@ -10176,7 +11164,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.006, y: 0.00001, z: 0.006}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
@@ -10278,10 +11266,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1914342742
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914342740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1929013267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
@@ -10300,7 +11302,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -10322,10 +11324,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1931202549
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931202547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1943573547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
@@ -10344,10 +11360,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &1943573549
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943573547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1949786863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10424,6 +11454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 526779fad832a5640b6e4217a2bc7c96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 526779fad832a5640b6e4217a2bc7c96, type: 3}
@@ -10592,6 +11627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &1995320730 stripped
@@ -10618,10 +11658,24 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &2002769032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002769030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2006678147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: efcc8c16701598d48a5925f76b58c177,
@@ -10640,7 +11694,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -10791,6 +11845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f5c63bdc07230944ba9f284cc7f5e417,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c63bdc07230944ba9f284cc7f5e417, type: 3}
 --- !u!4 &2025293920 stripped
@@ -10817,7 +11876,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -10987,6 +12046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trees1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 42d3ac9e8b7664f479c88b759e902a93,
+        type: 3}
+      propertyPath: m_TagString
+      value: Resources
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ac9e8b7664f479c88b759e902a93, type: 3}
 --- !u!4 &2103777717 stripped
@@ -11093,7 +12157,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.59, y: 0.4, z: 0.59}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.3, z: 0}
   m_TimeToStationary: 0.5
@@ -11115,10 +12179,98 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 0.75, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &2145512268
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145512266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1001 &5740100993963115602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.510501
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7772522
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362020356297112749, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gatherer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740100995272402347, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
+        type: 3}
+      propertyPath: nameScriptable
+      value: Gatherer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cacd5c5b2488ba44fb70fc405ce77fa4, type: 3}
 --- !u!1001 &6853334382675363804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11199,7 +12351,7 @@ PrefabInstance:
     - target: {fileID: 1900901130326902594, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1900901130326902594, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}

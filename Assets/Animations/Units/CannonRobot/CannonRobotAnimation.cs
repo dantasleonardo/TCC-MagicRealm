@@ -10,10 +10,10 @@ public class CannonRobotAnimation : MonoBehaviour
     [SerializeField] private float magnitude;
 
 
-    private AttackUnit unit;
+    private AttackUnitScript unitScript;
 
     private void Start() {
-        unit = GetComponent<AttackUnit>();
+        unitScript = GetComponent<AttackUnitScript>();
     }
 
     void Update() {

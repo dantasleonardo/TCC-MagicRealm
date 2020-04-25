@@ -9,15 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d55c053f032d088408cc9fe34d22f61b, type: 3}
-  m_Name: SoldierRobotLvl1
+  m_Script: {fileID: 11500000, guid: 34ec42034464594429e224f16b998dfd, type: 3}
+  m_Name: Gatherer
   m_EditorClassIdentifier: 
-  nameUnit: SoldierRobotLvl1
-  life: 3
+  nameUnit: Gatherer
+  life: 5
   speedMovement: 1.5
-  attackDistace: 2
-  firerateAttack: 0.5
-  turningSpeed: 2.5
-  unitPrefab: {fileID: 3186862269167367505, guid: 15a4329dcc2a68d41a865caca49a974b,
+  maxAmountResources: 15
+  gatheringSpeed: 2.5
+  unitPrefab: {fileID: 6275618020471865338, guid: 99530a58ca57e5e4f92cac8650dd9154,
     type: 3}
-  fileNameOfBullet: CannonBallLevel1

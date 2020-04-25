@@ -7,12 +7,12 @@ using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AttackUnit : Robot
+public class AttackUnitScript : Robot
 {
     [Header("AttackUnit properties")] [SerializeField]
     private string fileNameOfUnit;
 
-    public AttackUnitScriptable attackUnitProperties;
+    public AttackUnit attackUnitProperties;
 
     [SerializeField] private float attakDistance;
     [SerializeField] private float firerateAttack;
@@ -42,8 +42,8 @@ public class AttackUnit : Robot
     }
 
     public override void InitItems() {
-        bulletProperties = Resources.Load<Bullet>(fileNameOfBullet);
-        attackUnitProperties = Resources.Load<AttackUnitScriptable>(fileNameOfUnit);
+        bulletProperties = UnityEngine.Resources.Load<Bullet>(fileNameOfBullet);
+        attackUnitProperties = UnityEngine.Resources.Load<AttackUnit>(fileNameOfUnit);
         agent = GetComponent<NavMeshAgent>();
 
         if (bulletProperties != null) {
@@ -60,6 +60,7 @@ public class AttackUnit : Robot
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null) {
+        print($"Hit: {targetObject.tag}");
         if (targetObject.CompareTag("Mages")) {
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
