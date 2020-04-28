@@ -14,20 +14,27 @@ public class GahtererUnitScript : Robot
 
     [SerializeField] private GathererUnit properties;
     [SerializeField] private int maxAmountResources;
+    [SerializeField] private int currentAmountResources = 0;
     [SerializeField] private float gatheringSpeed;
+    [SerializeField] private int amountResources;
 
-    [SerializeField] private GameObject resourceTarget;
+    [SerializeField] private Resources resourceTarget;
+
+    [SerializeField] private float turningSpeed = 2.5f;
+
+    private Dictionary<ResourceType, int> inventory = new Dictionary<ResourceType, int>();
+    [SerializeField] private bool inventoryIsFull;
 
     [Header("Animations")] [SerializeField]
     private float distanceStopAnimationPlay = 0.2f;
 
     private Animator animator;
 
-    private GameObject currentTarget;
-
     [Header("Actions")] public bool idle = true;
     public bool inMovement;
     public bool gathering;
+
+    #region UnitRelated
 
     public override void InitItems() {
         agent = GetComponent<NavMeshAgent>();
@@ -35,8 +42,11 @@ public class GahtererUnitScript : Robot
 
         life = properties.life;
         speedMovement = properties.speedMovement;
+        agent.speed = speedMovement;
         maxAmountResources = properties.maxAmountResources;
         gatheringSpeed = properties.gatheringSpeed;
+        amountResources = properties.amountResources;
+        turningSpeed = properties.turningSpeed;
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null) {
@@ -45,10 +55,11 @@ public class GahtererUnitScript : Robot
         if (targetObject.CompareTag("Resources")) {
             MoveTo(target);
             ActiveMovement();
-            resourceTarget = targetObject;
+            resourceTarget = targetObject.GetComponent<Resources>();
+            agent.stoppingDistance = 1.0f;
         }
         else if (!targetObject.CompareTag("Ground")) return;
-        
+
         MoveTo(target);
         ActiveMovement();
     }
@@ -62,16 +73,75 @@ public class GahtererUnitScript : Robot
         // animator.SetBool("Idle", idle);
     }
 
-    private void Update() {
-        if (resourceTarget != null) {
-            var distance = Vector3.Distance(transform.position, resourceTarget.transform.position);
-            if (distance < 1.0f) {
-                print($"Distance: {distance}");
-                agent.isStopped = true;
-            }
+    #endregion
+
+    #region GathererUnitRelated
+
+    private IEnumerator GetResource() {
+        yield return new WaitForSeconds(gatheringSpeed);
+
+        var resources = resourceTarget.GetResource(amountResources);
+
+        ResourceType key = ResourceType.Rock;
+        var value = 0;
+
+        foreach (var resource in resources) {
+            key = resource.Key;
+            value = resource.Value;
+        }
+
+        if (inventory.ContainsKey(key)) {
+            inventory[key] += value;
         }
         else {
-            agent.isStopped = false;
+            inventory.Add(key, value);
         }
+
+        print($"Key: {key} Value: {inventory[key]}");
+        currentAmountResources += value;
+
+        if (currentAmountResources < maxAmountResources) {
+            StartCoroutine(GetResource());
+        }
+        else {
+            gathering = false;
+            inventoryIsFull = true;
+            GoToBase();
+        }
+    }
+
+    #endregion
+
+    private void Update() {
+        if (resourceTarget != null) {
+            var distance = WithinReach();
+            if (!distance) return;
+            var lookRotation = LookTarget();
+            if (!(Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 2.5f)) return;
+            if (gathering || inventoryIsFull) return;
+            StartCoroutine(GetResource());
+            gathering = true;
+        }
+        else {
+            // agent.isStopped = false;
+        }
+    }
+
+    private bool WithinReach() {
+        var isTrue = Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance;
+        return isTrue;
+    }
+
+    private Quaternion LookTarget() {
+        Vector3 direction = (resourceTarget.gameObject.transform.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turningSpeed);
+
+        return lookRotation;
+    }
+
+    private void GoToBase() {
+        var target = MainBase.Instance.gameObject.transform.position;
+        MoveTo(target);
     }
 }

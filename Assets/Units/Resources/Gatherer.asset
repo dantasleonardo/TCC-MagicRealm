@@ -15,7 +15,9 @@ MonoBehaviour:
   nameUnit: Gatherer
   life: 5
   speedMovement: 1.5
-  maxAmountResources: 15
+  maxAmountResources: 20
   gatheringSpeed: 2.5
+  amountResources: 2
   unitPrefab: {fileID: 6275618020471865338, guid: 99530a58ca57e5e4f92cac8650dd9154,
     type: 3}
+  turningSpeed: 2

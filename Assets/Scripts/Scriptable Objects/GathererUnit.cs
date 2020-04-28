@@ -10,5 +10,7 @@ public class GathererUnit : ScriptableObject
     public float speedMovement;
     public int maxAmountResources;
     public float gatheringSpeed;
+    public int amountResources;
     public GameObject unitPrefab;
+    public float turningSpeed;
 }

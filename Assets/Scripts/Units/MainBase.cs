@@ -1,10 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class MainBase : Building
 {
+    #region Singleton
+
+    public static MainBase Instance;
+
+    private void Awake() {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+    #endregion
+    
+    
     [SerializeField] private GameObject functionsPanel;
     [SerializeField] private Transform spawnPosition;
     
