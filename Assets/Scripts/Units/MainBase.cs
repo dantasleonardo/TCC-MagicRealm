@@ -46,7 +46,9 @@ public class MainBase : Building
 
     #region UnitRelated
     
-    
+    public void GetResourcesOfUnit(Dictionary<ResourceType, int> resources){
+        GameController.Instance.GetResources(resources);
+    }
     
     #endregion
 
@@ -58,7 +60,7 @@ public class MainBase : Building
     }
 
     private void CloseFunctionsPanel() {
-        LeanTween.moveY(functionsPanel, -300.0f, animationTimeFunctionsPanel).setOnComplete(FunctionsPanelIsActive);
+        LeanTween.moveY(functionsPanel, -250.0f, animationTimeFunctionsPanel).setOnComplete(FunctionsPanelIsActive);
     }
 
     private void FunctionsPanelIsActive() {

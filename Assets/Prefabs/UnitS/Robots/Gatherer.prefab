@@ -169,10 +169,17 @@ MonoBehaviour:
   nameScriptable: Gatherer
   properties: {fileID: 0}
   maxAmountResources: 0
+  currentAmountResources: 0
   gatheringSpeed: 0
-  DistanceStopAnimationPlay: 0.2
+  amountResources: 0
+  resourceTarget: {fileID: 0}
+  turningSpeed: 2.5
+  inventoryIsFull: 0
+  distanceStopAnimationPlay: 0.2
   idle: 1
   inMovement: 0
+  gathering: 0
+  goingToBase: 0
 --- !u!136 &618591081577529957
 CapsuleCollider:
   m_ObjectHideFlags: 0

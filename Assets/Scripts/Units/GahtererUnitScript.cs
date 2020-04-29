@@ -33,6 +33,7 @@ public class GahtererUnitScript : Robot
     [Header("Actions")] public bool idle = true;
     public bool inMovement;
     public bool gathering;
+    public bool goingToBase;
 
     #region UnitRelated
 
@@ -50,16 +51,18 @@ public class GahtererUnitScript : Robot
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null) {
+        StopAllCoroutines();
         resourceTarget = null;
         print($"Hit: {targetObject.tag} and Vector of Target: {target}");
         if (targetObject.CompareTag("Resources")) {
+            agent.stoppingDistance = 1.0f;
             MoveTo(target);
             ActiveMovement();
             resourceTarget = targetObject.GetComponent<Resources>();
-            agent.stoppingDistance = 1.0f;
         }
         else if (!targetObject.CompareTag("Ground")) return;
 
+        agent.stoppingDistance = 0.0f;
         MoveTo(target);
         ActiveMovement();
     }
@@ -68,6 +71,7 @@ public class GahtererUnitScript : Robot
         idle = false;
         inMovement = true;
         gathering = false;
+        goingToBase = false;
 
         // animator.SetBool("inMovement", inMovement);
         // animator.SetBool("Idle", idle);
@@ -107,6 +111,7 @@ public class GahtererUnitScript : Robot
             gathering = false;
             inventoryIsFull = true;
             GoToBase();
+            goingToBase = true;
         }
     }
 
@@ -114,7 +119,13 @@ public class GahtererUnitScript : Robot
 
     private void Update() {
         if (resourceTarget != null) {
-            var distance = WithinReach();
+            if (goingToBase) {
+                var distanceOfBase = WithinReach(1f);
+                if (!distanceOfBase) return;
+                GiveResources();
+                return;
+            }
+            var distance = WithinReach(agent.stoppingDistance);
             if (!distance) return;
             var lookRotation = LookTarget();
             if (!(Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 2.5f)) return;
@@ -127,8 +138,8 @@ public class GahtererUnitScript : Robot
         }
     }
 
-    private bool WithinReach() {
-        var isTrue = Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance;
+    private bool WithinReach(float distance) {
+        var isTrue = Vector3.Distance(transform.position, agent.destination) <= distance;
         return isTrue;
     }
 
@@ -143,5 +154,23 @@ public class GahtererUnitScript : Robot
     private void GoToBase() {
         var target = MainBase.Instance.gameObject.transform.position;
         MoveTo(target);
+    }
+
+    private void GoToResource() {
+        var target = resourceTarget.gameObject.transform.position;
+        MoveTo(target);
+    }
+
+    private void GiveResources() {
+        MainBase.Instance.GetResourcesOfUnit(inventory);
+        GoToResource();
+        ActiveMovement();
+        inventoryIsFull = false;
+        currentAmountResources = 0;
+        inventory = new Dictionary<ResourceType, int>();
+        foreach (var test in inventory) {
+            print("Inventario tem alguma coisa");
+            print(test.Key + test.Value);
+        }
     }
 }

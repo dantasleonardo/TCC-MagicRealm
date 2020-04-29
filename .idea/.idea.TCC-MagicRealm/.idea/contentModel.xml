@@ -39,6 +39,7 @@
             <e p="CameraController.cs" t="Include" />
           </e>
           <e p="Credits.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="Pause.cs" t="Include" />
           <e p="Player" t="Include">
@@ -52,6 +53,11 @@
             <e p="AttackUnit.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="GathererUnit.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="AttackUnitItem.cs" t="Include" />
+            <e p="ButtonStoreItem.cs" t="Include" />
+            <e p="ItemStore.cs" t="Include" />
           </e>
           <e p="UnitS" t="Include">
             <e p="AttackUnitScript.cs" t="Include" />
