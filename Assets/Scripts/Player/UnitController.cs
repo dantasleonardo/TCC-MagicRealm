@@ -7,7 +7,7 @@ public class UnitController : MonoBehaviour
 {
     public static UnitController Instance;
     
-    public List<Unit> units = new List<Unit>();
+    public List<UnitScript> units = new List<UnitScript>();
 
     private void Awake() {
         if (Instance == null)
@@ -16,11 +16,11 @@ public class UnitController : MonoBehaviour
             Destroy(this.gameObject);
     }
 
-    public void AddUnitInList(Unit unit) {
-        units.Add(unit);
+    public void AddUnitInList(UnitScript unitScript) {
+        this.units.Add(unitScript);
     }
 
-    public void RemoveUnitOfList(Unit unit) {
-        units.Remove(unit);
+    public void RemoveUnitOfList(UnitScript unitScript) {
+        this.units.Remove(unitScript);
     }
 }
