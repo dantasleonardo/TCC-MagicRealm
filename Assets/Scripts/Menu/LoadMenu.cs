@@ -12,5 +12,4 @@ public class LoadMenu : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
     }
-
 }
