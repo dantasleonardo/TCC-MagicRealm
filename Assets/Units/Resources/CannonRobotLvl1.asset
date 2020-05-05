@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55c053f032d088408cc9fe34d22f61b, type: 3}
   m_Name: CannonRobotLvl1
   m_EditorClassIdentifier: 
-  nameUnit: CannonRobotLvl1
+  nameUnit: CannonRobot
   life: 3
   speedMovement: 1.5
   attackDistace: 2
@@ -24,5 +24,7 @@ MonoBehaviour:
   unitIcon: {fileID: 21300000, guid: 5e3cd6a79460ae049bac68a973087bc2, type: 3}
   nameItemShop: Cannon Robot
   itemDescription: Teste eurheuheurheurheu uerhuehreuh eufheurheuhe
-  woodCost: 50
-  rockCost: 100
+  woodCost: 5
+  rockCost: 10
+  currentTimeToCreate: 0
+  timeToCreate: 10

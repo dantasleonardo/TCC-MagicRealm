@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class AttackUnitItem : ItemStore
+public class GathererUnitItem : ItemStore
 {
-    public AttackUnit unitProperties;
+    public GathererUnit unitProperties;
     private ItemCreation itemCreation = new ItemCreation();
     public ButtonStoreItem buttonStoreItem;
 
