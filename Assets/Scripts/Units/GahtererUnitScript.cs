@@ -39,7 +39,6 @@ public class GahtererUnitScript : Robot
 
     public override void InitItems() {
         agent = GetComponent<NavMeshAgent>();
-        properties = UnityEngine.Resources.Load<GathererUnit>(nameScriptable);
 
         life = properties.life;
         speedMovement = properties.speedMovement;

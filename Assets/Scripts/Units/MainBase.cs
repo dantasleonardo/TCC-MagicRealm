@@ -10,6 +10,7 @@ public class MainBase : Building
 
     public static MainBase Instance;
 
+
     private void Awake() {
         if (Instance == null)
             Instance = this;
@@ -21,9 +22,10 @@ public class MainBase : Building
     
     
     [SerializeField] private GameObject functionsPanel;
-    [SerializeField] private Transform spawnPosition;
-    
-    
+    public Transform spawnPosition;
+    public Transform destinationPosition;
+
+
     private bool isSelected = false;
 
     [Header("Animations")] 
@@ -32,8 +34,8 @@ public class MainBase : Building
 
     public override void InitItems() {
         FunctionsPanelIsActive();
+        
     }
-
 
     public override void SelectionObjectIsActive(bool isActive) {
         isSelected = isActive;
@@ -56,7 +58,7 @@ public class MainBase : Building
 
     private void OpenFunctionsPanel() {
         FunctionsPanelIsActive();
-        LeanTween.moveY(functionsPanel, 0.0f, animationTimeFunctionsPanel);
+        LeanTween.moveY(functionsPanel, -10.0f, animationTimeFunctionsPanel);
     }
 
     private void CloseFunctionsPanel() {

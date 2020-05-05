@@ -16,7 +16,7 @@ public class Robot : UnitScript
 
     #endregion
 
-    protected void MoveTo(Vector3 target) {
+    public void MoveTo(Vector3 target) {
         agent.SetDestination(target);
     }
 }

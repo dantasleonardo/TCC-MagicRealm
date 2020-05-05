@@ -26,9 +26,6 @@ public class UnitSelection : MonoBehaviour
     private void Update() {
         //Mouse actions with left button.
         if (Input.GetMouseButtonDown(0)) {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
             if (!EventSystem.current.IsPointerOverGameObject()) {
                 if (selectedUnits.Count > 0) {
                     if (Input.GetKey(KeyCode.LeftControl)) {
@@ -43,6 +40,7 @@ public class UnitSelection : MonoBehaviour
                     }
                     else {
                         selectedUnits = new List<UnitScript>();
+                        DesactiveSelectionUnit();
                     }
                 }
 
@@ -56,10 +54,32 @@ public class UnitSelection : MonoBehaviour
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            if (startPosition.Equals(Input.mousePosition))
+            if (startPosition.Equals(Input.mousePosition)) {
+                if (Input.GetKey(KeyCode.LeftControl)) {
+                    
+                }
+                else
+                {
+                    if (!EventSystem.current.IsPointerOverGameObject()) {
+                        selectedUnits = new List<UnitScript>();
+                        DesactiveSelectionUnit();
+                    }
+                }
                 TrySelect(Input.mousePosition);
-            else
-                ReleaseSelectionBox();
+            }
+            else {
+                if (Input.GetKey(KeyCode.LeftControl)) {
+                    
+                }
+                else
+                {
+                    if (!EventSystem.current.IsPointerOverGameObject()) {
+                        selectedUnits = new List<UnitScript>();
+                        DesactiveSelectionUnit();
+                    }
+                }
+            }
+            ReleaseSelectionBox();
         }
 
         //Mouse actions with right button

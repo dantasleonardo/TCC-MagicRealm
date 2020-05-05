@@ -167,7 +167,7 @@ MonoBehaviour:
   life: 0
   speedMovement: 2
   nameScriptable: Gatherer
-  properties: {fileID: 0}
+  properties: {fileID: 11400000, guid: 4984cf14f00932c48b33d71c3155f003, type: 2}
   maxAmountResources: 0
   currentAmountResources: 0
   gatheringSpeed: 0

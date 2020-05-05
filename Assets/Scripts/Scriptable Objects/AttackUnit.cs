@@ -17,7 +17,7 @@ public class AttackUnit : ScriptableObject
     public string fileNameOfBullet;
 
     [Header("Item Store")] 
-    public Image unitIcon;
+    public Sprite unitIcon;
     public string nameItemShop;
     [TextArea]
     public string itemDescription;
@@ -25,4 +25,8 @@ public class AttackUnit : ScriptableObject
     public int woodCost;
     public int rockCost;
 
+    [Header("Spawn Item")] 
+    public float currentTimeToCreate = 0.0f;
+
+    public float timeToCreate = 2.0f;
 }

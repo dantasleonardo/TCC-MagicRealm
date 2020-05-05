@@ -40,6 +40,7 @@
           </e>
           <e p="Credits.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
+          <e p="ItemCreation.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="Pause.cs" t="Include" />
           <e p="Player" t="Include">

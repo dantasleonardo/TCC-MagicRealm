@@ -6,6 +6,7 @@ using UnityEditor.Rendering;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 public class AttackUnitScript : Robot
 {
@@ -25,7 +26,7 @@ public class AttackUnitScript : Robot
     [SerializeField] private Transform spawnBulletPosition;
 
     [Header("Animations")] [SerializeField]
-    private float DistanceStopAnimationPlay = 0.2f;
+    private float distanceStopAnimationPlay = 0.2f;
 
     private Animator animator;
 
@@ -43,7 +44,6 @@ public class AttackUnitScript : Robot
 
     public override void InitItems() {
         bulletProperties = UnityEngine.Resources.Load<Bullet>(fileNameOfBullet);
-        attackUnitProperties = UnityEngine.Resources.Load<AttackUnit>(fileNameOfUnit);
         agent = GetComponent<NavMeshAgent>();
 
         if (bulletProperties != null) {
@@ -56,6 +56,7 @@ public class AttackUnitScript : Robot
             attakDistance = attackUnitProperties.attackDistace;
             firerateAttack = attackUnitProperties.firerateAttack;
             turningSpeed = attackUnitProperties.turningSpeed;
+            agent.speed = speedMovement;
         }
     }
 
@@ -87,7 +88,7 @@ public class AttackUnitScript : Robot
 
     private void Update() {
         if (inMovement) {
-            if (Vector3.Distance(agent.destination, transform.position) < DistanceStopAnimationPlay) {
+            if (Vector3.Distance(agent.destination, transform.position) < distanceStopAnimationPlay) {
                 inMovement = false;
                 idle = true;
                 animator.SetBool("inMovement", inMovement);
