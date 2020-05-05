@@ -47,6 +47,7 @@ public class GahtererUnitScript : Robot
         gatheringSpeed = properties.gatheringSpeed;
         amountResources = properties.amountResources;
         turningSpeed = properties.turningSpeed;
+        robotType = properties.RobotType;
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null) {

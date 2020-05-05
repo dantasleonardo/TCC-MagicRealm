@@ -57,6 +57,7 @@ public class AttackUnitScript : Robot
             firerateAttack = attackUnitProperties.firerateAttack;
             turningSpeed = attackUnitProperties.turningSpeed;
             agent.speed = speedMovement;
+            robotType = attackUnitProperties.RobotType;
         }
     }
 

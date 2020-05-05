@@ -15,6 +15,7 @@ public class AttackUnit : ScriptableObject
     public float turningSpeed;
     public GameObject unitPrefab;
     public string fileNameOfBullet;
+    public RobotType RobotType = RobotType.Attack;
 
     [Header("Item Store")] 
     public Sprite unitIcon;

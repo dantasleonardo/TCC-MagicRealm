@@ -13,4 +13,19 @@ public class GathererUnit : ScriptableObject
     public int amountResources;
     public GameObject unitPrefab;
     public float turningSpeed;
+    public RobotType RobotType = RobotType.Gatherer;
+    
+    [Header("Item Store")] 
+    public Sprite unitIcon;
+    public string nameItemShop;
+    [TextArea]
+    public string itemDescription;
+
+    public int woodCost;
+    public int rockCost;
+
+    [Header("Spawn Item")] 
+    public float currentTimeToCreate = 0.0f;
+
+    public float timeToCreate = 2.0f;
 }

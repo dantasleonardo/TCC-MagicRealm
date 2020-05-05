@@ -7,13 +7,16 @@ using UnityEngine.UI;
 public class ButtonStoreItem : MonoBehaviour
 {
     private ItemStore itemStore;
-    private Button buttonItem;
+    public Button buttonItem;
 
 
     private void Start() {
         itemStore = GetComponent<ItemStore>();
-        buttonItem = GetComponent<Button>();
+        if(buttonItem == null)
+            buttonItem = GetComponent<Button>();
         itemStore.Init();
         buttonItem.onClick.AddListener(itemStore.BuyItem);
     }
+
+    
 }

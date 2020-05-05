@@ -38,10 +38,15 @@
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
-          <e p="Credits.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="ItemCreation.cs" t="Include" />
-          <e p="Menu.cs" t="Include" />
+          <e p="Menu" t="Include">
+            <e p="BlinkUI.cs" t="Include" />
+            <e p="Credits.cs" t="Include" />
+            <e p="LoadMenu.cs" t="Include" />
+            <e p="Menu.cs" t="Include" />
+            <e p="SimpleAnimation.cs" t="Include" />
+          </e>
           <e p="Pause.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="UnitController.cs" t="Include" />
@@ -58,6 +63,8 @@
           <e p="UI" t="Include">
             <e p="AttackUnitItem.cs" t="Include" />
             <e p="ButtonStoreItem.cs" t="Include" />
+            <e p="CreationLoading.cs" t="Include" />
+            <e p="GathererUnitItem.cs" t="Include" />
             <e p="ItemStore.cs" t="Include" />
           </e>
           <e p="UnitS" t="Include">
