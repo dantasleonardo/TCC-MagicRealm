@@ -2,25 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Animations;
 
 public class LoadMenu : MonoBehaviour
 {
     public GameObject Menu;
-    public bool pressAnyKey;
+    public bool keyIsPressed;
     public GameObject PressAnyKey;
+    public Animator menuAnimation;
 
     public void activeMenu()
     {
-        if (Input.anyKeyDown)
-        {
-            Menu.SetActive(true);
-            PressAnyKey.SetActive(false);
-            //SceneManager.LoadScene("Menu");
-        }
+        Menu.SetActive(true);
     }
 
     private void Update()
     {
-        activeMenu();
+        if (Input.anyKeyDown && !keyIsPressed) 
+        {
+            PressAnyKey.SetActive(false);
+            keyIsPressed = true;
+            menuAnimation.SetBool("KeyPressed", keyIsPressed);
+        }
     }
 }
