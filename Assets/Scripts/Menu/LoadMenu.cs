@@ -5,11 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class LoadMenu : MonoBehaviour
 {
-    private void Update()
+    public GameObject Menu;
+    public bool pressAnyKey;
+    public GameObject PressAnyKey;
+
+    public void activeMenu()
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene("Menu");
+            Menu.SetActive(true);
+            PressAnyKey.SetActive(false);
+            //SceneManager.LoadScene("Menu");
         }
+    }
+
+    private void Update()
+    {
+        activeMenu();
     }
 }

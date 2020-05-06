@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleAnimation : MonoBehaviour
+public class SimpleAnimationX : MonoBehaviour
 {
     public GameObject back;
     public float animationTime;
