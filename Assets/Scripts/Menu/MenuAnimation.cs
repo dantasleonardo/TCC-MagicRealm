@@ -29,7 +29,7 @@ public class MenuAnimation : MonoBehaviour
     {
         menu.SetActive(true);
         //Move as opções do menu, fazendo assim eles aparecerem de fora da tela
-        LeanTween.moveX(menu, 700.0f, 1.0f);
+        LeanTween.moveX(menu, 750.0f, 1.0f);
     }
 
     //Chamado quando inicia a transição da camera
