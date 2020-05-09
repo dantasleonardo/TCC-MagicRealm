@@ -13,6 +13,7 @@ public class MenuAnimation : MonoBehaviour
     public bool keyIsPressed;
     public GameObject pressAnyKey;
     public Animator menuAnimation;
+    public Animator buttonsAnimation;
 
 
     private void Update()
@@ -22,6 +23,7 @@ public class MenuAnimation : MonoBehaviour
             pressAnyKey.SetActive(false);
             keyIsPressed = true;
             menuAnimation.SetBool("KeyPressed", keyIsPressed);
+            buttonsAnimation.SetBool("KeyPressed", keyIsPressed);
         }
     }
     
@@ -29,7 +31,7 @@ public class MenuAnimation : MonoBehaviour
     {
         menu.SetActive(true);
         //Move as opções do menu, fazendo assim eles aparecerem de fora da tela
-        LeanTween.moveX(menu, 750.0f, 1.0f);
+        //LeanTween.moveX(menu, 750.0f, 1.0f);
     }
 
     //Chamado quando inicia a transição da camera
