@@ -20,6 +20,7 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Credits");
     }
 
+
     public void Quit()
     {
         Debug.Log("Fechou");
