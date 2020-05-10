@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 public class MenuAnimation : MonoBehaviour
 {
     public Animator title;
+    public Animator buttons;
     public GameObject menu;
     
     public bool keyIsPressed;

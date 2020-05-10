@@ -584,11 +584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: {fileID: 481348295}
+  buttons: {fileID: 1953460068}
   menu: {fileID: 1953460064}
   keyIsPressed: 0
   pressAnyKey: {fileID: 67817053}
   menuAnimation: {fileID: 274769092}
-  buttonsAnimation: {fileID: 0}
+  buttonsAnimation: {fileID: 1953460068}
 --- !u!1 &389256482
 GameObject:
   m_ObjectHideFlags: 0
