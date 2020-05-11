@@ -8,14 +8,21 @@ using UnityEngine.Serialization;
 public class MenuAnimation : MonoBehaviour
 {
     public Animator title;
-    public Animator buttons;
     public GameObject menu;
     
     public bool keyIsPressed;
     public GameObject pressAnyKey;
     public Animator menuAnimation;
-    public Animator buttonsAnimation;
 
+    private void Start()
+    {
+        if (GameManager.Instance.startedKeyPressed)
+        {
+            pressAnyKey.SetActive(false);
+            keyIsPressed = true;
+            menuAnimation.Play("MenuAnimation");
+        }
+    }
 
     private void Update()
     {
@@ -24,7 +31,7 @@ public class MenuAnimation : MonoBehaviour
             pressAnyKey.SetActive(false);
             keyIsPressed = true;
             menuAnimation.SetBool("KeyPressed", keyIsPressed);
-            buttonsAnimation.SetBool("KeyPressed", keyIsPressed);
+            GameManager.Instance.startedKeyPressed = true;
         }
     }
     
