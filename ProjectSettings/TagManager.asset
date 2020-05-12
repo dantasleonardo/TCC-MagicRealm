@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - Mages
-  - Unit
-  - Building
-  - UI
-  - Resources
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Unit
-  - UserUI
-  - Global
+  - 
+  - 
+  - 
   - 
   - 
   - 
