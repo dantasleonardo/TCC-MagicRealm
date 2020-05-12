@@ -14,3 +14,18 @@ Tiago Cruz
 t:Level Designer
 Leonardo Dantas
 Tiago Cruz
+
+t:Tech Artists
+Gabriel
+
+t:User Interface
+Lalala
+
+t:Testers
+Lalala
+
+t:Animator
+Tiago
+
+t:Sounds
+Lalala

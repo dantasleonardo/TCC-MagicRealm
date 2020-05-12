@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditor.Rendering;
-using UnityEditorInternal;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
 public class AttackUnitScript : Robot
 {
