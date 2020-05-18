@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e222162ddb8d34547a133b673221b195, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1005,7 +1005,7 @@ PrefabInstance:
     - target: {fileID: 2901242582758507419, guid: f898a0d5edba0e04b9c71b25812429ed,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2901242582758507419, guid: f898a0d5edba0e04b9c71b25812429ed,
         type: 3}
@@ -1883,7 +1883,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 100}
+  m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1001 &381624404
 PrefabInstance:
@@ -2102,7 +2102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &398860050
 PrefabInstance:
@@ -3325,7 +3325,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2a85b682f74cea945ae6be35268add3e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2a85b682f74cea945ae6be35268add3e,
         type: 3}
@@ -5661,7 +5661,7 @@ Transform:
   - {fileID: 1094975537}
   - {fileID: 1142644660}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1019026950
 GameObject:
@@ -9900,13 +9900,14 @@ GameObject:
   - component: {fileID: 1657204616}
   - component: {fileID: 1657204618}
   - component: {fileID: 1657204617}
+  - component: {fileID: 1657204619}
   m_Layer: 5
   m_Name: WoodText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1657204616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9923,8 +9924,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -850, y: 25}
-  m_SizeDelta: {x: -1700, y: -50}
+  m_AnchoredPosition: {x: -783, y: 45}
+  m_SizeDelta: {x: -1681, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657204617
 MonoBehaviour:
@@ -9945,7 +9946,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 236eddfe7e9227b42abda62f68b18bd5, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 1
@@ -9966,6 +9967,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657204615}
   m_CullTransparentMesh: 0
+--- !u!114 &1657204619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657204615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1659202368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5440527868101724965, guid: 98c7de0da4feffb43b92fc488677b9ad,
@@ -12424,13 +12440,14 @@ GameObject:
   - component: {fileID: 1952461912}
   - component: {fileID: 1952461914}
   - component: {fileID: 1952461913}
+  - component: {fileID: 1952461915}
   m_Layer: 5
   m_Name: RockText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1952461912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12447,8 +12464,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -850, y: -25}
-  m_SizeDelta: {x: -1700, y: -50}
+  m_AnchoredPosition: {x: -783.99994, y: -73.5}
+  m_SizeDelta: {x: -1683, y: -53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952461913
 MonoBehaviour:
@@ -12469,7 +12486,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 236eddfe7e9227b42abda62f68b18bd5, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 1
@@ -12490,6 +12507,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952461911}
   m_CullTransparentMesh: 0
+--- !u!114 &1952461915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952461911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1965702203
 GameObject:
   m_ObjectHideFlags: 0
@@ -13223,7 +13255,7 @@ PrefabInstance:
     - target: {fileID: 6389502399632485483, guid: e9736cd0cc90fd34ab719f30f9f58073,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6389502399632485483, guid: e9736cd0cc90fd34ab719f30f9f58073,
         type: 3}
@@ -13297,7 +13329,7 @@ PrefabInstance:
     - target: {fileID: 8036960592020426115, guid: b535a9981acf96a42a49751365c40594,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8036960592020426115, guid: b535a9981acf96a42a49751365c40594,
         type: 3}
