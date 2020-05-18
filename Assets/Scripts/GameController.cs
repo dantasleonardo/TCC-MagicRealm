@@ -129,8 +129,8 @@ public class GameController : MonoBehaviour
     #endregion
 
     private void UpdateResourcesUi() {
-        woodText.text = $"Wood: {resources[ResourceType.Wood].ToString()}";
-        rockText.text = $"Rock: {resources[ResourceType.Rock].ToString()}";
+        woodText.text = $" {resources[ResourceType.Wood].ToString()}";
+        rockText.text = $" {resources[ResourceType.Rock].ToString()}";
     }
 
     public void GetResources(Dictionary<ResourceType, int> _resources) {
