@@ -21,7 +21,8 @@ MonoBehaviour:
   unitPrefab: {fileID: 3186862269167367505, guid: 15a4329dcc2a68d41a865caca49a974b,
     type: 3}
   fileNameOfBullet: CannonBallLevel1
-  unitIcon: {fileID: 21300000, guid: 5e3cd6a79460ae049bac68a973087bc2, type: 3}
+  RobotType: 0
+  unitIcon: {fileID: 21300000, guid: ee05eccf84334b4478c536b46d4cda2a, type: 3}
   nameItemShop: Cannon Robot
   itemDescription: Teste eurheuheurheurheu uerhuehreuh eufheurheuhe
   woodCost: 5
