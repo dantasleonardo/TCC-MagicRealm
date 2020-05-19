@@ -32,6 +32,10 @@ public class GameController : MonoBehaviour
     public GameObject itemLoadingPrefab;
     public Transform itemLoadingParent;
 
+    [Header("Manager")]
+    public List<GameObject> Enemies = new List<GameObject>();
+
+
     private void Start() {
         resources.Add(ResourceType.Wood, startAmountWood);
         resources.Add(ResourceType.Rock, startAmountRock);

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Resources : MonoBehaviour
 {
-    [SerializeField] private int amountResources;
+    public int amountResources;
     [SerializeField] private ResourceType resourceType;
+    [SerializeField] private ParticleSystem[] particles;
 
     
     public Dictionary<ResourceType, int> GetResource(int amount) {
@@ -20,6 +21,26 @@ public class Resources : MonoBehaviour
         }
 
         return resourceDesired;
+    }
+
+    public void SetParticles(bool isActive) {
+        if (isActive) {
+            foreach (var item in particles) {
+                var emission = item.emission;
+                emission.rateOverTime = 10.0f;
+            }
+        }
+        else {
+            foreach (var item in particles) {
+                var emission = item.emission;
+                emission.rateOverTime = 0.0f;
+            }
+        }
+    }
+
+    private void Update() {
+        if (amountResources <= 0)
+            Destroy(this.gameObject);
     }
 }
 
