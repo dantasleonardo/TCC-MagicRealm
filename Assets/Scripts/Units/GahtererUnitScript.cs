@@ -47,6 +47,8 @@ public class GahtererUnitScript : Robot
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null) {
+        if(resourceTarget != null)
+            resourceTarget.SetParticles(false);
         StopAllCoroutines();
         resourceTarget = null;
         print($"Hit: {targetObject.tag} and Vector of Target: {target}");
@@ -124,6 +126,7 @@ public class GahtererUnitScript : Robot
             var distance = WithinReach(agent.stoppingDistance);
             if (!distance) return;
             var lookRotation = LookTarget();
+            resourceTarget.SetParticles(true);
             if (!(Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 2.5f)) return;
             if (gathering || inventoryIsFull) return;
             StartCoroutine(GetResource());
@@ -148,6 +151,7 @@ public class GahtererUnitScript : Robot
     }
 
     private void GoToBase() {
+        resourceTarget.SetParticles(false);
         var target = MainBase.Instance.gameObject.transform.position;
         MoveTo(target);
     }
