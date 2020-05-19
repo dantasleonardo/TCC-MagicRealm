@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3798679364965449577}
   - component: {fileID: 3798679364965449576}
   m_Layer: 0
-  m_Name: Mined_Rock
+  m_Name: Resource_MinedRock
   m_TagString: Resources
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,12 +105,12 @@ NavMeshObstacle:
   m_GameObject: {fileID: 5158437793241359179}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 0.00001, y: 0.00001, z: 0.00001}
+  m_Shape: 1
+  m_Extents: {x: 0.00001, y: 0.003, z: 0.00001}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.003, y: 0.001, z: 0.002}
   m_TimeToStationary: 0.5
 --- !u!114 &3798679364965449576
 MonoBehaviour:

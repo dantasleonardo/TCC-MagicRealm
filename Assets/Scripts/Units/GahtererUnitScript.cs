@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,6 +18,7 @@ public class GahtererUnitScript : Robot
     [SerializeField] private Resources resourceTarget;
 
     [SerializeField] private float turningSpeed = 2.5f;
+    [SerializeField] private float magnitudeTurning= 2.5f;
 
     private Dictionary<ResourceType, int> inventory = new Dictionary<ResourceType, int>();
     [SerializeField] private bool inventoryIsFull;
@@ -127,7 +129,6 @@ public class GahtererUnitScript : Robot
             if (!distance) return;
             var lookRotation = LookTarget();
             resourceTarget.SetParticles(true);
-            if (!(Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 2.5f)) return;
             if (gathering || inventoryIsFull) return;
             StartCoroutine(GetResource());
             gathering = true;

@@ -166,6 +166,7 @@ MonoBehaviour:
   unitSelectionObject: {fileID: 1783309067997263326}
   life: 0
   speedMovement: 2
+  robotType: 0
   nameScriptable: Gatherer
   properties: {fileID: 11400000, guid: 4984cf14f00932c48b33d71c3155f003, type: 2}
   maxAmountResources: 0
@@ -174,6 +175,7 @@ MonoBehaviour:
   amountResources: 0
   resourceTarget: {fileID: 0}
   turningSpeed: 2.5
+  magnitudeTurning: 10
   inventoryIsFull: 0
   distanceStopAnimationPlay: 0.2
   idle: 1
