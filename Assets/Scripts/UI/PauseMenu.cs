@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Pause : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public bool gameIsPaused;
     public GameObject panelPause;
