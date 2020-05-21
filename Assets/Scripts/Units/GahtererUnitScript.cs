@@ -55,16 +55,16 @@ public class GahtererUnitScript : Robot
         resourceTarget = null;
         print($"Hit: {targetObject.tag} and Vector of Target: {target}");
         if (targetObject.CompareTag("Resources")) {
-            agent.stoppingDistance = 1.0f;
+            agent.stoppingDistance = 0.5f;
             MoveTo(target);
             ActiveMovement();
             resourceTarget = targetObject.GetComponent<Resources>();
         }
-        else if (!targetObject.CompareTag("Ground")) return;
-
-        agent.stoppingDistance = 0.0f;
-        MoveTo(target);
-        ActiveMovement();
+        else if (targetObject.CompareTag("Ground")) {
+            agent.stoppingDistance = 0.0f;
+            MoveTo(target);
+            ActiveMovement();
+        }
     }
 
     private void ActiveMovement() {
@@ -86,7 +86,7 @@ public class GahtererUnitScript : Robot
 
         var resources = resourceTarget.GetResource(amountResources);
 
-        ResourceType key = ResourceType.Rock;
+        ResourceType key = ResourceType.Stone;
         var value = 0;
 
         foreach (var resource in resources) {

@@ -23,8 +23,8 @@ public class AttackUnitScript : Robot
 
     private Animator animator;
 
-    private GameObject currentTarget;
-    private float nextTimeToFire;
+    [SerializeField] private GameObject currentTarget;
+    [SerializeField] private float nextTimeToFire;
 
     [Header("Actions")] public bool idle = true;
     public bool inMovement;
@@ -90,14 +90,14 @@ public class AttackUnitScript : Robot
             }
         }
 
-        if (attacking) {
+        if (attacking && currentTarget != null) {
             // transform.LookAt(currentTarget.transform);
             var lookRotation = LookTarget();
 
 
-            if (Time.time > nextTimeToFire &&
-                Vector3.Magnitude(lookRotation.eulerAngles - transform.rotation.eulerAngles) < 0.5f) {
+            if (Time.time > nextTimeToFire) {
                 var bullet = Instantiate(bulletPrefab, spawnBulletPosition.position, transform.rotation);
+                Debug.Log($"InstantiateBullet: {bullet.name}");
                 bullet.transform.forward = spawnBulletPosition.forward;
                 nextTimeToFire = Time.time + (1f / firerateAttack);
             }

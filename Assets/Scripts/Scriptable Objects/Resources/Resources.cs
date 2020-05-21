@@ -47,5 +47,5 @@ public class Resources : MonoBehaviour
 public enum ResourceType
 {
     Wood,
-    Rock
+    Stone
 }

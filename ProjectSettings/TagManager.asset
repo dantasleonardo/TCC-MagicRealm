@@ -10,6 +10,7 @@ TagManager:
   - Building
   - Ground
   - Mages
+  - Attack
   layers:
   - Default
   - TransparentFX

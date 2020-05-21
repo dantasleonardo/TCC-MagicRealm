@@ -21,7 +21,7 @@ public class AttackUnitItem : ItemStore
     }
 
     public override void BuyItem() {
-        GameController.Instance.resources[ResourceType.Rock] -= unitProperties.rockCost;
+        GameController.Instance.resources[ResourceType.Stone] -= unitProperties.rockCost;
         GameController.Instance.resources[ResourceType.Wood] -= unitProperties.woodCost;
         
         GameController.Instance.stackCreation.Add(itemCreation);
@@ -30,7 +30,7 @@ public class AttackUnitItem : ItemStore
     
     private void Update() {
         var resources = GameController.Instance.resources;
-        if (resources[ResourceType.Rock] >= unitProperties.rockCost &&
+        if (resources[ResourceType.Stone] >= unitProperties.rockCost &&
             resources[ResourceType.Wood] >= unitProperties.woodCost)
             buttonStoreItem.buttonItem.interactable = true;
         else

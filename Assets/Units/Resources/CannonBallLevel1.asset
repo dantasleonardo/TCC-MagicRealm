@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CannonBallLevel1
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
-  bulletPrefab: {fileID: 3212765929509405957, guid: 2b1a69f02b4897d44bf7f20b39494b0b,
+  speed: 2
+  bulletPrefab: {fileID: 75671323729014839, guid: 2b1a69f02b4897d44bf7f20b39494b0b,
     type: 3}

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using System.Security.Cryptography;
 using System.Transactions;
 using UnityEngine;
@@ -37,11 +38,15 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Mages")) {
-            DamageInEnemy();
+            var enemy = other.gameObject.GetComponent<IEnemy>();
+            DamageInEnemy(enemy);
         }
+        if (other.CompareTag("Unit") || other.CompareTag("Attack")) return;
+            Destroy(this.gameObject);
     }
 
-    private void DamageInEnemy() {
+    private void DamageInEnemy(IEnemy enemy) {
+        enemy.TakeDamage(damage);
         Destroy(this.gameObject);
     }
 }

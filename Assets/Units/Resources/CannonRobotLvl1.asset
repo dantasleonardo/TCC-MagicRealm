@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CannonRobotLvl1
   m_EditorClassIdentifier: 
   nameUnit: CannonRobot
-  life: 3
+  life: 150
   speedMovement: 1.5
   attackDistace: 2
   firerateAttack: 0.5
@@ -28,4 +28,4 @@ MonoBehaviour:
   woodCost: 5
   rockCost: 10
   currentTimeToCreate: 0
-  timeToCreate: 10
+  timeToCreate: 2.5

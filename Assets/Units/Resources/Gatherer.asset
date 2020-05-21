@@ -29,4 +29,4 @@ MonoBehaviour:
   woodCost: 10
   rockCost: 5
   currentTimeToCreate: 0
-  timeToCreate: 10
+  timeToCreate: 2.5

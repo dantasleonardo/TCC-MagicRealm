@@ -13,6 +13,7 @@ public class Waypoint : StateMachineBehaviour
     {
         bot = animator.GetComponent<BotAi>();
         bot.baseAi.Waypoint();
+        bot.baseAi.agent.stoppingDistance = 0.0f;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

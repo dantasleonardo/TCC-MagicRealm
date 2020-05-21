@@ -18,13 +18,13 @@ public class GameController : MonoBehaviour
     #endregion
 
     public int startAmountWood;
-    public int startAmountRock;
+    public int startAmountStone;
     public Dictionary<ResourceType, int> resources = new Dictionary<ResourceType, int>();
 
     [Header("UI")] 
     public Text woodText;
 
-    public Text rockText;
+    public Text stoneText;
     
     [Header("Create Units")]
     public List<ItemCreation> stackCreation = new List<ItemCreation>();
@@ -34,11 +34,13 @@ public class GameController : MonoBehaviour
 
     [Header("Manager")]
     public List<GameObject> Enemies = new List<GameObject>();
+    public int stonesCollected;
+    public int woodCollected;
 
 
     private void Start() {
         resources.Add(ResourceType.Wood, startAmountWood);
-        resources.Add(ResourceType.Rock, startAmountRock);
+        resources.Add(ResourceType.Stone, startAmountStone);
         
         UpdateResourcesUi();
     }
@@ -91,7 +93,7 @@ public class GameController : MonoBehaviour
     }
 
     public void ClickToRemoveItemOfCreations(int index) {
-        resources[ResourceType.Rock] += stackCreation[index].rockCost;
+        resources[ResourceType.Stone] += stackCreation[index].rockCost;
         resources[ResourceType.Wood] += stackCreation[index].woodCost;
         UpdateResourcesUi();
 
@@ -130,12 +132,16 @@ public class GameController : MonoBehaviour
 
     private void UpdateResourcesUi() {
         woodText.text = $" {resources[ResourceType.Wood].ToString()}";
-        rockText.text = $" {resources[ResourceType.Rock].ToString()}";
+        stoneText.text = $" {resources[ResourceType.Stone].ToString()}";
     }
 
     public void GetResources(Dictionary<ResourceType, int> _resources) {
         foreach (var resource in _resources) {
             resources[resource.Key] += resource.Value;
+            if (resource.Key == ResourceType.Stone)
+                stonesCollected += resource.Value;
+            if (resource.Key == ResourceType.Wood)
+                stonesCollected += resource.Value;
         }
         UpdateResourcesUi();
     }
