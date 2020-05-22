@@ -24,7 +24,7 @@ public class AttackUnitScript : Robot
     private Animator animator;
 
     [SerializeField] private GameObject currentTarget;
-    [SerializeField] private float nextTimeToFire;
+    [SerializeField] private float currentTimeToFire;
 
     [Header("Actions")] public bool idle = true;
     public bool inMovement;
@@ -51,6 +51,8 @@ public class AttackUnitScript : Robot
             turningSpeed = attackUnitProperties.turningSpeed;
             agent.speed = speedMovement;
             robotType = attackUnitProperties.RobotType;
+            firerateAttack = attackUnitProperties.firerateAttack;
+            lifeBar.totalValue = life;
         }
     }
 
@@ -93,13 +95,13 @@ public class AttackUnitScript : Robot
         if (attacking && currentTarget != null) {
             // transform.LookAt(currentTarget.transform);
             var lookRotation = LookTarget();
+            currentTimeToFire += Time.deltaTime;
 
-
-            if (Time.time > nextTimeToFire) {
+            if (currentTimeToFire > firerateAttack) {
                 var bullet = Instantiate(bulletPrefab, spawnBulletPosition.position, transform.rotation);
                 Debug.Log($"InstantiateBullet: {bullet.name}");
                 bullet.transform.forward = spawnBulletPosition.forward;
-                nextTimeToFire = Time.time + (1f / firerateAttack);
+                currentTimeToFire = 0.0f;
             }
             else {
                 MoveTo(currentTarget.transform.position);

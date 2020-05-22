@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class MainBase : Building
-{
+public class RobotsCastle : Building, IUnit {
     #region Singleton
 
-    public static MainBase Instance;
+    public static RobotsCastle Instance;
 
 
     private void Awake() {
@@ -24,17 +23,23 @@ public class MainBase : Building
     [SerializeField] private GameObject functionsPanel;
     public Transform spawnPosition;
     public Transform destinationPosition;
-
+    public int life;
+    [SerializeField] private LifeBar lifeBar;
 
     private bool isSelected = false;
 
     [Header("Animations")] 
     [SerializeField] private float animationTimeFunctionsPanel;
 
+    public void TakeDamage(int damage) {
+        life -= damage;
+        lifeBar.UpdateBar((float)life);
+    }
+
 
     public override void InitItems() {
         FunctionsPanelIsActive();
-        
+        lifeBar.totalValue = life;
     }
 
     public override void SelectionObjectIsActive(bool isActive) {

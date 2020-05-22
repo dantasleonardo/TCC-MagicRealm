@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GathererUnitItem : ItemStore
-{
+public class GathererUnitItem : ItemStore {
     public GathererUnit unitProperties;
     private ItemCreation itemCreation = new ItemCreation();
     public ButtonStoreItem buttonStoreItem;
@@ -19,13 +18,15 @@ public class GathererUnitItem : ItemStore
     }
 
     public override void BuyItem() {
-        GameController.Instance.resources[ResourceType.Stone] -= unitProperties.rockCost;
-        GameController.Instance.resources[ResourceType.Wood] -= unitProperties.woodCost;
-        
-        GameController.Instance.stackCreation.Add(itemCreation);
-        GameController.Instance.InstantiateItemLoading(unitProperties.unitIcon);
+        if (GameController.Instance.stackCreation.Count < 10) {
+            GameController.Instance.resources[ResourceType.Stone] -= unitProperties.rockCost;
+            GameController.Instance.resources[ResourceType.Wood] -= unitProperties.woodCost;
+
+            GameController.Instance.stackCreation.Add(itemCreation);
+            GameController.Instance.InstantiateItemLoading(unitProperties.unitIcon);
+        }
     }
-    
+
     private void Update() {
         var resources = GameController.Instance.resources;
         if (resources[ResourceType.Stone] >= unitProperties.rockCost &&

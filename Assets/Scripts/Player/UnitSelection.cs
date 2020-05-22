@@ -134,9 +134,10 @@ public class UnitSelection : MonoBehaviour
     }
 
     private void DesactiveSelectionUnit() {
-        foreach (var unit in forDesactiveUnits) {
-            unit.SelectionObjectIsActive(false);
-        }
+        forDesactiveUnits.ForEach(unit => {
+            if(unit != null)
+                unit.SelectionObjectIsActive(false);
+        });
 
         forDesactiveUnits = new List<UnitScript>();
     }
@@ -156,10 +157,12 @@ public class UnitSelection : MonoBehaviour
             }
             else {
                 foreach (var unit in selectedUnits) {
-                    if (unit.CompareTag("Unit"))
-                        unit.Action(target, hit.collider.gameObject);
-                    if (unit.CompareTag("Building"))
-                        unit.Action(target);
+                    if(unit != null) {
+                        if (unit.CompareTag("Unit"))
+                            unit.Action(target, hit.collider.gameObject);
+                        if (unit.CompareTag("Building"))
+                            unit.Action(target);
+                    }
                 }
             }
         }

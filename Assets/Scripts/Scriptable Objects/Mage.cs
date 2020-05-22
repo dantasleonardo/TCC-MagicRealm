@@ -9,4 +9,5 @@ public class Mage : ScriptableObject
     public int totalLife;
     public int totalAttacks;
     public Bullet[] attacksPrefabs;
+    public float distanceSeek;
 }

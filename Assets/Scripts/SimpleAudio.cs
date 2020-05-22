@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SimpleAudio : MonoBehaviour
 {
@@ -17,5 +18,10 @@ public class SimpleAudio : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(transform.gameObject);
         }
+    }
+
+    private void Update() {
+        if (SceneManager.GetActiveScene().name != "Menu" && SceneManager.GetActiveScene().name != "Credits")
+            Destroy(this.gameObject);
     }
 }

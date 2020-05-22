@@ -32,7 +32,7 @@ public class AttackMagics : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Unit")) {
+        if (other.CompareTag("Unit") || other.CompareTag("Building")) {
             var unit = other.gameObject.GetComponent<IUnit>();
             DamageInEnemy(unit);
         }

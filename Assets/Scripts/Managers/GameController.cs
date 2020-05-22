@@ -36,6 +36,8 @@ public class GameController : MonoBehaviour
     public List<GameObject> Enemies = new List<GameObject>();
     public int stonesCollected;
     public int woodCollected;
+    public RobotsCastle robotsCastle;
+    public MagicCastle magicCastle;
 
 
     private void Start() {
@@ -57,25 +59,26 @@ public class GameController : MonoBehaviour
                 RemoveItemOfCreations(0);
             }
         }
+        Debug.Log(Enemies.Count);
     }
     #region InstantiateUnits
 
     private void InstantiateUnit(GameObject unitPrefab, RobotType type) {
-        var spawn = MainBase.Instance.spawnPosition.position;
-        var spawnRotation = MainBase.Instance.spawnPosition.rotation;
+        var spawn = RobotsCastle.Instance.spawnPosition.position;
+        var spawnRotation = RobotsCastle.Instance.spawnPosition.rotation;
         var unit = Instantiate(unitPrefab, spawn, spawnRotation);
 
         if (type == RobotType.Attack) {
             var attackUnit = unit.GetComponent<AttackUnitScript>();
             attackUnit.InitItems();
         
-            attackUnit.MoveTo(MainBase.Instance.destinationPosition.position);
+            attackUnit.MoveTo(RobotsCastle.Instance.destinationPosition.position);
         }
         if (type == RobotType.Gatherer) {
             var gatherer = unit.GetComponent<GahtererUnitScript>();
             gatherer.InitItems();
         
-            gatherer.MoveTo(MainBase.Instance.destinationPosition.position);
+            gatherer.MoveTo(RobotsCastle.Instance.destinationPosition.position);
         }
     }
 
@@ -141,7 +144,7 @@ public class GameController : MonoBehaviour
             if (resource.Key == ResourceType.Stone)
                 stonesCollected += resource.Value;
             if (resource.Key == ResourceType.Wood)
-                stonesCollected += resource.Value;
+                woodCollected += resource.Value;
         }
         UpdateResourcesUi();
     }

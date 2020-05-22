@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: CannonRobotLvl1
   m_EditorClassIdentifier: 
   nameUnit: CannonRobot
-  life: 150
+  life: 5
   speedMovement: 1.5
   attackDistace: 2
-  firerateAttack: 0.5
+  firerateAttack: 1.5
   turningSpeed: 2.5
   unitPrefab: {fileID: 3186862269167367505, guid: 15a4329dcc2a68d41a865caca49a974b,
     type: 3}

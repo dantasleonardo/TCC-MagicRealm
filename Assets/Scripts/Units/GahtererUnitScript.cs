@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -46,6 +45,7 @@ public class GahtererUnitScript : Robot
         amountResources = properties.amountResources;
         turningSpeed = properties.turningSpeed;
         robotType = properties.RobotType;
+        lifeBar.totalValue = life;
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null) {
@@ -153,7 +153,7 @@ public class GahtererUnitScript : Robot
 
     private void GoToBase() {
         resourceTarget.SetParticles(false);
-        var target = MainBase.Instance.gameObject.transform.position;
+        var target = RobotsCastle.Instance.spawnPosition.position;
         MoveTo(target);
     }
 
@@ -163,7 +163,7 @@ public class GahtererUnitScript : Robot
     }
 
     private void GiveResources() {
-        MainBase.Instance.GetResourcesOfUnit(inventory);
+        RobotsCastle.Instance.GetResourcesOfUnit(inventory);
         GoToResource();
         ActiveMovement();
         inventoryIsFull = false;

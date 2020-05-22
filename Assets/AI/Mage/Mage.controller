@@ -368,6 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeNextTarget: 2.5
   timeCount: 0
+  strikeAmount: 210
 --- !u!1102 &5802220730750101402
 AnimatorState:
   serializedVersion: 5

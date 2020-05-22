@@ -11,24 +11,40 @@ public class Robot : UnitScript, IUnit {
     [SerializeField] protected int life;
     [SerializeField] protected float speedMovement = 2.0f;
     public RobotType robotType;
+    [SerializeField] protected LifeBar lifeBar;
+    [SerializeField] private float disableLifeBar = 3.0f;
 
     protected NavMeshAgent agent;
-
-    #region FunctionsOfUnit
-
-    #endregion
 
     public void MoveTo(Vector3 target) {
         agent.SetDestination(target);
     }
 
     public void TakeDamage(int damage) {
+        StopAllCoroutines();
         life -= damage;
-        Debug.Log($"Take damage: {damage} and life: {life}");
-        if(life <= 0) {
+
+        if (!lifeBar.isActive) {
+            lifeBar.isActive = true;
+            lifeBar.BarIsActive(true);
+        }
+        lifeBar.UpdateBar(life);
+        StartCoroutine(DisableLifeBar());
+    }
+
+    private void FixedUpdate() {
+        float fillAmount = lifeBar.foregroundBar.fillAmount;
+
+        if (life <= 0 && fillAmount <= 0.0f) {
             UnitController.Instance.units.Remove(this);
             Destroy(this.gameObject);
         }
+    }
+
+    private IEnumerator DisableLifeBar() {
+        yield return new WaitForSeconds(disableLifeBar);
+        lifeBar.BarIsActive(false);
+        lifeBar.isActive = false;
     }
 }
 
