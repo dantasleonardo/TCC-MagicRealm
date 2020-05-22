@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CannonRobotLvl1
   m_EditorClassIdentifier: 
   nameUnit: CannonRobot
-  life: 5
+  life: 6
   speedMovement: 1.5
   attackDistace: 2
   firerateAttack: 1.5
