@@ -27,7 +27,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     private void Start() {
-        slider.value = GameManager.Instance.volume;
+        slider.value = GameManager.Instance.volume; 
     }
 
     void Update()
