@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,8 @@ public class GameController : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+
+        audioSource.volume = GameManager.Instance.volume;
     }
 
     #endregion
@@ -39,10 +42,15 @@ public class GameController : MonoBehaviour
     public RobotsCastle robotsCastle;
     public MagicCastle magicCastle;
 
+    [Header("Music")]
+    public AudioSource audioSource;
+
 
     private void Start() {
         resources.Add(ResourceType.Wood, startAmountWood);
         resources.Add(ResourceType.Stone, startAmountStone);
+
+
         
         UpdateResourcesUi();
     }

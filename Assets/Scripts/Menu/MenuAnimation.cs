@@ -37,7 +37,7 @@ public class MenuAnimation : MonoBehaviour
     
     public void ActiveMenu()
     {
-        menu.SetActive(true);
+        menu.GetComponent<Animator>().SetBool("Transition", true);
         //Move as opções do menu, fazendo assim eles aparecerem de fora da tela
         //LeanTween.moveX(menu, 750.0f, 1.0f);
     }

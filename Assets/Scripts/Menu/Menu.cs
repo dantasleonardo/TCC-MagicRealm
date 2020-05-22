@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject Audio;
+    public AudioSource audioSource;
+    public Slider slider;
 
-    public void Start()
-    {
-        Audio = GameObject.Find("Audio");
+    private void Start() {
+        slider.value = GameManager.Instance.volume;
+    }
+
+    private void Update() {
+        GameManager.Instance.volume = slider.value;
+        audioSource.volume = GameManager.Instance.volume;
     }
 
     public void MenuPrincipal()

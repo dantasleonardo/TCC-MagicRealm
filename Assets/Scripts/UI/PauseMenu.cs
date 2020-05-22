@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public bool gameIsPaused;
     public GameObject panelPause;
+    public Slider slider;
 
     public void Paused()
     {
@@ -24,12 +26,18 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    private void Start() {
+        slider.value = GameManager.Instance.volume;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             Paused();
         }
+        GameManager.Instance.volume = slider.value;
+        GameController.Instance.audioSource.volume = GameManager.Instance.volume;
     }
 
     public void Resume()
