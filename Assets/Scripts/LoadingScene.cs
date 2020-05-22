@@ -3,21 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadingScene : MonoBehaviour
-{
+public class LoadingScene : MonoBehaviour {
+    public LoadingScene Instance;
+
+    private void Awake() {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     float time;
     public float waitTime;
-    public void LoadScene() {
-        StartCoroutine(loadSceneAsyncExtraTime(2));
+    public bool withTime;
+
+    public Animator transition;
+
+    public void StartTransition() {
+        transition.SetBool("Start", true);
+    }
+    public void LoadScene(int index) {
+        if (withTime)
+            StartCoroutine(loadSceneAsync(index));
+        else
+            StartCoroutine(loadSceneAsyncExtraTime(index));
+
     }
 
     IEnumerator loadSceneAsync(int index) {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index);
-        while (!asyncLoad.isDone) {
-            time += Time.deltaTime;
-            Debug.Log($"Time: {time}");
-            yield return null;
-        }
+        yield return new WaitForSeconds(waitTime);
+        StartCoroutine(loadSceneAsyncExtraTime(index));
     }
 
     IEnumerator loadSceneAsyncExtraTime(int index) {
@@ -27,7 +43,8 @@ public class LoadingScene : MonoBehaviour
             Debug.Log(asyncLoad.progress);
             yield return null;
         }
-        //StartCoroutine(Load(asyncLoad));
+        transition.SetBool("Start", false);
+        transition.SetBool("End", true);
     }
 
     IEnumerator Load(AsyncOperation async) {
