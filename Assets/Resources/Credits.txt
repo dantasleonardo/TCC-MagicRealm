@@ -1,13 +1,30 @@
 t:Producer
-lalala
+Leonardo Dantas
 
-t:Programmers
+t:Lead Programmer
 Gabriel Cassimiro
+
+t:Gameplay Programmer
+Gabriel Cassimiro
+
+t:UI Programmer
+Gabriel Cassimiro
+Leonardo Dantas
+
+t:Lead Designer
+Tiago Cruz
+
+t:2D Artist
+Tiago Cruz
 
 t:3D Artist
 Tiago Cruz
 
+t:User Interface
+Leonardo Dantas
+
 t:Game Designers
+Gabriel Cassimiro
 Leonardo Dantas
 Tiago Cruz
 
@@ -16,16 +33,13 @@ Leonardo Dantas
 Tiago Cruz
 
 t:Tech Artists
-Gabriel
+Gabriel Cassimiro
+Leonardo Dantas
 
-t:User Interface
-Lalala
-
-t:Testers
-Lalala
-
-t:Animator
-Tiago
+t:Animators
+Gabriel Cassimiro
+Tiago Cruz
 
 t:Sounds
-Lalala
+Andy Ray - Inspiration
+Andy Ray - Dreams of Glory

@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public GameObject Audio;
+
+    public void Start()
+    {
+        Audio = GameObject.Find("Audio");
+    }
+
     public void MenuPrincipal()
     {
         SceneManager.LoadScene("Menu");
@@ -12,7 +19,7 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
-
+        SceneManager.LoadScene("Alpha");
     }
 
     public void Credits()
