@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 3095012932988846638}
   - component: {fileID: 3095012932988846640}
   m_Layer: 0
-  m_Name: Resource_Tree
+  m_Name: Resource_TreeBig
   m_TagString: Resources
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ce64a36f589c34bb1fada199d889df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountResources: 250
+  amountResources: 50
   resourceType: 0
   particles:
   - {fileID: 7889130259615692767}
