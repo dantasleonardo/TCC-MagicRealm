@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadingScene : MonoBehaviour {
-    public LoadingScene Instance;
+    public static LoadingScene Instance;
 
     private void Awake() {
         if (Instance == null)

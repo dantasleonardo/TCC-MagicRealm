@@ -1,0 +1,23 @@
+tree("Root")
+	parallel
+		tree ("NormalActions")
+
+tree ("NormalActions")
+	sequence
+		tree ("Waypoint")
+		tree ("ArrivedDestination")
+		Wait 2.0
+			
+
+tree ("Waypoint")
+	sequence
+		Waypoint
+
+tree ("ArrivedDestination")
+	sequence
+		AgentArrivedDestination
+
+tree ("GetEnemyDistance")
+	sequence
+		GetEnemyDistance
+		Wait 0.01

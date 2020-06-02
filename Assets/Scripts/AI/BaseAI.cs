@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using Panda;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class BaseAI : MonoBehaviour
 {
     public NavMeshAgent agent;
+    BotAi ai;
 
     [Header("Wander")] 
     public float wanderRadius = 10.0f;
@@ -12,6 +14,10 @@ public class BaseAI : MonoBehaviour
     public float jitter = 1.0f;
     private Vector3 wanderTarget = Vector3.zero;
     private int currentWaypoint;
+
+    private void Start() {
+        ai = GetComponent<BotAi>();
+    }
 
 
     //Seguir
@@ -42,6 +48,7 @@ public class BaseAI : MonoBehaviour
         Seek(targetWorld);
     }
 
+    [Task]
     public void Waypoint() {
         int count;
         do {
@@ -49,5 +56,40 @@ public class BaseAI : MonoBehaviour
         } while (count == currentWaypoint);
         Vector3 target = ManagerWaypoints.Instance.waypoints[count].position;
         Seek(target);
+        Task.current.Succeed();
+    }
+
+    [Task]
+    public void AgentArrivedDestination() {
+        if(Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance) {
+            Task.current.Succeed();
+        }
+    }
+
+    [Task]
+    public void GetEnemyDistance() {
+        if (ai.target == null) {
+            ai.distanceSeek = ai.gameObject.GetComponent<MageScript>().properties.distanceSeek;
+            UnitController.Instance.units.ForEach(u => {
+                if (Vector3.Distance(ai.transform.position, u.transform.position) <= ai.distanceSeek) {
+                    ai.target = u.transform;
+                    Seek(ai.target.position);
+                    Task.current.Succeed();
+                }
+            });
+        }
+    }
+
+    [Task]
+    public void AttackTarget() {
+        if (ai.target != null) {
+            if (Vector3.Distance(ai.transform.position, ai.target.position) > agent.stoppingDistance)
+                ai.timeCount += Time.deltaTime;
+            ai.LookTarget();
+            if (ai.timeCount > ai.timeFirerate) {
+                ai.enemy.Attack(0);
+                ai.timeCount = 0.0f;
+            }
+        }
     }
 }
