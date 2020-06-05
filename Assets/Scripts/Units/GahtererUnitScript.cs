@@ -53,7 +53,7 @@ public class GahtererUnitScript : Robot
             resourceTarget.SetParticles(false);
         StopAllCoroutines();
         resourceTarget = null;
-        print($"Hit: {targetObject.tag} and Vector of Target: {target}");
+        //print($"Hit: {targetObject.tag} and Vector of Target: {target}");
         if (targetObject.CompareTag("Resources")) {
             agent.stoppingDistance = 0.5f;
             MoveTo(target);

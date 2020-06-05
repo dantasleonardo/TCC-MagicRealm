@@ -1,5 +1,19 @@
 tree("Root")
 	parallel
+		tree ("Actions")
+
+tree("SeekTarget")
+	sequence
+		SeekTarget
+
+tree("Actions")
+	parallel
+		while HaveTarget
+			tree("SeekTarget")
+		while not HaveTarget
+			tree ("Actions")
+	parallel
+		tree ("GetEnemyDistance")
 		tree ("NormalActions")
 
 tree ("NormalActions")

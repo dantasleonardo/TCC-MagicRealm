@@ -230,7 +230,6 @@ GameObject:
   - component: {fileID: 4916353934883321614}
   - component: {fileID: 4916353934883321613}
   - component: {fileID: 4916353934883321611}
-  - component: {fileID: 5171294028436911082}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Mages
@@ -277,7 +276,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3970917910578650514}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2ea8d13dc35f2b940a35271da1de13f7, type: 3}
   m_Controller: {fileID: 9100000, guid: ed1307bb4806c724695089f07b2b1cf1, type: 2}
   m_CullingMode: 0
@@ -329,6 +328,8 @@ MonoBehaviour:
   flee: 0
   attacking: 0
   target: {fileID: 0}
+  timeFirerate: 2
+  timeCount: 0
   distanceSeek: 6
   distanceAttack: 2
   fleeProbabillity: 0
@@ -367,28 +368,6 @@ MonoBehaviour:
   spawnAttack: {fileID: 4916353934749190866}
   lifeBar: {fileID: 4185402601427341926}
   disableLifeBar: 5
---- !u!114 &5171294028436911082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3970917910578650514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e43e7170fb45b4b81dcd16d0ff55d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scripts:
-  - {fileID: 4900000, guid: 7aa4c545bb73b104a9495933e32d29e9, type: 3}
-  autoReset: 1
-  tickOn: 0
-  sourceInfos:
-  - isFoldout: 1
-    breakPoints: 
-    breakPointStatuses: 
-    collapsedLines: 
-    btScript: 
 --- !u!1 &4052932941298336604
 GameObject:
   m_ObjectHideFlags: 0

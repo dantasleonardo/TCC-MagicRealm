@@ -1,4 +1,4 @@
-﻿using Panda;
+﻿//using Panda;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -21,6 +21,7 @@ public class BaseAI : MonoBehaviour
 
 
     //Seguir
+   //[Task]
     public void Seek(Vector3 target)
     {
         agent.SetDestination(target);
@@ -48,7 +49,7 @@ public class BaseAI : MonoBehaviour
         Seek(targetWorld);
     }
 
-    [Task]
+   // [Task]
     public void Waypoint() {
         int count;
         do {
@@ -56,31 +57,33 @@ public class BaseAI : MonoBehaviour
         } while (count == currentWaypoint);
         Vector3 target = ManagerWaypoints.Instance.waypoints[count].position;
         Seek(target);
-        Task.current.Succeed();
+       // Task.current.Succeed();
     }
 
-    [Task]
+   // [Task]
     public void AgentArrivedDestination() {
         if(Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance) {
-            Task.current.Succeed();
+            //ask.current.Succeed();
         }
     }
 
-    [Task]
+    //[Task]
     public void GetEnemyDistance() {
+        Debug.Log("GetEnemyDistance");
         if (ai.target == null) {
             ai.distanceSeek = ai.gameObject.GetComponent<MageScript>().properties.distanceSeek;
             UnitController.Instance.units.ForEach(u => {
+                Debug.Log($"Target {u.name}, Distance {Vector3.Distance(ai.transform.position, u.transform.position)}");
                 if (Vector3.Distance(ai.transform.position, u.transform.position) <= ai.distanceSeek) {
                     ai.target = u.transform;
                     Seek(ai.target.position);
-                    Task.current.Succeed();
+                    //Task.current.Succeed();
                 }
             });
         }
     }
 
-    [Task]
+    //[Task]
     public void AttackTarget() {
         if (ai.target != null) {
             if (Vector3.Distance(ai.transform.position, ai.target.position) > agent.stoppingDistance)
@@ -89,6 +92,35 @@ public class BaseAI : MonoBehaviour
             if (ai.timeCount > ai.timeFirerate) {
                 ai.enemy.Attack(0);
                 ai.timeCount = 0.0f;
+            }
+        }
+    }
+
+    /*
+     while
+			HaveTarget
+			SeekTarget()
+    */
+
+    //[Task]
+    bool HaveTarget() {
+        if (ai.target != null)
+            return true;
+        else
+            return false;
+    }
+
+    //[Task]
+    void SeekTarget() {
+        var target = ai.target;
+        if(target != null) {
+            if (Vector3.Distance(ai.transform.position, ai.target.position) > ai.distanceSeek) {
+                ai.target = null;
+                //Task.current.Succeed();
+            }
+            else if(Vector3.Distance(ai.transform.position, ai.target.position) > agent.stoppingDistance) {
+                Seek(target.position);
+                //Task.current.Succeed();
             }
         }
     }
