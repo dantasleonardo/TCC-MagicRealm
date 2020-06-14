@@ -67,7 +67,6 @@ public class GameController : MonoBehaviour
                 RemoveItemOfCreations(0);
             }
         }
-        Debug.Log(Enemies.Count);
     }
     #region InstantiateUnits
 

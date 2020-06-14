@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\gdini\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\gdini\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TCC-MagicRealm.229587469.00" t="ExcludeRecursive" />
+    <e p="C:\Users\gdini\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\gdini\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\ReSharperHost\v202\SolutionCaches\_TCC-MagicRealm.229587469.00" t="ExcludeRecursive" />
     <e p="D:\Projects\Unity\TCC-MagicRealm" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AI" t="Include">
+          <e p="Scirpts" t="Include">
+            <e p="Attacking.cs" t="Include" />
+            <e p="Seek.cs" t="Include" />
+            <e p="Waypoint.cs" t="Include" />
+          </e>
+        </e>
         <e p="Animations" t="Include">
           <e p="UnitS" t="Include">
             <e p="CannonRobot" t="Include">
@@ -14,32 +21,101 @@
             </e>
           </e>
         </e>
-        <e p="LeanTween" t="Include">
-          <e p="Editor" t="Include">
-            <e p="LeanTweenDocumentationEditor.cs" t="Include" />
+        <e p="AssetStore" t="Include">
+          <e p="kenney_uiaudio" t="Include">
+            <e p="License.txt" t="Include" />
           </e>
-          <e p="Framework" t="Include">
-            <e p="LeanAudio.cs" t="Include" />
-            <e p="LeanSmooth.cs" t="Include" />
-            <e p="LeanTest.cs" t="Include" />
-            <e p="LeanTween.cs" t="Include" />
-            <e p="LeanTweenExt.cs" t="Include" />
-            <e p="LTDescr.cs" t="Include" />
-            <e p="LTDescrOptional.cs" t="Include" />
-            <e p="LTSeq.cs" t="Include" />
+          <e p="LeanTween" t="Include">
+            <e p="Editor" t="Include">
+              <e p="LeanTweenDocumentationEditor.cs" t="Include" />
+            </e>
+            <e p="Framework" t="Include">
+              <e p="LeanAudio.cs" t="Include" />
+              <e p="LeanSmooth.cs" t="Include" />
+              <e p="LeanTest.cs" t="Include" />
+              <e p="LeanTween.cs" t="Include" />
+              <e p="LeanTweenExt.cs" t="Include" />
+              <e p="LTDescr.cs" t="Include" />
+              <e p="LTDescrOptional.cs" t="Include" />
+              <e p="LTSeq.cs" t="Include" />
+            </e>
+            <e p="License.txt" t="Include" />
+            <e p="ReadMe.txt" t="Include" />
           </e>
-          <e p="License.txt" t="Include" />
+          <e p="TextMesh Pro" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="LiberationSans - OFL.txt" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="LineBreaking Following Characters.txt" t="Include" />
+              <e p="LineBreaking Leading Characters.txt" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+                <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+                <e p="TMP_Bitmap.shader" t="Include" />
+                <e p="TMP_SDF Overlay.shader" t="Include" />
+                <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+                <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+                <e p="TMP_SDF-Mobile.shader" t="Include" />
+                <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+                <e p="TMP_SDF-Surface.shader" t="Include" />
+                <e p="TMP_SDF.shader" t="Include" />
+                <e p="TMP_Sprite.shader" t="Include" />
+                <e p="TMPro.cginc" t="Include" />
+                <e p="TMPro_Properties.cginc" t="Include" />
+                <e p="TMPro_Surface.cginc" t="Include" />
+              </e>
+            </e>
+            <e p="Sprites" t="Include">
+              <e p="EmojiOne Attribution.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PandaBehaviour" t="Include">
+          <e p="ChangeLog.txt" t="Include" />
+          <e p="Core" t="Include">
+            <e p="Editor" t="Include">
+              <e p="CreatePandaScriptMenu.cs" t="Include" />
+              <e p="PandaBehaviourEditor.cs" t="Include" />
+            </e>
+            <e p="PandaBehaviour.cs" t="Include" />
+            <e p="PandaBehaviour.xml" t="Include" />
+          </e>
           <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Resources" t="Include">
           <e p="Credits.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="AI.cs" t="Include" />
+            <e p="AttackMagics.cs" t="Include" />
+            <e p="BaseAI.cs" t="Include" />
+            <e p="BotAi.cs" t="Include" />
+            <e p="Golem.txt" t="Include" />
+            <e p="GolemScript.cs" t="Include" />
+            <e p="Mage.txt" t="Include" />
+            <e p="MageScript.cs" t="Include" />
+            <e p="ManagerWaypoints.cs" t="Include" />
+          </e>
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
-          <e p="GameController.cs" t="Include" />
+          <e p="Feedback.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="IEnemy.cs" t="Include" />
+            <e p="IUnit.cs" t="Include" />
+          </e>
           <e p="ItemCreation.cs" t="Include" />
+          <e p="LoadingScene.cs" t="Include" />
+          <e p="Magic" t="Include">
+            <e p="MagicCastle.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="GameController.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="ObjectivesManager.cs" t="Include" />
+          </e>
           <e p="Menu" t="Include">
             <e p="BlinkUI.cs" t="Include" />
             <e p="Credits.cs" t="Include" />
@@ -47,69 +123,41 @@
             <e p="MenuAnimation.cs" t="Include" />
             <e p="SimpleAnimationX.cs" t="Include" />
           </e>
-          <e p="Pause.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="UnitController.cs" t="Include" />
             <e p="UnitSelection.cs" t="Include" />
-          </e>
-          <e p="Resources" t="Include">
-            <e p="Resources.cs" t="Include" />
           </e>
           <e p="Scriptable Objects" t="Include">
             <e p="AttackUnit.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="GathererUnit.cs" t="Include" />
+            <e p="Mage.cs" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="Resources.cs" t="Include" />
+              <e p="RockSize.cs" t="Include" />
+            </e>
           </e>
+          <e p="SimpleAudio.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AttackUnitItem.cs" t="Include" />
             <e p="ButtonStoreItem.cs" t="Include" />
             <e p="CreationLoading.cs" t="Include" />
             <e p="GathererUnitItem.cs" t="Include" />
             <e p="ItemStore.cs" t="Include" />
+            <e p="LifeBar.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
           </e>
           <e p="UnitS" t="Include">
             <e p="AttackUnitScript.cs" t="Include" />
             <e p="Building.cs" t="Include" />
             <e p="BulletScript.cs" t="Include" />
             <e p="GahtererUnitScript.cs" t="Include" />
-            <e p="MainBase.cs" t="Include" />
             <e p="Robot.cs" t="Include" />
+            <e p="RobotsCastle.cs" t="Include" />
             <e p="UnitScript.cs" t="Include" />
           </e>
           <e p="Utilities" t="Include">
             <e p="Utils.cs" t="Include" />
-          </e>
-          <e p="WindowScripts" t="Include">
-            <e p="CreateBulletsUnitsWindow.cs" t="Include" />
-            <e p="CreateUnitWindow.cs" t="Include" />
-          </e>
-        </e>
-        <e p="TextMesh Pro" t="Include">
-          <e p="Fonts" t="Include">
-            <e p="LiberationSans - OFL.txt" t="Include" />
-          </e>
-          <e p="Resources" t="Include">
-            <e p="LineBreaking Following Characters.txt" t="Include" />
-            <e p="LineBreaking Leading Characters.txt" t="Include" />
-            <e p="Shaders" t="Include">
-              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
-              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
-              <e p="TMP_Bitmap.shader" t="Include" />
-              <e p="TMP_SDF Overlay.shader" t="Include" />
-              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
-              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
-              <e p="TMP_SDF-Mobile.shader" t="Include" />
-              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
-              <e p="TMP_SDF-Surface.shader" t="Include" />
-              <e p="TMP_SDF.shader" t="Include" />
-              <e p="TMP_Sprite.shader" t="Include" />
-              <e p="TMPro.cginc" t="Include" />
-              <e p="TMPro_Properties.cginc" t="Include" />
-              <e p="TMPro_Surface.cginc" t="Include" />
-            </e>
-          </e>
-          <e p="Sprites" t="Include">
-            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>

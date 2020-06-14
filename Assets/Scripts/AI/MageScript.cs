@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.WSA.Input;
 
 public class MageScript : MonoBehaviour, IEnemy {
     public Mage properties;
     [SerializeField] private Transform spawnAttack;
     [SerializeField] private LifeBar lifeBar;
     [SerializeField] private float disableLifeBar = 3.0f;
-
-
     private int life;
+
+
 
     public void Attack(int typeAttack) {
         StopAllCoroutines();
@@ -49,5 +50,6 @@ public class MageScript : MonoBehaviour, IEnemy {
         life = properties.totalLife;
         lifeBar.totalValue = life;
         GameController.Instance.Enemies.Add(this.gameObject);
+        GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance, properties.Speed);
     }
 }

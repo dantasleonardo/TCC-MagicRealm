@@ -1,37 +1,22 @@
 tree("Root")
-	parallel
-		tree ("Actions")
-
-tree("SeekTarget")
-	sequence
-		SeekTarget
-
-tree("Actions")
-	parallel
-		while HaveTarget
-			tree("SeekTarget")
-		while not HaveTarget
-			tree ("Actions")
-	parallel
-		tree ("GetEnemyDistance")
+	fallback
+		tree ("AttackEnemy")
+		tree ("SeekTarget")
 		tree ("NormalActions")
 
 tree ("NormalActions")
 	sequence
-		tree ("Waypoint")
-		tree ("ArrivedDestination")
-		Wait 2.0
-			
-
-tree ("Waypoint")
-	sequence
 		Waypoint
+		AgentArrivedDestinationWithGetDistance
+		Wait 2.0
 
-tree ("ArrivedDestination")
-	sequence
-		AgentArrivedDestination
-
-tree ("GetEnemyDistance")
-	sequence
+tree ("SeekTarget")
+	parallel
 		GetEnemyDistance
-		Wait 0.01
+		while HaveTarget
+			SeekTarget
+
+tree ("AttackEnemy")
+	sequence
+		while DistanceAttack
+			Attack

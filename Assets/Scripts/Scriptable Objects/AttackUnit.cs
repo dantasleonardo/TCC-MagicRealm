@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Attack Character", menuName = "Units/Attack Unit/Character")]
@@ -24,7 +25,7 @@ public class AttackUnit : ScriptableObject
     public string itemDescription;
 
     public int woodCost;
-    public int rockCost;
+    public int stoneCost;
 
     [Header("Spawn Item")] 
     public float currentTimeToCreate = 0.0f;

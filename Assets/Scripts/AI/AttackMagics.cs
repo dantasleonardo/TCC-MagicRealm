@@ -14,7 +14,6 @@ public class AttackMagics : MonoBehaviour
 
     private void Awake() {
         InitItem();
-        Debug.Log(Vector3.forward);
     }
 
     private void Start() {

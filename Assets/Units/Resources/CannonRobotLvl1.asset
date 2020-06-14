@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55c053f032d088408cc9fe34d22f61b, type: 3}
   m_Name: CannonRobotLvl1
   m_EditorClassIdentifier: 
-  nameUnit: CannonRobot
+  nameUnit: Cannon
   life: 6
   speedMovement: 1.5
   attackDistace: 2
@@ -24,8 +24,8 @@ MonoBehaviour:
   RobotType: 0
   unitIcon: {fileID: 21300000, guid: ee05eccf84334b4478c536b46d4cda2a, type: 3}
   nameItemShop: Cannon Robot
-  itemDescription: Teste eurheuheurheurheu uerhuehreuh eufheurheuhe
+  itemDescription: "Rob\xF4 de ataque, que atira bolas de canh\xF5es"
   woodCost: 5
-  rockCost: 10
+  stoneCost: 10
   currentTimeToCreate: 0
   timeToCreate: 2.5
