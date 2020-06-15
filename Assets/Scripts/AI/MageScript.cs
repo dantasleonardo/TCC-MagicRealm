@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Windows.Speech;
 using UnityEngine.XR.WSA.Input;
 
 public class MageScript : MonoBehaviour, IEnemy {
@@ -8,16 +10,23 @@ public class MageScript : MonoBehaviour, IEnemy {
     [SerializeField] private Transform spawnAttack;
     [SerializeField] private LifeBar lifeBar;
     [SerializeField] private float disableLifeBar = 3.0f;
+    [SerializeField] private Animator animator;
+    [SerializeField] float speed;
+    [SerializeField] private NavMeshAgent agent;
     private int life;
 
 
 
     public void Attack(int typeAttack) {
         StopAllCoroutines();
+        animator.SetTrigger("Attacking");
+        animator.SetInteger("typeAttack", typeAttack);
+    }
 
-        if (typeAttack == 0) {
-            Instantiate(properties.attacksPrefabs[0].bulletPrefab, spawnAttack.position, spawnAttack.rotation);
-        }
+    public void AttackInstantiate()
+    {
+        int typeAttack = animator.GetInteger("typeAttack");
+        Instantiate(properties.attacksPrefabs[typeAttack].bulletPrefab, spawnAttack.position, spawnAttack.rotation);
     }
 
     public void TakeDamage(int damage) {
@@ -33,6 +42,8 @@ public class MageScript : MonoBehaviour, IEnemy {
 
     private void Update() {
         float fillAmount = lifeBar.foregroundBar.fillAmount;
+        speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
+        animator.SetFloat("Speed", speed);
 
         if(life <= 0 && fillAmount <= 0.0f) {
             GameController.Instance.Enemies.Remove(this.gameObject);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11a4b816a071df4aad831ccbb4b1535, type: 3}
   m_Name: BasicAttackMage
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 20
   speed: 1
   bulletPrefab: {fileID: 6428692689406625908, guid: 4db87ebefe42df0469ff604514b0e8e2,
     type: 3}

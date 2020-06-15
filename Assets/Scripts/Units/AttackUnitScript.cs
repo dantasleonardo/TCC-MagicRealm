@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class AttackUnitScript : Robot
@@ -16,19 +17,18 @@ public class AttackUnitScript : Robot
     [SerializeField] private Bullet bulletProperties;
 
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform spawnBulletPosition;
+    [SerializeField] private Transform[] spawnBulletPosition;
+    private int nextSpawn;
 
     [Header("Animations")] [SerializeField]
     private float distanceStopAnimationPlay = 0.2f;
+
+    public bool attackWithAnimation = false;
 
     private Animator animator;
 
     [SerializeField] private GameObject currentTarget;
     [SerializeField] private float currentTimeToFire;
-
-    [Header("Actions")] public bool idle = true;
-    public bool inMovement;
-    public bool attacking = false;
 
 
     private void Awake() {
@@ -61,70 +61,59 @@ public class AttackUnitScript : Robot
         if (targetObject.CompareTag("Mages")) {
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
-            ActiveMovement();
-            if (!WithinReach())
-                ActiveMovement();
         }
         else if (targetObject.CompareTag("Ground")) {
             agent.stoppingDistance = 0.0f;
-            attacking = false;
             currentTarget = null;
             MoveTo(target);
-            ActiveMovement();
         }
-    }
-
-    private void ActiveMovement() {
-        idle = false;
-        inMovement = true;
-
-        animator.SetBool("inMovement", inMovement);
-        animator.SetBool("Idle", idle);
     }
 
     private void Update() {
-        if (inMovement) {
-            if (Vector3.Distance(agent.destination, transform.position) < distanceStopAnimationPlay) {
-                inMovement = false;
-                idle = true;
-                animator.SetBool("inMovement", inMovement);
-                animator.SetBool("Idle", idle);
-            }
-        }
+        var speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
+        animator.SetFloat("Speed", speed);
+        if (speed < 0.1f && currentTarget != null)
+        {
+            RaycastHit hit;
+            LookTarget();
+            var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
+            if (Physics.Raycast(position, transform.forward, out hit, 50.0f))
+            {
+                if (hit.collider.CompareTag("Mages"))
+                {
+                    // transform.LookAt(currentTarget.transform);
+                    var lookRotation = LookTarget();
+                    currentTimeToFire += Time.deltaTime;
 
-        if (attacking && currentTarget != null) {
-            // transform.LookAt(currentTarget.transform);
-            var lookRotation = LookTarget();
-            currentTimeToFire += Time.deltaTime;
-
-            if (currentTimeToFire > firerateAttack) {
-                var bullet = Instantiate(bulletPrefab, spawnBulletPosition.position, transform.rotation);
-                Debug.Log($"InstantiateBullet: {bullet.name}");
-                bullet.transform.forward = spawnBulletPosition.forward;
-                currentTimeToFire = 0.0f;
+                    if (currentTimeToFire > firerateAttack) {
+                        if(attackWithAnimation)
+                            animator.SetTrigger("Attacking");
+                        else BulletInstantiate();
+                        currentTimeToFire = 0.0f;
+                    }
+                }
             }
-            else {
-                MoveTo(currentTarget.transform.position);
-                inMovement = true;
-                idle = false;
-                animator.SetBool("inMovement", inMovement);
-                animator.SetBool("Idle", idle);
-            }
-        }
-
-        if (WithinReach() && currentTarget != null) {
-            attacking = true;
-            idle = true;
-            inMovement = false;
-            animator.SetBool("inMovement", inMovement);
-            animator.SetBool("Idle", idle);
         }
         else if (currentTarget != null && currentTarget.CompareTag("Mages")) {
-            attacking = false;
             MoveTo(currentTarget.transform.position);
         }
     }
 
+    public void BulletInstantiate()
+    {
+        if (spawnBulletPosition.Length > 1)
+        {
+            var bullet = Instantiate(bulletPrefab, spawnBulletPosition[nextSpawn].position, transform.rotation);
+            bullet.transform.forward = spawnBulletPosition[nextSpawn].forward;
+            nextSpawn = nextSpawn >= 1 ? 0 : 1;
+        }
+        else
+        {
+            var bullet = Instantiate(bulletPrefab, spawnBulletPosition[0].position, transform.rotation);
+            bullet.transform.forward = spawnBulletPosition[0].forward;
+        }
+    }
+    
     private bool WithinReach() {
         bool isTrue = Vector3.Distance(transform.position, agent.destination) <= attakDistance;
         return isTrue;

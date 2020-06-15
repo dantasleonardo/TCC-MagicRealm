@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Mage
   m_EditorClassIdentifier: 
   name: Mage
-  totalLife: 10
+  totalLife: 100
   totalAttacks: 2
   attacksPrefabs:
   - {fileID: 11400000, guid: 66c1e7a442a287a44acc2c89f0669257, type: 2}
   distanceSeek: 4.5
   distanceAttack: 2
   stopDistance: 0.2
+  Speed: 2

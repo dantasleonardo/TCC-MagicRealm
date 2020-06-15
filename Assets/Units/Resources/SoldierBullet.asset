@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b11a4b816a071df4aad831ccbb4b1535, type: 3}
-  m_Name: CannonBallLevel1
+  m_Name: SoldierBullet
   m_EditorClassIdentifier: 
-  damage: 20
-  speed: 2
-  bulletPrefab: {fileID: 75671323729014839, guid: 2b1a69f02b4897d44bf7f20b39494b0b,
+  damage: 2
+  speed: 5
+  bulletPrefab: {fileID: 50617366978492578, guid: 813843e42548a7643a177ccaeaa1a298,
     type: 3}

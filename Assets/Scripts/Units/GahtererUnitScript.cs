@@ -25,8 +25,8 @@ public class GahtererUnitScript : Robot
     [Header("Animations")] [SerializeField]
     private float distanceStopAnimationPlay = 0.2f;
 
-    private Animator animator;
-
+    public Animator animator;
+    private float speed;
     [Header("Actions")] public bool idle = true;
     public bool inMovement;
     public bool gathering;
@@ -118,6 +118,8 @@ public class GahtererUnitScript : Robot
     #endregion
 
     private void Update() {
+        speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
+        animator.SetFloat("Speed", speed);
         if (resourceTarget != null) {
             if (goingToBase) {
                 var distanceOfBase = WithinReach(1f);

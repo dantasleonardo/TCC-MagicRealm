@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gatherer
   m_EditorClassIdentifier: 
   nameUnit: Gatherer
-  life: 5
+  life: 50
   speedMovement: 1.5
   maxAmountResources: 6
   gatheringSpeed: 1

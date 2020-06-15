@@ -127,6 +127,5 @@ public class AI : MonoBehaviour {
         Vector3 direction = (target.transform.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turningSpeed);
-        Task.current.Succeed();
     }
 }
