@@ -28,7 +28,6 @@ public class GahtererUnitScript : Robot
     public Animator animator;
     private float speed;
     [Header("Actions")] public bool idle = true;
-    public bool inMovement;
     public bool gathering;
     public bool goingToBase;
 
@@ -54,27 +53,18 @@ public class GahtererUnitScript : Robot
         StopAllCoroutines();
         resourceTarget = null;
         //print($"Hit: {targetObject.tag} and Vector of Target: {target}");
-        if (targetObject.CompareTag("Resources")) {
-            agent.stoppingDistance = 0.5f;
-            MoveTo(target);
-            ActiveMovement();
+        if (targetObject != null && targetObject.CompareTag("Resources")) {
             resourceTarget = targetObject.GetComponent<Resources>();
+            agent.stoppingDistance = 0.5f;
+            if (inventoryIsFull)
+                GoToBase();
+            else
+                MoveTo(resourceTarget.transform.position);
         }
-        else if (targetObject.CompareTag("Ground")) {
+        else if (targetObject != null && targetObject.CompareTag("Ground")) {
             agent.stoppingDistance = 0.0f;
             MoveTo(target);
-            ActiveMovement();
         }
-    }
-
-    private void ActiveMovement() {
-        idle = false;
-        inMovement = true;
-        gathering = false;
-        goingToBase = false;
-
-        // animator.SetBool("inMovement", inMovement);
-        // animator.SetBool("Idle", idle);
     }
 
     #endregion
@@ -131,7 +121,7 @@ public class GahtererUnitScript : Robot
             if (!distance) return;
             var lookRotation = LookTarget();
             resourceTarget.SetParticles(true);
-            if (gathering || inventoryIsFull) return;
+            if (gathering) return;
             StartCoroutine(GetResource());
             gathering = true;
         }
@@ -167,8 +157,8 @@ public class GahtererUnitScript : Robot
     private void GiveResources() {
         RobotsCastle.Instance.GetResourcesOfUnit(inventory);
         GoToResource();
-        ActiveMovement();
         inventoryIsFull = false;
+        goingToBase = false;
         currentAmountResources = 0;
         inventory = new Dictionary<ResourceType, int>();
         foreach (var test in inventory) {

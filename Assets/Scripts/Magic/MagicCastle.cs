@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MagicCastle : MonoBehaviour,IEnemy
+public class MagicCastle : IEnemy
 {
     public int life;
     [SerializeField] private LifeBar lifeBar;
@@ -20,11 +20,11 @@ public class MagicCastle : MonoBehaviour,IEnemy
         lifeBar.totalValue = life;
     }
 
-    public void Attack(int typeAttack) {
+    public override void Attack(int typeAttack) {
         
     }
 
-    public void TakeDamage(int damage) {
+    public override void TakeDamage(int damage) {
         life -= damage;
         lifeBar.UpdateBar((float)life);
     }

@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.AI;
 using Panda;
 
-public class AI : MonoBehaviour {
+public class AI : MonoBehaviour
+{
     public NavMeshAgent agent;
-    [SerializeField] private Transform target;
+    public Transform target;
     [SerializeField] private float distanceSeek;
     [SerializeField] private float distanceAttack;
     [SerializeField] private float stopDistance;
@@ -16,7 +17,8 @@ public class AI : MonoBehaviour {
     [SerializeField] private float timeFirerate = 2.0f;
     [SerializeField] private float timeCount = 0.0f;
 
-    public void Init(float distSeek, float distAttack, float stopDist, float speed) {
+    public void Init(float distSeek, float distAttack, float stopDist, float speed)
+    {
         agent = GetComponent<NavMeshAgent>();
         distanceAttack = distAttack;
         distanceSeek = distSeek;
@@ -25,52 +27,66 @@ public class AI : MonoBehaviour {
         agent.speed = speed;
     }
 
-    private void Start() {
+    private void Start()
+    {
         agent = GetComponent<NavMeshAgent>();
     }
 
-    public void Seek(Vector3 target) {
+    public void Seek(Vector3 target)
+    {
         agent.SetDestination(target);
     }
 
     [Task]
-    public void Waypoint() {
+    public void Waypoint()
+    {
         agent.stoppingDistance = stopDistance;
         int count;
-        do {
+        do
+        {
             count = Random.Range(0, ManagerWaypoints.Instance.waypoints.Count);
         } while (count == currentWaypoint);
+
         Vector3 target = ManagerWaypoints.Instance.waypoints[count].position;
         Seek(target);
         Task.current.Succeed();
     }
 
     [Task]
-    public void AgentArrivedDestination() {
-        if (Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance) {
+    public void AgentArrivedDestination()
+    {
+        if (Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance)
+        {
             Task.current.Succeed();
         }
     }
 
     [Task]
-    public void AgentArrivedDestinationWithGetDistance() {
-        if (target == null) {
+    public void AgentArrivedDestinationWithGetDistance()
+    {
+        if (target == null)
+        {
             distanceSeek = gameObject.GetComponent<MageScript>().properties.distanceSeek;
-            UnitController.Instance.units.ForEach(u => {
-                if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek) {
+            UnitController.Instance.units.ForEach(u =>
+            {
+                if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
+                {
                     target = u.transform;
                     Seek(target.position);
                     Task.current.Succeed();
                 }
             });
         }
-        if (Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance) {
+
+        if (Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance)
+        {
             Task.current.Succeed();
         }
     }
 
     [Task]
-    public bool HaveTarget() {
+    public bool HaveTarget()
+    {
         if (target != null)
             return true;
         else
@@ -78,30 +94,38 @@ public class AI : MonoBehaviour {
     }
 
     [Task]
-    public void GetEnemyDistance() {
-        if (target == null) {
-            distanceSeek = gameObject.GetComponent<MageScript>().properties.distanceSeek;
-            UnitController.Instance.units.ForEach(u => {
-                if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek) {
+    public void GetEnemyDistance()
+    {
+        if (target == null)
+        {
+            distanceSeek = gameObject.GetComponent<IEnemy>().properties.distanceSeek;
+            UnitController.Instance.units.ForEach(u =>
+            {
+                if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
+                {
                     target = u.transform;
                     Seek(target.position);
                     Task.current.Succeed();
                 }
             });
         }
+
         Task.current.Succeed();
     }
 
     [Task]
-    public void SeekTarget() {
+    public void SeekTarget()
+    {
         agent.stoppingDistance = distanceAttack;
         Seek(target.position);
         Task.current.Succeed();
     }
 
     [Task]
-    public bool DistanceAttack() {
-        if (target != null) {
+    public bool DistanceAttack()
+    {
+        if (target != null)
+        {
             if (Vector3.Distance(transform.position, target.position) <= agent.stoppingDistance)
                 return true;
             else
@@ -112,18 +136,38 @@ public class AI : MonoBehaviour {
     }
 
     [Task]
-    public void Attack() {
+    public void Attack()
+    {
         LookTarget();
         timeCount += Time.deltaTime;
-        if(timeCount > timeFirerate) {
+        if (timeCount > timeFirerate)
+        {
             var attack = GetComponent<IEnemy>();
             attack.Attack(0);
             timeCount = 0.0f;
         }
+
         Task.current.Succeed();
     }
 
-    public void LookTarget() {
+    [Task]
+    public bool ArrivedDestination()
+    {
+        if (Vector3.Distance(transform.position, agent.destination) < 0.1f)
+        {
+            target = null;
+            Task.current.Succeed();
+            return true;
+        }
+        else
+        {
+            Task.current.Succeed();
+            return false;
+        }
+    }
+
+    public void LookTarget()
+    {
         Vector3 direction = (target.transform.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turningSpeed);

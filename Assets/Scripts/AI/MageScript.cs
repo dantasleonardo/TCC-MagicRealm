@@ -5,8 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.Windows.Speech;
 using UnityEngine.XR.WSA.Input;
 
-public class MageScript : MonoBehaviour, IEnemy {
-    public Mage properties;
+public class MageScript : IEnemy {
     [SerializeField] private Transform spawnAttack;
     [SerializeField] private LifeBar lifeBar;
     [SerializeField] private float disableLifeBar = 3.0f;
@@ -17,7 +16,7 @@ public class MageScript : MonoBehaviour, IEnemy {
 
 
 
-    public void Attack(int typeAttack) {
+    public override void Attack(int typeAttack) {
         StopAllCoroutines();
         animator.SetTrigger("Attacking");
         animator.SetInteger("typeAttack", typeAttack);
@@ -29,7 +28,7 @@ public class MageScript : MonoBehaviour, IEnemy {
         Instantiate(properties.attacksPrefabs[typeAttack].bulletPrefab, spawnAttack.position, spawnAttack.rotation);
     }
 
-    public void TakeDamage(int damage) {
+    public override void TakeDamage(int damage) {
         life -= damage;
 
         if (!lifeBar.isActive) {

@@ -21,7 +21,7 @@ MonoBehaviour:
   unitPrefab: {fileID: 0}
   fileNameOfBullet: SoldierBullet
   RobotType: 0
-  unitIcon: {fileID: 0}
+  unitIcon: {fileID: 21300000, guid: 7f3dcebaf8771c840890d47e9b387b3c, type: 3}
   nameItemShop: Soldier
   itemDescription: 
   woodCost: 5

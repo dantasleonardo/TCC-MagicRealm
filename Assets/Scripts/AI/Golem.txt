@@ -1,2 +1,33 @@
 tree("Root")
-	Succeed
+    fallback
+        tree ("GetBaseDistance")
+        tree ("AttackEnemy")
+        tree ("GetTarget")
+
+tree ("GetBaseDistance")
+    fallback
+        while not HaveTarget
+            GetEnemyDistance
+        while not TargetIsBase
+            while not GetBaseDistance
+                SetTargetIsBasePoint
+        while ArrivedDestination
+            SetTargetEqualNUll
+        while TargetIsBase
+            while not ArrivedDestination
+                SeekTarget
+
+tree("GetTarget")
+    fallback
+        while HaveTarget
+            fallback
+                while not IsStanding
+                    RaiseGolem
+                while IsStanding
+                    SeekTarget
+             
+
+tree ("AttackEnemy")
+	sequence
+		while DistanceAttack
+			Attack
