@@ -22,9 +22,17 @@
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destruir Cristais.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Missions/Destruir Cristais.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/Mage.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/Mage.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ObjectivesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ObjectivesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +46,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/Builder/Scripts/BuilderStoreType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ObjectivesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,7 +71,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" />
@@ -69,12 +79,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/IMission.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/IMission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ObjectivesManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" />
       </list>
     </option>
@@ -133,6 +147,7 @@
       <workItem from="1592427230373" duration="3522000" />
       <workItem from="1592592666354" duration="642000" />
       <workItem from="1592595578650" duration="7769000" />
+      <workItem from="1592657279721" duration="7489000" />
     </task>
     <servers />
   </component>

@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 119978852}
   - component: {fileID: 119978851}
   m_Layer: 0
-  m_Name: CutScenes
+  m_Name: Cutscenes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6932,6 +6932,7 @@ MonoBehaviour:
   Enemies: []
   stonesCollected: 0
   woodCollected: 0
+  crystalsDestroyed: 0
   robotsCastle: {fileID: 1454259371}
   magicCastle: {fileID: 1167373322}
   audioSource: {fileID: 79032608}
@@ -16485,6 +16486,7 @@ GameObject:
   - component: {fileID: 1787219435}
   - component: {fileID: 1787219436}
   - component: {fileID: 1787219437}
+  - component: {fileID: 1787219438}
   m_Layer: 5
   m_Name: Missions
   m_TagString: Untagged
@@ -16556,10 +16558,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missions:
   - {fileID: 11400000, guid: d4b19a2d0ae73ba40a0f7f85b573d3a4, type: 2}
+  - {fileID: 11400000, guid: 5e6a19fd01b8f2e4b837cbd4a16bc3ff, type: 2}
+  - {fileID: 11400000, guid: 871a713b515ec664b96a677497b3d2ef, type: 2}
   missionPrefab: {fileID: 5524712328310375388, guid: 094932f666697334787cd5548de242cb,
     type: 3}
   missionParent: {fileID: 1028807405}
-  missionsCompleted: 
+  missionsInScene: []
+--- !u!114 &1787219438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787219434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af05abf279f9e9d49882dc102f3b537f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 119978852}
+  screenText: {fileID: 1353037250}
 --- !u!1001 &1800515587
 PrefabInstance:
   m_ObjectHideFlags: 0

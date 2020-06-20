@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MissionScripts;
 using UnityEngine;
 
@@ -8,9 +8,25 @@ public class MissionManager : MonoBehaviour
     [SerializeField] private List<Mission> missions;
     [SerializeField] private GameObject missionPrefab;
     [SerializeField] private Transform missionParent;
-    [SerializeField] private List<bool> missionsCompleted;
+    [SerializeField] private List<GameObject> missionsInScene;
 
     private void Start()
+    {
+        GetTypeMission();
+    }
+
+    private void Update()
+    {
+        var missionsCompleted = GetMissionsCompleted();
+        if (GameController.Instance.robotsCastle.life < 1)
+            GameOver();
+        if (GameController.Instance.magicCastle.life < 1)
+            WonTheGame();
+        if (missionsCompleted == missions.Count)
+            WonTheGame();
+    }
+
+    private void GetTypeMission()
     {
         missions.ForEach(m =>
         {
@@ -26,32 +42,27 @@ public class MissionManager : MonoBehaviour
             }
 
             go.GetComponent<IMission>().Init(m);
+            missionsInScene.Add(go);
             go.name = m.title;
         });
     }
 
-    private void Update()
+    private int GetMissionsCompleted()
     {
-;
-    }
-
-    private void GetTypeMission()
-    {
-        
-    }
-
-    private List<bool> GetMissionsCompleted()
-    {
-        return new List<bool>();
+        var list = missionsInScene.Where(m => m.GetComponent<IMission>().MissionCompleted()).ToList();
+        Debug.Log($"list {list.Count}");
+        return list.Count;
     }
 
     private void GameOver()
     {
-        
+        Debug.Log("Lose The Game ");
+        GetComponent<MissionsDirector>().PlayWinLoseCutscene($"You Lose!");
     }
 
     private void WonTheGame()
     {
-        
+        Debug.Log("Won The Game ");
+        GetComponent<MissionsDirector>().PlayWinLoseCutscene($"You Win!");
     }
 }

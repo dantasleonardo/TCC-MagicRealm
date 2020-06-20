@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 using UnityEngine.UI;
 
 public class ObjectivesManager : MonoBehaviour
@@ -30,20 +27,28 @@ public class ObjectivesManager : MonoBehaviour
     public PlayableDirector director;
     public Text gameoverText;
 
-    private void Update() {
-        if (GameController.Instance.stonesCollected >= totalStoneResouceCollected && !stoneCompleted) {
+    private void Update()
+    {
+        if (GameController.Instance.stonesCollected >= totalStoneResouceCollected && !stoneCompleted)
+        {
             stoneCompleted = true;
             stoneObjectiveText.color = objectiveCompletedColor;
         }
-        if (GameController.Instance.woodCollected >= totalWoodResouceCollected && !woodCompleted) {
-            woodCompleted= true;
+
+        if (GameController.Instance.woodCollected >= totalWoodResouceCollected && !woodCompleted)
+        {
+            woodCompleted = true;
             woodObjectiveText.color = objectiveCompletedColor;
         }
-        if(GameController.Instance.magicCastle.life < 1) {
+
+        if (GameController.Instance.magicCastle.life < 1)
+        {
             destroyCastleCompleted = true;
             destroyCastleText.color = objectiveCompletedColor;
         }
-        if(GameController.Instance.robotsCastle.life < 1) {
+
+        if (GameController.Instance.robotsCastle.life < 1)
+        {
             youLose = true;
         }
 
@@ -51,31 +56,43 @@ public class ObjectivesManager : MonoBehaviour
         GameOverConditions();
     }
 
-    public void GameOverConditions() {
-        if(destroyCastleCompleted && woodCompleted && stoneCompleted) {
+    public void GameOverConditions()
+    {
+        if (destroyCastleCompleted && woodCompleted && stoneCompleted)
+        {
             director.gameObject.SetActive(true);
             director.Play();
             gameoverText.text = youWin;
         }
-        else if (destroyCastleCompleted) {
+        else if (destroyCastleCompleted)
+        {
             director.gameObject.SetActive(true);
             director.Play();
             gameoverText.text = youWin;
-        } else if (youLose) {
+        }
+        else if (youLose)
+        {
             director.gameObject.SetActive(true);
             director.Play();
             gameoverText.text = youLoseString;
         }
     }
 
-    private void UpdateUI() {
-        if(GameController.Instance.stonesCollected <= totalStoneResouceCollected) {
-            stoneObjectiveText.text = $"{GameController.Instance.stonesCollected}/{totalStoneResouceCollected} {stoneObjectiveTitle}";
+    private void UpdateUI()
+    {
+        if (GameController.Instance.stonesCollected <= totalStoneResouceCollected)
+        {
+            stoneObjectiveText.text =
+                $"{GameController.Instance.stonesCollected}/{totalStoneResouceCollected} {stoneObjectiveTitle}";
             destroyCastleText.text = $"{destroyCastleTitle}";
         }
-        if (GameController.Instance.woodCollected <= totalWoodResouceCollected) {
-            woodObjectiveText.text = $"{GameController.Instance.woodCollected}/{totalWoodResouceCollected} {woodObjectiveTitle}";
+
+        if (GameController.Instance.woodCollected <= totalWoodResouceCollected)
+        {
+            woodObjectiveText.text =
+                $"{GameController.Instance.woodCollected}/{totalWoodResouceCollected} {woodObjectiveTitle}";
         }
+
         destroyCastleText.text = $"{destroyCastleTitle}";
     }
 }

@@ -134,6 +134,7 @@
           </e>
           <e p="MissionScripts" t="Include">
             <e p="CollectingMission.cs" t="Include" />
+            <e p="MissionsDirector.cs" t="Include" />
             <e p="MissionToDestroy.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
