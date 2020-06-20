@@ -101,9 +101,17 @@
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
+          <e p="Editor" t="Include">
+            <e p="MissionEditor.cs" t="Include" />
+          </e>
+          <e p="Enum" t="Include">
+            <e p="DestroyType.cs" t="Include" />
+            <e p="MissionType.cs" t="Include" />
+          </e>
           <e p="Feedback.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IEnemy.cs" t="Include" />
+            <e p="IMission.cs" t="Include" />
             <e p="IUnit.cs" t="Include" />
           </e>
           <e p="ItemCreation.cs" t="Include" />
@@ -114,6 +122,7 @@
           <e p="Managers" t="Include">
             <e p="GameController.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="MissionManager.cs" t="Include" />
             <e p="ObjectivesManager.cs" t="Include" />
           </e>
           <e p="Menu" t="Include">
@@ -122,6 +131,10 @@
             <e p="Menu.cs" t="Include" />
             <e p="MenuAnimation.cs" t="Include" />
             <e p="SimpleAnimationX.cs" t="Include" />
+          </e>
+          <e p="MissionScripts" t="Include">
+            <e p="CollectingMission.cs" t="Include" />
+            <e p="MissionToDestroy.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="UnitController.cs" t="Include" />
@@ -132,6 +145,7 @@
             <e p="Bullet.cs" t="Include" />
             <e p="GathererUnit.cs" t="Include" />
             <e p="Mage.cs" t="Include" />
+            <e p="Mission.cs" t="Include" />
             <e p="Resources" t="Include">
               <e p="Resources.cs" t="Include" />
               <e p="RockSize.cs" t="Include" />

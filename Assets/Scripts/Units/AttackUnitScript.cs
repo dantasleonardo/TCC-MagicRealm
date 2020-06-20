@@ -10,6 +10,7 @@ public class AttackUnitScript : Robot
     public AttackUnit attackUnitProperties;
 
     [SerializeField] private float attakDistance;
+    [SerializeField] private float distanceSeek = 2.25f;
     [SerializeField] private float firerateAttack;
     [SerializeField] private float turningSpeed;
 
@@ -31,19 +32,23 @@ public class AttackUnitScript : Robot
     [SerializeField] private float currentTimeToFire;
 
 
-    private void Awake() {
+    private void Awake()
+    {
         animator = GetComponent<Animator>();
     }
 
-    public override void InitItems() {
+    public override void InitItems()
+    {
         bulletProperties = UnityEngine.Resources.Load<Bullet>(fileNameOfBullet);
         agent = GetComponent<NavMeshAgent>();
 
-        if (bulletProperties != null) {
+        if (bulletProperties != null)
+        {
             bulletPrefab = bulletProperties.bulletPrefab;
         }
 
-        if (attackUnitProperties != null) {
+        if (attackUnitProperties != null)
+        {
             life = attackUnitProperties.life;
             speedMovement = attackUnitProperties.speedMovement;
             attakDistance = attackUnitProperties.attackDistace;
@@ -56,20 +61,25 @@ public class AttackUnitScript : Robot
         }
     }
 
-    public override void Action(Vector3 target, GameObject targetObject = null) {
+    public override void Action(Vector3 target, GameObject targetObject = null)
+    {
         print($"Hit: {targetObject.tag}");
-        if (targetObject.CompareTag("Mages")) {
+        if (targetObject.CompareTag("Mages"))
+        {
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
         }
-        else if (targetObject.CompareTag("Ground")) {
+        else if (targetObject.CompareTag("Ground"))
+        {
             agent.stoppingDistance = 0.0f;
             currentTarget = null;
             MoveTo(target);
         }
     }
 
-    private void Update() {
+    private void Update()
+    {
+        GetEnemyDistance();
         var speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
         animator.SetFloat("Speed", speed);
         if (speed < 0.1f && currentTarget != null)
@@ -82,11 +92,12 @@ public class AttackUnitScript : Robot
                 if (hit.collider.CompareTag("Mages"))
                 {
                     // transform.LookAt(currentTarget.transform);
-                    var lookRotation = LookTarget();
+                    LookTarget();
                     currentTimeToFire += Time.deltaTime;
 
-                    if (currentTimeToFire > firerateAttack) {
-                        if(attackWithAnimation)
+                    if (currentTimeToFire > firerateAttack)
+                    {
+                        if (attackWithAnimation)
                             animator.SetTrigger("Attacking");
                         else BulletInstantiate();
                         currentTimeToFire = 0.0f;
@@ -94,7 +105,8 @@ public class AttackUnitScript : Robot
                 }
             }
         }
-        else if (currentTarget != null && currentTarget.CompareTag("Mages")) {
+        else if (currentTarget != null && currentTarget.CompareTag("Mages"))
+        {
             MoveTo(currentTarget.transform.position);
         }
     }
@@ -113,17 +125,33 @@ public class AttackUnitScript : Robot
             bullet.transform.forward = spawnBulletPosition[0].forward;
         }
     }
-    
-    private bool WithinReach() {
+
+    private bool WithinReach()
+    {
         bool isTrue = Vector3.Distance(transform.position, agent.destination) <= attakDistance;
         return isTrue;
     }
 
-    private Quaternion LookTarget() {
+    private Quaternion LookTarget()
+    {
         Vector3 direction = (currentTarget.transform.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turningSpeed);
 
         return lookRotation;
+    }
+
+    public void GetEnemyDistance()
+    {
+        if (currentTarget == null)
+        {
+            GameController.Instance.Enemies.ForEach(u =>
+            {
+                if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
+                {
+                    currentTarget = u;
+                }
+            });
+        }
     }
 }

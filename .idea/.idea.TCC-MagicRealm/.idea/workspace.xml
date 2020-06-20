@@ -20,28 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/.idea.TCC-MagicRealm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Golem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Golem.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Resources/Resource_TreeBig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Resources/Resource_TreeBig.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/Mage.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/Mage.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +35,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" />
@@ -71,6 +66,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/IMission.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" />
       </list>
     </option>
   </component>
@@ -125,7 +130,9 @@
       <workItem from="1592240571995" duration="237000" />
       <workItem from="1592255376725" duration="7085000" />
       <workItem from="1592337757069" duration="4512000" />
-      <workItem from="1592427230373" duration="2144000" />
+      <workItem from="1592427230373" duration="3522000" />
+      <workItem from="1592592666354" duration="642000" />
+      <workItem from="1592595578650" duration="7769000" />
     </task>
     <servers />
   </component>
@@ -154,17 +161,29 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="536" y="170" key="#Inspection_severity/0.0.1920.1050@0.0.1920.1050" timestamp="1592240438314" />
+    <state x="794" y="226" key="RiderGenerateDialog" timestamp="1592612229333">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="226" key="RiderGenerateDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592612229333" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1592240803637">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1592240803637" />
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1592239714085">
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1592438275109">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592239714085" />
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592438275109" />
     <state x="733" y="399" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1592239678283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="733" y="399" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592239678283" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1592612078507">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592612090471">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612090471" />
   </component>
 </project>

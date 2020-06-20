@@ -20,4 +20,4 @@ MonoBehaviour:
   distanceSeek: 4.5
   distanceAttack: 2
   stopDistance: 0.2
-  Speed: 2
+  Speed: 1.5
