@@ -17,5 +17,5 @@ MonoBehaviour:
   missionType: 0
   resourceType: 0
   amountOfResources: 100
-  destroyType: 0
+  destroyType: 1
   amountToDestroyed: 4

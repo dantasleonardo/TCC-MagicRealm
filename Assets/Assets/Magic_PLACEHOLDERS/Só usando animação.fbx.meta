@@ -1,27 +1,12 @@
 fileFormatVersion: 2
-guid: 23f982d35bb8e544a8875dec60cdd2ce
+guid: 920544bbc6d30694d8971cffa72c36ed
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -5494425853405598632
     second: Lamp_Armature|ArmatureAction
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Emission_source
-    second: {fileID: 2100000, guid: 8b378df7308ebd448978a3ad8d860380, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass
-    second: {fileID: 2100000, guid: f6f26fcff52c35b48a05861ece48a634, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Light_Socket
-    second: {fileID: 2100000, guid: c2e2151882ce19b42b633cba8a4a9068, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -54,7 +39,7 @@ ModelImporter:
       takeName: Lamp_Armature|ArmatureAction
       internalID: 0
       firstFrame: 0
-      lastFrame: 150
+      lastFrame: 152
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
