@@ -116,13 +116,20 @@
           </e>
           <e p="ItemCreation.cs" t="Include" />
           <e p="LoadingScene.cs" t="Include" />
+          <e p="LocalizationSystem" t="Include">
+            <e p="LanguageKey.cs" t="Include" />
+            <e p="LocalizationButton.cs" t="Include" />
+            <e p="LocalizationDropdown.cs" t="Include" />
+            <e p="LocalizationManager.cs" t="Include" />
+            <e p="LocalizationText.cs" t="Include" />
+            <e p="LocalizationTextMeshPro.cs" t="Include" />
+          </e>
           <e p="Magic" t="Include">
             <e p="MagicCastle.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
             <e p="GameController.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
-            <e p="MissionManager.cs" t="Include" />
             <e p="ObjectivesManager.cs" t="Include" />
           </e>
           <e p="Menu" t="Include">
@@ -134,6 +141,7 @@
           </e>
           <e p="MissionScripts" t="Include">
             <e p="CollectingMission.cs" t="Include" />
+            <e p="MissionManager.cs" t="Include" />
             <e p="MissionsDirector.cs" t="Include" />
             <e p="MissionToDestroy.cs" t="Include" />
           </e>

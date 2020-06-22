@@ -23,8 +23,10 @@ MonoBehaviour:
   turningSpeed: 2
   RobotType: 1
   unitIcon: {fileID: 21300000, guid: 60b5eb5712b588a47842d1f0e61cb558, type: 3}
-  nameItemShop: Gatherer
-  itemDescription: "Respons\xE1vel por coletar os recursos"
+  nameItemShopEn: Collector
+  nameItemShopPt: Coletor
+  itemDescriptionEn: Collect Resources in map.
+  itemDescriptionPt: Coleta Recursos no mapa.
   woodCost: 10
   stoneCost: 5
   currentTimeToCreate: 0

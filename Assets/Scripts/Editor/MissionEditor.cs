@@ -9,7 +9,8 @@ public class MissionEditor : Editor
     {
         var mission = (Mission) target;
         mission.title = EditorGUILayout.TextField("Title", mission.title);
-        mission.textUI = EditorGUILayout.TextField("Text in UI", mission.textUI);
+        mission.textUI_En = EditorGUILayout.TextField("Text in UI in English", mission.textUI_En);
+        mission.textUI_Pt = EditorGUILayout.TextField("Text in UI in Portuguese", mission.textUI_Pt);
         mission.missionType = (MissionType) EditorGUILayout.EnumPopup("Mission Type", mission.missionType);
         switch (mission.missionType)
         {

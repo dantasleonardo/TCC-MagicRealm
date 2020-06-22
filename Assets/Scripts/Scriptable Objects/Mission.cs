@@ -4,7 +4,8 @@
 public class Mission : ScriptableObject
 {
     public string title;
-    public string textUI;
+    public string textUI_En;
+    public string textUI_Pt;
     public MissionType missionType;
 
     //Collect Type
