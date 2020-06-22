@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 1074924517}
   - component: {fileID: 1074924516}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
