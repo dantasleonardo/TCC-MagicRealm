@@ -2,6 +2,7 @@
 using System.Linq;
 using MissionScripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MissionManager : MonoBehaviour
 {
@@ -63,5 +64,13 @@ public class MissionManager : MonoBehaviour
     {
         Debug.Log("Won The Game ");
         GetComponent<MissionsDirector>().PlayWinLoseCutscene($"You Win!");
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "ProgrammingScene":
+                var user = SaveSystem.SaveSystem.Load();
+                user.levelsCompleted[0] = true;
+                SaveSystem.SaveSystem.Save(user);
+                break;
+        }
     }
 }

@@ -25,13 +25,18 @@ namespace LocalizationSystem
 
         private void ChangeLanguage(int value)
         {
+            var user = SaveSystem.SaveSystem.Load();
             switch (value)
             {
                 case 0:
                     LocalizationManager.instance.SetLanguageKey(LanguageKey.Portuguese);
+                    user.languageKey = LanguageKey.Portuguese;
+                    SaveSystem.SaveSystem.Save(user);
                     break;
                 case 1:
                     LocalizationManager.instance.SetLanguageKey(LanguageKey.English);
+                    user.languageKey = LanguageKey.English;
+                    SaveSystem.SaveSystem.Save(user);
                     break;
             }
         }

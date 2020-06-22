@@ -32,7 +32,7 @@ public class MagicCastle : IEnemy
 
     private void Update()
     {
-        if (GameController.Instance.Enemies.Count < 4)
+        if (GameController.Instance.enemies.Count < 4)
         {
             currentTime += Time.deltaTime;
             if (currentTime > ermegencySpawnTime)
@@ -41,7 +41,7 @@ public class MagicCastle : IEnemy
                 currentTime = 0.0f;
             }
         }
-        else if (GameController.Instance.Enemies.Count > 3 && GameController.Instance.Enemies.Count < 8)
+        else if (GameController.Instance.enemies.Count > 3 && GameController.Instance.enemies.Count < 8)
         {
             currentTime += Time.deltaTime;
             if (currentTime > timeSpawn)

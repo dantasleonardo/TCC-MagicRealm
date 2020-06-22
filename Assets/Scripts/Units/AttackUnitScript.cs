@@ -145,7 +145,7 @@ public class AttackUnitScript : Robot
     {
         if (currentTarget == null)
         {
-            GameController.Instance.Enemies.ForEach(u =>
+            GameController.Instance.enemies.ForEach(u =>
             {
                 if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
                 {

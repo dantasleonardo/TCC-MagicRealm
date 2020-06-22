@@ -15,6 +15,9 @@ namespace LocalizationSystem
             else Destroy(this.gameObject);
             
             DontDestroyOnLoad(this.gameObject);
+
+            if (SaveSystem.SaveSystem.Load() != null)
+                languageKey = SaveSystem.SaveSystem.Load().languageKey;
         }
 
         #endregion

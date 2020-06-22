@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
         else
             Destroy(gameObject);
 
-        audioSource.volume = GameManager.Instance.volume;
+        AudioListener.volume = GameManager.instance.volume;
     }
 
     #endregion
@@ -33,14 +33,12 @@ public class GameController : MonoBehaviour
     public GameObject itemLoadingPrefab;
     public Transform itemLoadingParent;
 
-    [Header("Manager")] public List<GameObject> Enemies = new List<GameObject>();
+    [Header("Manager")] public List<GameObject> enemies = new List<GameObject>();
     public int stonesCollected;
     public int woodCollected;
     public int crystalsDestroyed;
     public RobotsCastle robotsCastle;
     public MagicCastle magicCastle;
-
-    [Header("Music")] public AudioSource audioSource;
 
 
     private void Start()

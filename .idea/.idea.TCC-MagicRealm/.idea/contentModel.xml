@@ -133,7 +133,10 @@
           </e>
           <e p="Menu" t="Include">
             <e p="BlinkUI.cs" t="Include" />
+            <e p="ContinuePanel.cs" t="Include" />
             <e p="Credits.cs" t="Include" />
+            <e p="GoToLevel.cs" t="Include" />
+            <e p="MainMenuManager.cs" t="Include" />
             <e p="Menu.cs" t="Include" />
             <e p="MenuAnimation.cs" t="Include" />
             <e p="SimpleAnimationX.cs" t="Include" />

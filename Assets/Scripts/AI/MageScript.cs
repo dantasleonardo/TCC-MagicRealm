@@ -45,7 +45,7 @@ public class MageScript : IEnemy {
         animator.SetFloat("Speed", speed);
 
         if(life <= 0 && fillAmount <= 0.0f) {
-            GameController.Instance.Enemies.Remove(this.gameObject);
+            GameController.Instance.enemies.Remove(this.gameObject);
             Destroy(this.gameObject);
         }
     }
@@ -59,7 +59,7 @@ public class MageScript : IEnemy {
     void Start() {
         life = properties.totalLife;
         lifeBar.totalValue = life;
-        GameController.Instance.Enemies.Add(this.gameObject);
+        GameController.Instance.enemies.Add(this.gameObject);
         GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance, properties.Speed);
     }
 }
