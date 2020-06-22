@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 588febfe2d6275c41a6e6c3125a63544, type: 3}
-  m_Name: CollectWoods
+  m_Name: Destruir Cristais
   m_EditorClassIdentifier: 
-  title: Collect Woods
-  textUI_En: Collect Woods
-  textUI_Pt: Coletar madeiras
+  title: Collect Woods 100
+  textUI: Collect Woods
   missionType: 0
   resourceType: 0
   amountOfResources: 100
-  destroyType: 0
-  amountToDestroyed: 0
+  destroyType: 1
+  amountToDestroyed: 4
