@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7217,13 +7217,12 @@ MonoBehaviour:
   itemLoadingPrefab: {fileID: 1924639685025526396, guid: 3330fa51a1c023547bd5bad2f7c54129,
     type: 3}
   itemLoadingParent: {fileID: 1110456985}
-  Enemies: []
+  enemies: []
   stonesCollected: 0
   woodCollected: 0
   crystalsDestroyed: 0
   robotsCastle: {fileID: 1454259371}
   magicCastle: {fileID: 1167373322}
-  audioSource: {fileID: 79032608}
 --- !u!4 &852292050
 Transform:
   m_ObjectHideFlags: 0
@@ -18096,7 +18095,7 @@ PrefabInstance:
     - target: {fileID: 2937913243304607546, guid: d0d6718b531efb4468248476c0ddb92a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 2937913243304607546, guid: d0d6718b531efb4468248476c0ddb92a,
         type: 3}
@@ -18106,7 +18105,7 @@ PrefabInstance:
     - target: {fileID: 2937913243304607546, guid: d0d6718b531efb4468248476c0ddb92a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.43
+      value: -11.59
       objectReference: {fileID: 0}
     - target: {fileID: 2937913243304607546, guid: d0d6718b531efb4468248476c0ddb92a,
         type: 3}
