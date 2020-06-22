@@ -1,32 +1,30 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using LocalizationSystem;
-using Unity.Collections.LowLevel.Unsafe;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LocalizationButton : MonoBehaviour
+namespace LocalizationSystem
 {
-    [SerializeField] private LanguageKey languageKey;
-
-    private void Start()
+    public class LocalizationButton : MonoBehaviour
     {
-        var button = GetComponent<Button>();
-        button.onClick.AddListener(SetGameLanguage);
-    }
+        [SerializeField] private LanguageKey languageKey;
 
-    private void SetGameLanguage()
-    {
-        LocalizationManager.instance.SetLanguageKey(languageKey);
-        Debug.Log($"Language seted to: {languageKey}");
+        private void Start()
+        {
+            var button = GetComponent<Button>();
+            button.onClick.AddListener(SetGameLanguage);
+        }
+
+        private void SetGameLanguage()
+        {
+            LocalizationManager.instance.SetLanguageKey(languageKey);
+            Debug.Log($"Language seted to: {languageKey}");
         
-        Invoke("GoToScene", 1.0f);
-    }
+            Invoke(nameof(GoToScene), 0.1f);
+        }
 
-    private void GoToScene()
-    {
-        SceneManager.LoadScene("ProgrammingScene");
+        private void GoToScene()
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }

@@ -22,26 +22,16 @@
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destroy Castle.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destroy Castle.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destroy Crystals.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destroy Crystals.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destruir Cristais.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Missions/Destruir Cristais.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/Gatherer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/Gatherer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Others/StartTransition.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Others/StartTransition.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Missions/CollectWoods.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Missions/CollectWoods.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SetLanguageScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SetLanguageScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,14 +51,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/SaveSystem/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PressStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -109,7 +104,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" />
@@ -118,6 +112,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/UserSaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PressStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionManager.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +179,8 @@
       <workItem from="1592657279721" duration="8092000" />
       <workItem from="1592771532841" duration="1931000" />
       <workItem from="1592791406858" duration="1477000" />
-      <workItem from="1592826462927" duration="4881000" />
+      <workItem from="1592826462927" duration="7411000" />
+      <workItem from="1592837159969" duration="1808000" />
     </task>
     <servers />
   </component>
@@ -227,9 +229,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592612090471">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592836543181">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612090471" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592836543181" />
   </component>
 </project>

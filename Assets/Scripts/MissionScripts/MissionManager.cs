@@ -50,7 +50,6 @@ public class MissionManager : MonoBehaviour
     private int GetMissionsCompleted()
     {
         var list = missionsInScene.Where(m => m.GetComponent<IMission>().MissionCompleted()).ToList();
-        Debug.Log($"list {list.Count}");
         return list.Count;
     }
 

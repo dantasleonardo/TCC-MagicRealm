@@ -23,24 +23,23 @@ public class LoadingScene : MonoBehaviour {
     public void StartTransition() {
         transition.SetBool("Start", true);
     }
-    public void LoadScene(int index) {
+    public void LoadScene(string scene) {
         if (withTime)
-            StartCoroutine(loadSceneAsync(index));
+            StartCoroutine(loadSceneAsync(scene));
         else
-            StartCoroutine(loadSceneAsyncExtraTime(index));
+            StartCoroutine(loadSceneAsyncExtraTime(scene));
 
     }
 
-    IEnumerator loadSceneAsync(int index) {
+    IEnumerator loadSceneAsync(string scene) {
         yield return new WaitForSeconds(waitTime);
-        StartCoroutine(loadSceneAsyncExtraTime(index));
+        StartCoroutine(loadSceneAsyncExtraTime(scene));
     }
 
-    IEnumerator loadSceneAsyncExtraTime(int index) {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index);
+    IEnumerator loadSceneAsyncExtraTime(string scene) {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
         while (!asyncLoad.isDone) {
             time += Time.deltaTime;
-            Debug.Log(asyncLoad.progress);
             yield return null;
         }
         transition.SetBool("Start", false);
