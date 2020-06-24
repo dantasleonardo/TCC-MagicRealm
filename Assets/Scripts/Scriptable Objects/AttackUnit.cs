@@ -20,9 +20,12 @@ public class AttackUnit : ScriptableObject
 
     [Header("Item Store")] 
     public Sprite unitIcon;
-    public string nameItemShop;
+    public string nameItemShopEn;
+    public string nameItemShopPt;
     [TextArea]
-    public string itemDescription;
+    public string itemDescriptionEn;
+    [TextArea]
+    public string itemDescriptionPt;
 
     public int woodCost;
     public int stoneCost;

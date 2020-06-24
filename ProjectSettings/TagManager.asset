@@ -12,6 +12,7 @@ TagManager:
   - Mages
   - Attack
   - baseGolem
+  - Text
   layers:
   - Default
   - TransparentFX

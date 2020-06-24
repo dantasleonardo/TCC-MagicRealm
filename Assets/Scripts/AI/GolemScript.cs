@@ -21,7 +21,7 @@ public class GolemScript : IEnemy
     {
         life = properties.totalLife;
         lifeBar.totalValue = life;
-        GameController.Instance.Enemies.Add(this.gameObject);
+        GameController.Instance.enemies.Add(this.gameObject);
         GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance,
             0.0f);
     }
@@ -32,7 +32,7 @@ public class GolemScript : IEnemy
         animator.SetFloat("Speed", speed);
 
         if(life <= 0 && fillAmount <= 0.0f) {
-            GameController.Instance.Enemies.Remove(this.gameObject);
+            GameController.Instance.enemies.Remove(this.gameObject);
             Destroy(this.gameObject);
         }
         

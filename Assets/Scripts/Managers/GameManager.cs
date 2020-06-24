@@ -6,14 +6,14 @@ public class GameManager : MonoBehaviour
 {
     public bool startedKeyPressed;
 
-    public static GameManager Instance;
+    public static GameManager instance;
     public float volume;
 
     private void Awake()
     {
-        if(Instance == null)
+        if(instance == null)
         {
-            Instance = this;
+            instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
         else

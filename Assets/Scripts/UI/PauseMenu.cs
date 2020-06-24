@@ -27,7 +27,16 @@ public class PauseMenu : MonoBehaviour
     }
 
     private void Start() {
-        slider.value = GameManager.Instance.volume; 
+        var volumeUser = SaveSystem.SaveSystem.Load().volume;
+        slider.onValueChanged.AddListener(value =>
+        {
+            var user = SaveSystem.SaveSystem.Load();
+            user.volume = value;
+            SaveSystem.SaveSystem.Save(user);
+        });
+        GameManager.instance.volume = volumeUser;
+        slider.value = volumeUser;
+        AudioListener.volume = volumeUser;
     }
 
     void Update()
@@ -36,8 +45,8 @@ public class PauseMenu : MonoBehaviour
         {
             Paused();
         }
-        GameManager.Instance.volume = slider.value;
-        GameController.Instance.audioSource.volume = GameManager.Instance.volume;
+        GameManager.instance.volume = slider.value;
+        AudioListener.volume = GameManager.instance.volume;
     }
 
     public void Resume()

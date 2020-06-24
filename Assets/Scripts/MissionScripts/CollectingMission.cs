@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Net.Configuration;
+using LocalizationSystem;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace MissionScripts
@@ -13,7 +15,7 @@ namespace MissionScripts
         {
             properties = mission;
             missionText = GetComponent<Text>();
-            missionText.text = $"{properties.textUI} {count}/{properties.amountOfResources}";
+            missionText.text = SetLanguageText(properties.resourceType);
         }
 
         [SerializeField]
@@ -31,16 +33,57 @@ namespace MissionScripts
 
             if (count >= properties.amountOfResources)
             {
-                missionText.text = $"{properties.textUI} {properties.amountOfResources}/{properties.amountOfResources}";
+                missionText.text = SetLanguageText(properties.resourceType);
                 missionText.color = Color.gray;
             }
             else
             {
-                missionText.text = $"{properties.textUI} {count}/{properties.amountOfResources}";
+                missionText.text = SetLanguageText(properties.resourceType);
                 missionText.color = Color.white;
             }
 
             return count >= properties.amountOfResources;
+        }
+
+        private string SetLanguageText(ResourceType resourceType)
+        {
+            switch (resourceType)
+            {
+                case ResourceType.Stone:
+                    switch (LocalizationManager.instance.GetLanguageKey())
+                    {
+                        case LanguageKey.English:
+                            var textEnglish = count >= properties.amountOfResources
+                                ? $"{properties.textUI_En} {properties.amountOfResources}/{properties.amountOfResources}"
+                                : $"{properties.textUI_En} {GameController.Instance.stonesCollected}/{properties.amountOfResources}";
+                            return textEnglish;
+                        case LanguageKey.Portuguese:
+                            var textPortuguese = count >= properties.amountOfResources
+                                ? $"{properties.textUI_Pt} {properties.amountOfResources}/{properties.amountOfResources}"
+                                : $"{properties.textUI_Pt} {GameController.Instance.stonesCollected}/{properties.amountOfResources}";
+                            return textPortuguese;
+                    }
+
+                    break;
+                case ResourceType.Wood:
+                    switch (LocalizationManager.instance.GetLanguageKey())
+                    {
+                        case LanguageKey.English:
+                            var textEnglish = count >= properties.amountOfResources
+                                ? $"{properties.textUI_En} {properties.amountOfResources}/{properties.amountOfResources}"
+                                : $"{properties.textUI_En} {GameController.Instance.woodCollected}/{properties.amountOfResources}";
+                            return textEnglish;
+                        case LanguageKey.Portuguese:
+                            var textPortuguese = count >= properties.amountOfResources
+                                ? $"{properties.textUI_Pt} {properties.amountOfResources}/{properties.amountOfResources}"
+                                : $"{properties.textUI_Pt} {GameController.Instance.woodCollected}/{properties.amountOfResources}";
+                            return textPortuguese;
+                    }
+
+                    break;
+            }
+
+            return " ";
         }
     }
 }

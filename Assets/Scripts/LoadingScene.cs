@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScene : MonoBehaviour {
     public static LoadingScene Instance;
+    public string scene;
 
     private void Awake() {
         if (Instance == null)
@@ -23,24 +24,23 @@ public class LoadingScene : MonoBehaviour {
     public void StartTransition() {
         transition.SetBool("Start", true);
     }
-    public void LoadScene(int index) {
+    public void LoadScene() {
         if (withTime)
-            StartCoroutine(loadSceneAsync(index));
+            StartCoroutine(LoadSceneAsync());
         else
-            StartCoroutine(loadSceneAsyncExtraTime(index));
+            StartCoroutine(LoadSceneAsyncExtraTime());
 
     }
 
-    IEnumerator loadSceneAsync(int index) {
+    IEnumerator LoadSceneAsync() {
         yield return new WaitForSeconds(waitTime);
-        StartCoroutine(loadSceneAsyncExtraTime(index));
+        StartCoroutine(LoadSceneAsyncExtraTime());
     }
 
-    IEnumerator loadSceneAsyncExtraTime(int index) {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index);
+    IEnumerator LoadSceneAsyncExtraTime() {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
         while (!asyncLoad.isDone) {
             time += Time.deltaTime;
-            Debug.Log(asyncLoad.progress);
             yield return null;
         }
         transition.SetBool("Start", false);

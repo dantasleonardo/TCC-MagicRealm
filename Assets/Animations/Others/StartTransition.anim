@@ -179,7 +179,7 @@ AnimationClip:
   m_Events:
   - time: 0.5
     functionName: LoadScene
-    data: 
+    data: ProgrammingScene
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 2

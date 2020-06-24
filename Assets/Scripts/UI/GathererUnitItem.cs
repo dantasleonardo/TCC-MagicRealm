@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using LocalizationSystem;
+using TMPro;
 
 public class GathererUnitItem : ItemStore {
     public GathererUnit unitProperties;
@@ -16,10 +17,8 @@ public class GathererUnitItem : ItemStore {
         itemCreation.rockCost = unitProperties.stoneCost;
         itemCreation.woodCost = unitProperties.woodCost;
         itemCreation.robotType = unitProperties.RobotType;
-        descriptionUnit.text = unitProperties.itemDescription;
         woodText.text = unitProperties.woodCost.ToString();
         stoneText.text = unitProperties.stoneCost.ToString();
-        nameUnitText.text = unitProperties.nameUnit;
     }
 
     public override void BuyItem() {
@@ -33,6 +32,7 @@ public class GathererUnitItem : ItemStore {
     }
 
     private void Update() {
+        UpdateTextUi();
         var resources = GameController.Instance.resources;
         if (resources[ResourceType.Stone] >= unitProperties.stoneCost &&
             resources[ResourceType.Wood] >= unitProperties.woodCost)
@@ -40,5 +40,20 @@ public class GathererUnitItem : ItemStore {
         else
             buttonStoreItem.buttonItem.interactable = false;
 
+    }
+    
+    private void UpdateTextUi()
+    {
+        switch (LocalizationManager.instance.GetLanguageKey())
+        {
+            case LanguageKey.English:
+                descriptionUnit.text = unitProperties.itemDescriptionEn;
+                nameUnitText.text = unitProperties.nameItemShopEn;
+                break;
+            case LanguageKey.Portuguese:
+                descriptionUnit.text = unitProperties.itemDescriptionPt;
+                nameUnitText.text = unitProperties.nameItemShopPt;
+                break;
+        }
     }
 }

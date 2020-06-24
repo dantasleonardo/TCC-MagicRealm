@@ -16,7 +16,7 @@ public class MenuAnimation : MonoBehaviour
 
     private void Start()
     {
-        if (GameManager.Instance.startedKeyPressed)
+        if (GameManager.instance.startedKeyPressed)
         {
             pressAnyKey.SetActive(false);
             keyIsPressed = true;
@@ -31,7 +31,7 @@ public class MenuAnimation : MonoBehaviour
             pressAnyKey.SetActive(false);
             keyIsPressed = true;
             menuAnimation.SetBool("KeyPressed", keyIsPressed);
-            GameManager.Instance.startedKeyPressed = true;
+            GameManager.instance.startedKeyPressed = true;
         }
     }
     

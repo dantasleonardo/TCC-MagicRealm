@@ -23,8 +23,10 @@ MonoBehaviour:
   fileNameOfBullet: CannonBallLevel1
   RobotType: 0
   unitIcon: {fileID: 21300000, guid: ee05eccf84334b4478c536b46d4cda2a, type: 3}
-  nameItemShop: Cannon Robot
-  itemDescription: "Rob\xF4 de ataque, que atira bolas de canh\xF5es"
+  nameItemShopEn: Cannon
+  nameItemShopPt: "Boca de canh\xE3o"
+  itemDescriptionEn: Attack enemies.
+  itemDescriptionPt: Ataca os inimigos.
   woodCost: 5
   stoneCost: 10
   currentTimeToCreate: 0

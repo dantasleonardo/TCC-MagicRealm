@@ -1,4 +1,5 @@
-﻿using MissionScripts;
+﻿using LocalizationSystem;
+using MissionScripts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,13 +25,12 @@ public class MissionToDestroy : MonoBehaviour, IMission
                 count = GameController.Instance.crystalsDestroyed;
                 if (count >= properties.amountToDestroyed)
                 {
-                    missionText.text =
-                        $"{properties.textUI} {properties.amountToDestroyed}/{properties.amountToDestroyed}";
+                    missionText.text = SetLanguageText(DestroyType.Crystals);
                     missionText.color = Color.gray;
                 }
                 else
                 {
-                    missionText.text = $"{properties.textUI} {count}/{properties.amountToDestroyed}";
+                    missionText.text = SetLanguageText(DestroyType.Crystals);
                     missionText.color = Color.white;
                 }
 
@@ -38,12 +38,12 @@ public class MissionToDestroy : MonoBehaviour, IMission
             case DestroyType.Base:
                 if (GameController.Instance.magicCastle.life < 1)
                 {
-                    missionText.text = $"{properties.textUI}";
+                    missionText.text = SetLanguageText(DestroyType.Base);
                     missionText.color = Color.gray;
                 }
                 else
                 {
-                    missionText.text = $"{properties.textUI}";
+                    missionText.text = SetLanguageText(DestroyType.Base);
                     missionText.color = Color.white;
                 }
 
@@ -51,5 +51,40 @@ public class MissionToDestroy : MonoBehaviour, IMission
         }
 
         return false;
+    }
+
+    private string SetLanguageText(DestroyType destroyType)
+    {
+        switch (destroyType)
+        {
+            case DestroyType.Crystals:
+                switch (LocalizationManager.instance.GetLanguageKey())
+                {
+                    case LanguageKey.English:
+                        var textEnglish = count >= properties.amountToDestroyed
+                            ? $"{properties.textUI_En} {properties.amountToDestroyed}/{properties.amountToDestroyed}"
+                            : $"{properties.textUI_En} {GameController.Instance.crystalsDestroyed}/{properties.amountToDestroyed}";
+                        return textEnglish;
+                    case LanguageKey.Portuguese:
+                        var textPortuguese = count >= properties.amountToDestroyed
+                            ? $"{properties.textUI_Pt} {properties.amountToDestroyed}/{properties.amountToDestroyed}"
+                            : $"{properties.textUI_Pt} {GameController.Instance.crystalsDestroyed}/{properties.amountToDestroyed}";
+                        return textPortuguese;
+                }
+
+                break;
+            case DestroyType.Base:
+                switch (LocalizationManager.instance.GetLanguageKey())
+                {
+                    case LanguageKey.English:
+                        return missionText.text = $"{properties.textUI_En}";
+                    case LanguageKey.Portuguese:
+                        return missionText.text = $"{properties.textUI_Pt}";
+                }
+
+                break;
+        }
+
+        return " ";
     }
 }
