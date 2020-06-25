@@ -16,7 +16,6 @@ namespace LocalizationSystem
                 textInHud = GetComponent<Text>();
                 UpdateText();
             }
-            
         }
 
         private void OnEnable()

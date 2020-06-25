@@ -50,7 +50,7 @@ public class Robot : UnitScript, IUnit
             var emission = dustParticle.emission;
             emission.rateOverTime = 0.0f;
         }
-        
+
         float fillAmount = lifeBar.foregroundBar.fillAmount;
 
         if (life <= 0 && fillAmount <= 0.0f)

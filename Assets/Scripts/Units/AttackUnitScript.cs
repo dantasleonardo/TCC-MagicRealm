@@ -1,5 +1,4 @@
-﻿using System.Net.Configuration;
-using Magic;
+﻿using Magic;
 using UnityEngine;
 using UnityEngine.AI;
 

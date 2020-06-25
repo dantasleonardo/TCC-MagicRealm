@@ -21,11 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Cannon_Robot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Cannon_Robot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,10 +165,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
       </list>
     </option>
   </component>
