@@ -41,6 +41,13 @@ public class BulletScript : MonoBehaviour
             var enemy = other.gameObject.GetComponent<IEnemy>();
             DamageInEnemy(enemy);
         }
+
+        if (other.CompareTag("Crystal"))
+        {
+            var target = other.gameObject.GetComponent<IUnit>();
+            target.TakeDamage(damage);
+            Destroy(this.gameObject);
+        }
         if (other.CompareTag("Unit") || other.CompareTag("Attack")) return;
             Destroy(this.gameObject);
     }

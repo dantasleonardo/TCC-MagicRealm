@@ -27,13 +27,15 @@ public class MissionToDestroy : MonoBehaviour, IMission
                 {
                     missionText.text = SetLanguageText(DestroyType.Crystals);
                     missionText.color = Color.gray;
+                    var dome = GameObject.FindWithTag("Dome");
+                    if(dome != null)
+                        dome.GetComponent<Dome>().DestroyDome();
                 }
                 else
                 {
                     missionText.text = SetLanguageText(DestroyType.Crystals);
                     missionText.color = Color.white;
                 }
-
                 return count >= properties.amountToDestroyed;
             case DestroyType.Base:
                 if (GameController.Instance.magicCastle.life < 1)

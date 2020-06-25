@@ -124,6 +124,10 @@
             <e p="LocalizationTextMeshPro.cs" t="Include" />
           </e>
           <e p="Magic" t="Include">
+            <e p="CastleCrystal.cs" t="Include" />
+            <e p="Crystal.cs" t="Include" />
+            <e p="Dome.cs" t="Include" />
+            <e p="GetCurrentRotation.cs" t="Include" />
             <e p="MagicCastle.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">

@@ -37,6 +37,8 @@ public class Robot : UnitScript, IUnit {
 
         if (life <= 0 && fillAmount <= 0.0f) {
             UnitController.Instance.units.Remove(this);
+            if(GetComponent<AttackUnitScript>() != null)
+                GameController.Instance.attackUnits.Remove(gameObject);
             Destroy(this.gameObject);
         }
     }

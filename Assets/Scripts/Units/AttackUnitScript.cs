@@ -1,4 +1,5 @@
 ﻿using System;
+using Magic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -59,15 +60,18 @@ public class AttackUnitScript : Robot
             firerateAttack = attackUnitProperties.firerateAttack;
             lifeBar.totalValue = life;
         }
+
+        GameController.Instance.attackUnits.Add(gameObject);
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null)
     {
         print($"Hit: {targetObject.tag}");
-        if (targetObject.CompareTag("Mages"))
+        if (targetObject.CompareTag("Mages") || targetObject.CompareTag("Crystal"))
         {
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
+            MoveTo(target);
         }
         else if (targetObject.CompareTag("Ground"))
         {
@@ -84,12 +88,18 @@ public class AttackUnitScript : Robot
         animator.SetFloat("Speed", speed);
         if (speed < 0.1f && currentTarget != null)
         {
+            if (currentTarget.CompareTag("Crystal"))
+            {
+                currentTarget = currentTarget.GetComponent<Crystal>().GetCurrentDurability() ? currentTarget : null;
+                if(currentTarget == null)
+                    return;
+            }
             RaycastHit hit;
             LookTarget();
             var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
-            if (Physics.Raycast(position, transform.forward, out hit, 50.0f))
+            if (Physics.Raycast(position, transform.forward, out hit, attackUnitProperties.attackDistace + 0.5f))
             {
-                if (hit.collider.CompareTag("Mages"))
+                if (hit.collider.CompareTag("Mages") || hit.collider.CompareTag("Crystal"))
                 {
                     // transform.LookAt(currentTarget.transform);
                     LookTarget();
@@ -105,9 +115,10 @@ public class AttackUnitScript : Robot
                 }
             }
         }
-        else if (currentTarget != null && currentTarget.CompareTag("Mages"))
+        else if (currentTarget != null && (currentTarget.CompareTag("Mages") || currentTarget.CompareTag("Crystal")))
         {
             MoveTo(currentTarget.transform.position);
+            agent.stoppingDistance = attackUnitProperties.attackDistace;
         }
     }
 
