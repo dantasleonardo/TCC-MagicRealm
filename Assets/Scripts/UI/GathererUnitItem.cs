@@ -1,7 +1,8 @@
 ﻿using LocalizationSystem;
 using TMPro;
 
-public class GathererUnitItem : ItemStore {
+public class GathererUnitItem : ItemStore
+{
     public GathererUnit unitProperties;
     private ItemCreation itemCreation = new ItemCreation();
     public ButtonStoreItem buttonStoreItem;
@@ -10,7 +11,8 @@ public class GathererUnitItem : ItemStore {
     public TextMeshProUGUI woodText;
     public TextMeshProUGUI stoneText;
 
-    public override void Init() {
+    public override void Init()
+    {
         itemImage.sprite = unitProperties.unitIcon;
         itemCreation.timeToCreate = unitProperties.timeToCreate;
         itemCreation.prefab = unitProperties.unitPrefab;
@@ -21,8 +23,10 @@ public class GathererUnitItem : ItemStore {
         stoneText.text = unitProperties.stoneCost.ToString();
     }
 
-    public override void BuyItem() {
-        if (GameController.Instance.stackCreation.Count < 10) {
+    public override void BuyItem()
+    {
+        if (GameController.Instance.stackCreation.Count < 10)
+        {
             GameController.Instance.resources[ResourceType.Stone] -= unitProperties.stoneCost;
             GameController.Instance.resources[ResourceType.Wood] -= unitProperties.woodCost;
 
@@ -31,7 +35,8 @@ public class GathererUnitItem : ItemStore {
         }
     }
 
-    private void Update() {
+    private void Update()
+    {
         UpdateTextUi();
         var resources = GameController.Instance.resources;
         if (resources[ResourceType.Stone] >= unitProperties.stoneCost &&
@@ -39,9 +44,8 @@ public class GathererUnitItem : ItemStore {
             buttonStoreItem.buttonItem.interactable = true;
         else
             buttonStoreItem.buttonItem.interactable = false;
-
     }
-    
+
     private void UpdateTextUi()
     {
         switch (LocalizationManager.instance.GetLanguageKey())

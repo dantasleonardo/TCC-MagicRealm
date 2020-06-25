@@ -7,6 +7,7 @@ namespace Magic
         [SerializeField] private int durability = 200;
         [SerializeField] private GameObject mainCrystal;
         [SerializeField] private GameObject brokenCrystal;
+        [SerializeField] private bool isDestroyed;
 
 
         public void TakeDamage(int damage)
@@ -16,8 +17,13 @@ namespace Magic
             {
                 brokenCrystal.SetActive(true);
                 mainCrystal.SetActive(false);
-                GameController.Instance.crystalsDestroyed += 1;
+                if (!isDestroyed)
+                {
+                    isDestroyed = true;
+                    GameController.Instance.crystalsDestroyed += 1;
+                }
             }
+
             Debug.Log($"Durability: {durability}");
         }
 

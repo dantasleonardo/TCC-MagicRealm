@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using LocalizationSystem;
+﻿using LocalizationSystem;
 using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
 
-public class AttackUnitItem : ItemStore {
+public class AttackUnitItem : ItemStore
+{
     public AttackUnit unitProperties;
     private ItemCreation itemCreation = new ItemCreation();
     public ButtonStoreItem buttonStoreItem;
@@ -16,7 +12,8 @@ public class AttackUnitItem : ItemStore {
     public TextMeshProUGUI stoneText;
 
 
-    public override void Init() {
+    public override void Init()
+    {
         itemImage.sprite = unitProperties.unitIcon;
         itemCreation.timeToCreate = unitProperties.timeToCreate;
         itemCreation.prefab = unitProperties.unitPrefab;
@@ -27,8 +24,10 @@ public class AttackUnitItem : ItemStore {
         stoneText.text = unitProperties.stoneCost.ToString();
     }
 
-    public override void BuyItem() {
-        if (GameController.Instance.stackCreation.Count < 10) {
+    public override void BuyItem()
+    {
+        if (GameController.Instance.stackCreation.Count < 10)
+        {
             GameController.Instance.resources[ResourceType.Stone] -= unitProperties.stoneCost;
             GameController.Instance.resources[ResourceType.Wood] -= unitProperties.woodCost;
 
@@ -46,7 +45,6 @@ public class AttackUnitItem : ItemStore {
             buttonStoreItem.buttonItem.interactable = true;
         else
             buttonStoreItem.buttonItem.interactable = false;
-
     }
 
     private void UpdateTextUi()

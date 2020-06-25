@@ -20,8 +20,7 @@
     <explicitExcludes>
       <Path>.git</Path>
       <Path>.idea</Path>
-      <Path>.vs</Path>
-      <Path>Builds</Path>
+      <Path>Build</Path>
       <Path>Library</Path>
       <Path>Temp</Path>
       <Path>obj</Path>

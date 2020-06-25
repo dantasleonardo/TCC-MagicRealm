@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -12,19 +9,22 @@ public class ButtonStoreItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [SerializeField] private GameObject infoPopup;
 
 
-    private void Start() {
+    private void Start()
+    {
         itemStore = GetComponent<ItemStore>();
-        if(buttonItem == null)
+        if (buttonItem == null)
             buttonItem = GetComponent<Button>();
         itemStore.Init();
         buttonItem.onClick.AddListener(itemStore.BuyItem);
     }
 
-    public void OnPointerEnter(PointerEventData eventData) {
+    public void OnPointerEnter(PointerEventData eventData)
+    {
         infoPopup.SetActive(true);
     }
 
-    public void OnPointerExit(PointerEventData eventData) {
+    public void OnPointerExit(PointerEventData eventData)
+    {
         infoPopup.SetActive(false);
     }
 }

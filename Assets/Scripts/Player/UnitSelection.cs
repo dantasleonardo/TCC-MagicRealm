@@ -18,27 +18,37 @@ public class UnitSelection : MonoBehaviour
 
     [SerializeField] private UnitController unitController;
 
-    private void Awake() {
+    private void Awake()
+    {
         mainCamera = Camera.main;
         unitController = GetComponent<UnitController>();
     }
 
-    private void Update() {
+    private void Update()
+    {
         //Mouse actions with left button.
-        if (Input.GetMouseButtonDown(0)) {
-            if (!EventSystem.current.IsPointerOverGameObject()) {
-                if (selectedUnits.Count > 0) {
-                    if (Input.GetKey(KeyCode.LeftControl)) {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                if (selectedUnits.Count > 0)
+                {
+                    if (Input.GetKey(KeyCode.LeftControl))
+                    {
                     }
-                    else {
+                    else
+                    {
                         selectedUnits = new List<UnitScript>();
                         DesactiveSelectionUnit();
                     }
                 }
-                else {
-                    if (Input.GetKey(KeyCode.LeftControl)) {
+                else
+                {
+                    if (Input.GetKey(KeyCode.LeftControl))
+                    {
                     }
-                    else {
+                    else
+                    {
                         selectedUnits = new List<UnitScript>();
                         DesactiveSelectionUnit();
                     }
@@ -48,49 +58,59 @@ public class UnitSelection : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButton(0))
+        {
             if (!EventSystem.current.IsPointerOverGameObject())
                 UpdateSelectionBox(Input.mousePosition);
         }
 
-        if (Input.GetMouseButtonUp(0)) {
-            if (startPosition.Equals(Input.mousePosition)) {
-                if (Input.GetKey(KeyCode.LeftControl)) {
-                    
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (startPosition.Equals(Input.mousePosition))
+            {
+                if (Input.GetKey(KeyCode.LeftControl))
+                {
                 }
                 else
                 {
-                    if (!EventSystem.current.IsPointerOverGameObject()) {
+                    if (!EventSystem.current.IsPointerOverGameObject())
+                    {
                         selectedUnits = new List<UnitScript>();
                         DesactiveSelectionUnit();
                     }
                 }
+
                 TrySelect(Input.mousePosition);
             }
-            else {
-                if (Input.GetKey(KeyCode.LeftControl)) {
-                    
+            else
+            {
+                if (Input.GetKey(KeyCode.LeftControl))
+                {
                 }
                 else
                 {
-                    if (!EventSystem.current.IsPointerOverGameObject()) {
+                    if (!EventSystem.current.IsPointerOverGameObject())
+                    {
                         selectedUnits = new List<UnitScript>();
                         DesactiveSelectionUnit();
                     }
                 }
             }
+
             ReleaseSelectionBox();
         }
 
         //Mouse actions with right button
-        if (Input.GetMouseButtonDown(1)) {
+        if (Input.GetMouseButtonDown(1))
+        {
             SetDestinationOfUnits();
         }
     }
 
     #region Selection Unit
 
-    private void UpdateSelectionBox(Vector2 currentMousePosition) {
+    private void UpdateSelectionBox(Vector2 currentMousePosition)
+    {
         if (!selectionBox.gameObject.activeInHierarchy)
             selectionBox.gameObject.SetActive(true);
 
@@ -101,17 +121,20 @@ public class UnitSelection : MonoBehaviour
         selectionBox.anchoredPosition = startPosition + new Vector2(width / 2, height / 2);
     }
 
-    private void ReleaseSelectionBox() {
+    private void ReleaseSelectionBox()
+    {
         selectionBox.gameObject.SetActive(false);
 
         Vector2 min = selectionBox.anchoredPosition - (selectionBox.sizeDelta / 2);
         Vector2 max = selectionBox.anchoredPosition + (selectionBox.sizeDelta / 2);
 
-        unitController.units.ForEach(unit => {
+        unitController.units.ForEach(unit =>
+        {
             Vector3 screenPosition = mainCamera.WorldToScreenPoint(unit.transform.position);
 
             if (screenPosition.x >= min.x && screenPosition.y >= min.y && screenPosition.x <= max.x &&
-                screenPosition.y <= max.y) {
+                screenPosition.y <= max.y)
+            {
                 unit.SelectionObjectIsActive(true);
                 selectedUnits.Add(unit);
                 forDesactiveUnits.Add(unit);
@@ -119,12 +142,14 @@ public class UnitSelection : MonoBehaviour
         });
     }
 
-    private void TrySelect(Vector2 screenPosition) {
+    private void TrySelect(Vector2 screenPosition)
+    {
         var ray = mainCamera.ScreenPointToRay(screenPosition);
 
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 100, unitLayerMask)) {
+        if (Physics.Raycast(ray, out hit, 100, unitLayerMask))
+        {
             UnitScript unitScript = hit.collider.GetComponent<UnitScript>();
 
             selectedUnits.Add(unitScript);
@@ -133,9 +158,11 @@ public class UnitSelection : MonoBehaviour
         }
     }
 
-    private void DesactiveSelectionUnit() {
-        forDesactiveUnits.ForEach(unit => {
-            if(unit != null)
+    private void DesactiveSelectionUnit()
+    {
+        forDesactiveUnits.ForEach(unit =>
+        {
+            if (unit != null)
                 unit.SelectionObjectIsActive(false);
         });
 
@@ -146,18 +173,24 @@ public class UnitSelection : MonoBehaviour
 
     #region MoveUnits
 
-    private void SetDestinationOfUnits() {
+    private void SetDestinationOfUnits()
+    {
         var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit)) {
+        if (Physics.Raycast(ray, out hit))
+        {
             var target = hit.point;
-            if (hit.collider.CompareTag("Ground")) {
+            if (hit.collider.CompareTag("Ground"))
+            {
                 MoveUnitsTo(target, hit.collider.gameObject);
             }
-            else {
-                foreach (var unit in selectedUnits) {
-                    if(unit != null) {
+            else
+            {
+                foreach (var unit in selectedUnits)
+                {
+                    if (unit != null)
+                    {
                         if (unit.CompareTag("Unit"))
                             unit.Action(target, hit.collider.gameObject);
                         if (unit.CompareTag("Building"))
@@ -168,9 +201,11 @@ public class UnitSelection : MonoBehaviour
         }
     }
 
-    private void MoveUnitsTo(Vector3 target, GameObject targetObject) {
+    private void MoveUnitsTo(Vector3 target, GameObject targetObject)
+    {
         int AxisZ = 0;
-        List<Vector3> listOfTargets = new List<Vector3>() {
+        List<Vector3> listOfTargets = new List<Vector3>()
+        {
             target,
             target - new Vector3(-1, 0, 0),
             target - new Vector3(1, 0, 0)
@@ -178,7 +213,8 @@ public class UnitSelection : MonoBehaviour
 
         int count = 0;
 
-        foreach (var unit in selectedUnits) {
+        foreach (var unit in selectedUnits)
+        {
             var desiredTarget = listOfTargets[count];
             desiredTarget.z -= AxisZ;
             unit.Action(desiredTarget, targetObject);

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,7 +10,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Paused()
     {
-        if(gameIsPaused == false)
+        if (gameIsPaused == false)
         {
             gameIsPaused = true;
             Time.timeScale = 0f;
@@ -26,7 +24,8 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    private void Start() {
+    private void Start()
+    {
         var volumeUser = SaveSystem.SaveSystem.Load().volume;
         slider.onValueChanged.AddListener(value =>
         {
@@ -41,10 +40,11 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Paused();
         }
+
         GameManager.instance.volume = slider.value;
         AudioListener.volume = GameManager.instance.volume;
     }
@@ -65,5 +65,4 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Fechou");
         Application.Quit();
     }
-
 }

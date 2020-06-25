@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Magic;
+﻿using Magic;
 using UnityEngine;
 
 public class MagicCastle : IEnemy
@@ -86,9 +85,7 @@ public class MagicCastle : IEnemy
         }
         else if (GameController.Instance.enemies.Count >= minMageInMap)
         {
-
             var attackUnits = GameController.Instance.attackUnits.Count;
-            Debug.Log($"quantidade de unidade de ataque : {attackUnits}");
             if (maxMageInMap > attackUnits && GameController.Instance.enemies.Count <= maxMageInMap)
             {
                 currentTime += Time.deltaTime;

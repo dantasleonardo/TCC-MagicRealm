@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8880,9 +8880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2664bf761a44b46b222cc0c66ae42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durability: 5
+  durability: 100
   mainCrystal: {fileID: 1653337982}
   brokenCrystal: {fileID: 1585712999}
+  isDestroyed: 0
 --- !u!208 &1024577996
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -13909,7 +13910,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1479784279}
-        m_MethodName: linkFeedback
+        m_MethodName: LinkFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15213,7 +15214,7 @@ PrefabInstance:
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.160001
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
@@ -15223,7 +15224,7 @@ PrefabInstance:
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.8399999
+      value: 3.32
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
@@ -16384,7 +16385,7 @@ PrefabInstance:
     - target: {fileID: 1900901130326902594, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.76
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: 1900901130326902594, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}
@@ -16394,7 +16395,7 @@ PrefabInstance:
     - target: {fileID: 1900901130326902594, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.85
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: 1900901130326902594, guid: 15a4329dcc2a68d41a865caca49a974b,
         type: 3}
@@ -20540,6 +20541,16 @@ PrefabInstance:
       propertyPath: functionsPanel
       value: 
       objectReference: {fileID: 1947355024}
+    - target: {fileID: 1577108462333627454, guid: f36958053a26179458ae9d16dafab70b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577108462333627454, guid: f36958053a26179458ae9d16dafab70b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.48
+      objectReference: {fileID: 0}
     - target: {fileID: 5807874425251940365, guid: f36958053a26179458ae9d16dafab70b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21567,7 +21578,7 @@ PrefabInstance:
     - target: {fileID: 4203011100935074616, guid: fe56683117b986a49bfa1c471a31aed3,
         type: 3}
       propertyPath: durability
-      value: 5
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4203011100935074620, guid: fe56683117b986a49bfa1c471a31aed3,
         type: 3}
@@ -21577,7 +21588,7 @@ PrefabInstance:
     - target: {fileID: 4203011100935074621, guid: fe56683117b986a49bfa1c471a31aed3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.15
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 4203011100935074621, guid: fe56683117b986a49bfa1c471a31aed3,
         type: 3}
@@ -21587,7 +21598,7 @@ PrefabInstance:
     - target: {fileID: 4203011100935074621, guid: fe56683117b986a49bfa1c471a31aed3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.82
+      value: -0.64
       objectReference: {fileID: 0}
     - target: {fileID: 4203011100935074621, guid: fe56683117b986a49bfa1c471a31aed3,
         type: 3}

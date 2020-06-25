@@ -13,7 +13,7 @@ namespace Magic
         {
             brokenCrystal.SetActive(true);
             mainCrystal.SetActive(false);
-            if(useDestroy)
+            if (useDestroy)
                 Destroy(this.gameObject, timeToDestroy);
         }
     }

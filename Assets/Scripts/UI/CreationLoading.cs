@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class CreationLoading : MonoBehaviour
@@ -11,12 +8,14 @@ public class CreationLoading : MonoBehaviour
     public int index;
     public Button button;
 
-    private void Start() {
+    private void Start()
+    {
         button = GetComponent<Button>();
         button.onClick.AddListener(CancelCreationUnit);
     }
 
-    private void CancelCreationUnit() {
+    private void CancelCreationUnit()
+    {
         GameController.Instance.ClickToRemoveItemOfCreations(index);
     }
 }

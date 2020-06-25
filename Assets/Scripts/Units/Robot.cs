@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
-public class Robot : UnitScript, IUnit {
-    [Header("Robots Properties")] 
-    [SerializeField] protected int life;
+public class Robot : UnitScript, IUnit
+{
+    [Header("Robots Properties")] [SerializeField]
+    protected int life;
+
     [SerializeField] protected float speedMovement = 2.0f;
     public RobotType robotType;
     [SerializeField] protected LifeBar lifeBar;
@@ -16,34 +14,41 @@ public class Robot : UnitScript, IUnit {
 
     protected NavMeshAgent agent;
 
-    public void MoveTo(Vector3 target) {
+    public void MoveTo(Vector3 target)
+    {
         agent.SetDestination(target);
     }
 
-    public void TakeDamage(int damage) {
+    public void TakeDamage(int damage)
+    {
         StopAllCoroutines();
         life -= damage;
 
-        if (!lifeBar.isActive) {
+        if (!lifeBar.isActive)
+        {
             lifeBar.isActive = true;
             lifeBar.BarIsActive(true);
         }
+
         lifeBar.UpdateBar(life);
         StartCoroutine(DisableLifeBar());
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         float fillAmount = lifeBar.foregroundBar.fillAmount;
 
-        if (life <= 0 && fillAmount <= 0.0f) {
+        if (life <= 0 && fillAmount <= 0.0f)
+        {
             UnitController.Instance.units.Remove(this);
-            if(GetComponent<AttackUnitScript>() != null)
+            if (GetComponent<AttackUnitScript>() != null)
                 GameController.Instance.attackUnits.Remove(gameObject);
             Destroy(this.gameObject);
         }
     }
 
-    private IEnumerator DisableLifeBar() {
+    private IEnumerator DisableLifeBar()
+    {
         yield return new WaitForSeconds(disableLifeBar);
         lifeBar.BarIsActive(false);
         lifeBar.isActive = false;

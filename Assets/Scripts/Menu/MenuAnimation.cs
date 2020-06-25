@@ -1,15 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Animations;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 public class MenuAnimation : MonoBehaviour
 {
     public Animator title;
     public GameObject menu;
-    
+
     public bool keyIsPressed;
     public GameObject pressAnyKey;
     public Animator menuAnimation;
@@ -26,7 +21,7 @@ public class MenuAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown && !keyIsPressed) 
+        if (Input.anyKeyDown && !keyIsPressed)
         {
             pressAnyKey.SetActive(false);
             keyIsPressed = true;
@@ -34,7 +29,7 @@ public class MenuAnimation : MonoBehaviour
             GameManager.instance.startedKeyPressed = true;
         }
     }
-    
+
     public void ActiveMenu()
     {
         menu.GetComponent<Animator>().SetBool("Transition", true);
@@ -43,7 +38,8 @@ public class MenuAnimation : MonoBehaviour
     }
 
     //Chamado quando inicia a transição da camera
-    public void PressAnyKeyTransition() {
+    public void PressAnyKeyTransition()
+    {
         //Não estava ficando legal via script, então fiz pelo animator
         //Se quiser tentar fazer por script fica a vontade
         title.SetBool("Transition", keyIsPressed);

@@ -18,7 +18,7 @@ namespace LocalizationSystem
         {
             LocalizationManager.instance.SetLanguageKey(languageKey);
             Debug.Log($"Language seted to: {languageKey}");
-        
+
             Invoke(nameof(GoToScene), 0.1f);
         }
 

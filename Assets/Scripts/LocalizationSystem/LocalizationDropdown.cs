@@ -1,6 +1,5 @@
-﻿using System;
+﻿using TMPro;
 using UnityEngine;
-using TMPro;
 
 namespace LocalizationSystem
 {
@@ -20,6 +19,7 @@ namespace LocalizationSystem
                     dropdown.value = 1;
                     break;
             }
+
             dropdown.onValueChanged.AddListener(ChangeLanguage);
         }
 

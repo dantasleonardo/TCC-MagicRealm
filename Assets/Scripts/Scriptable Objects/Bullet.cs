@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
 [CreateAssetMenu(fileName = "Bullet", menuName = "Units/Attack Unit/Bullet")]
 public class Bullet : ScriptableObject
 {

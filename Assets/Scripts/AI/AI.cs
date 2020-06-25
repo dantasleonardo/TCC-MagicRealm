@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Panda;
 using UnityEngine;
 using UnityEngine.AI;
-using Panda;
-using Random = UnityEngine.Random;
 
 public class AI : MonoBehaviour
 {
@@ -135,7 +131,7 @@ public class AI : MonoBehaviour
     public void SeekTarget()
     {
         agent.stoppingDistance = distanceAttack;
-        if (Vector3.Distance(transform.position,target.position) <= distanceSeek)
+        if (Vector3.Distance(transform.position, target.position) <= distanceSeek)
         {
             Seek(target.position);
             Task.current.Succeed();
@@ -171,7 +167,7 @@ public class AI : MonoBehaviour
     public void Attack()
     {
         LookTarget();
-        
+
         timeCount += Time.deltaTime;
         if (timeCount > timeFirerate)
         {

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
 [Serializable]
@@ -12,6 +9,6 @@ public class ItemCreation
     public int rockCost;
     public int woodCost;
     public RobotType robotType;
-    
+
     public GameObject prefab;
 }

@@ -1,11 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Windows.Speech;
-using UnityEngine.XR.WSA.Input;
 
-public class MageScript : IEnemy {
+public class MageScript : IEnemy
+{
     [SerializeField] private Transform spawnAttack;
     [SerializeField] private LifeBar lifeBar;
     [SerializeField] private float disableLifeBar = 3.0f;
@@ -15,8 +13,8 @@ public class MageScript : IEnemy {
     private int life;
 
 
-
-    public override void Attack(int typeAttack) {
+    public override void Attack(int typeAttack)
+    {
         StopAllCoroutines();
         animator.SetTrigger("Attacking");
         animator.SetInteger("typeAttack", typeAttack);
@@ -28,38 +26,46 @@ public class MageScript : IEnemy {
         Instantiate(properties.attacksPrefabs[typeAttack].bulletPrefab, spawnAttack.position, spawnAttack.rotation);
     }
 
-    public override void TakeDamage(int damage) {
+    public override void TakeDamage(int damage)
+    {
         life -= damage;
 
-        if (!lifeBar.isActive) {
+        if (!lifeBar.isActive)
+        {
             lifeBar.isActive = true;
             lifeBar.BarIsActive(true);
         }
+
         lifeBar.UpdateBar(life);
         StartCoroutine(DisableLifeBar());
     }
 
-    private void Update() {
+    private void Update()
+    {
         float fillAmount = lifeBar.foregroundBar.fillAmount;
         speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
         animator.SetFloat("Speed", speed);
 
-        if(life <= 0 && fillAmount <= 0.0f) {
+        if (life <= 0 && fillAmount <= 0.0f)
+        {
             GameController.Instance.enemies.Remove(this.gameObject);
             Destroy(this.gameObject);
         }
     }
 
-    private IEnumerator DisableLifeBar() {
+    private IEnumerator DisableLifeBar()
+    {
         yield return new WaitForSeconds(disableLifeBar);
         lifeBar.BarIsActive(false);
         lifeBar.isActive = false;
     }
 
-    void Start() {
+    void Start()
+    {
         life = properties.totalLife;
         lifeBar.totalValue = life;
         GameController.Instance.enemies.Add(this.gameObject);
-        GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance, properties.Speed);
+        GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance,
+            properties.Speed);
     }
 }

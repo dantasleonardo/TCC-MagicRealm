@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum MissionType
+﻿public enum MissionType
 {
     Collect,
     Destroy

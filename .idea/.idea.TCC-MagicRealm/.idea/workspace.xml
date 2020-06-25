@@ -23,35 +23,79 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crystals/BrokenMapCrystal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Crystals/BrokenMapCrystal.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/ScienceCastle_Menu/Science_Castle_Lamps.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/ScienceCastle_Menu/Science_Castle_Lamps.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Science_Castle_Lamps.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Science_Castle_Lamps.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Science_Castle_Lamps.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Science_Castle_Lamps.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Emissive.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Emissive.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Emissive.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Emissive.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Lamp_Tranparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Lamp_Tranparency.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Lamp_Tranparency.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Lamp_Tranparency.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Light_Socket.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Light_Socket.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Light_Socket.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Light_Socket.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Druids_Castle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Druids_Castle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scientist_Castle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scientist_Castle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AI/Scirpts/Attacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AI/Scirpts/Attacking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AI/Scirpts/Seek.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AI/Scirpts/Seek.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AI/Scirpts/Waypoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AI/Scirpts/Waypoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Units/Nova pasta.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alpha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alpha.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AttackMagics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AttackMagics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BaseAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/BaseAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BotAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/BotAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ManagerWaypoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/ManagerWaypoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemCreation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemCreation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PressStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PressStart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Shield/Shield Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Shield/Shield Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Lamp_texture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Lamp_texture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Lamp_texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Lamp_texture.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,19 +107,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/LeanTween/Editor/LeanTweenDocumentationEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/MissionEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/SaveSystem/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PressStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PandaBehaviour/Core/Editor/PandaBehaviourEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemCreation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/Builder/Scripts/BuilderStoreType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BaseAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,25 +139,41 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BotAi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ManagerWaypoints.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI/Scirpts/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI/Scirpts/Seek.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI/Scirpts/Attacking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/IMission.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,56 +189,56 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/IMission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ObjectivesManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MissionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MissionEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/UserSaveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SliderAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/GetCurrentRotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Mage.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PressStart.cs" />
-        <option value="$PROJECT_DIR$/Assets/PandaBehaviour/Core/Editor/PandaBehaviourEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
       </list>
     </option>
   </component>
@@ -236,6 +304,7 @@
       <workItem from="1592860130563" duration="2310000" />
       <workItem from="1593023080163" duration="15136000" />
       <workItem from="1593086556855" duration="6781000" />
+      <workItem from="1593097071811" duration="3723000" />
     </task>
     <servers />
   </component>
@@ -284,9 +353,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593093845757">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593105261090">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593093845757" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593105261090" />
   </component>
 </project>

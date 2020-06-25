@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +12,7 @@ public class Credits : MonoBehaviour
     public float m_Speed = 2.0f;
 
     public Canvas m_Canvas;
+
     private void Start()
     {
         string[] lines = m_TextFile.text.Replace("\r", "").Split('\n');
@@ -32,8 +31,10 @@ public class Credits : MonoBehaviour
             {
                 line = $"<b><size={m_PersonSize}>{line}</size></b>";
             }
+
             builder.Append(line).Append($"<size={m_Space}>\n</size>");
         }
+
         m_TextUI.text = builder.ToString();
         Canvas.ForceUpdateCanvases();
     }

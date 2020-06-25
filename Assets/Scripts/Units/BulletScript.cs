@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
-using System.Security.Cryptography;
-using System.Transactions;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BulletScript : MonoBehaviour
@@ -14,30 +8,36 @@ public class BulletScript : MonoBehaviour
     [SerializeField] private float speed;
 
     [SerializeField] private Vector3 bulletDirection;
-    
+
     private Rigidbody rigidbody;
 
-    private void Awake() {
+    private void Awake()
+    {
         InitItem();
         Debug.Log(Vector3.forward);
     }
 
-    private void Start() {
+    private void Start()
+    {
         Destroy(this.gameObject, 5.0f);
     }
 
-    private void InitItem() {
+    private void InitItem()
+    {
         damage = bulletProperties.damage;
         speed = bulletProperties.speed;
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         rigidbody.velocity = transform.forward * speed;
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Mages")) {
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Mages"))
+        {
             var enemy = other.gameObject.GetComponent<IEnemy>();
             DamageInEnemy(enemy);
         }
@@ -48,11 +48,13 @@ public class BulletScript : MonoBehaviour
             target.TakeDamage(damage);
             Destroy(this.gameObject);
         }
+
         if (other.CompareTag("Unit") || other.CompareTag("Attack")) return;
-            Destroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 
-    private void DamageInEnemy(IEnemy enemy) {
+    private void DamageInEnemy(IEnemy enemy)
+    {
         enemy.TakeDamage(damage);
         Destroy(this.gameObject);
     }
