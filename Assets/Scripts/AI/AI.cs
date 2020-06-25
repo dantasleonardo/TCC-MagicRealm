@@ -135,8 +135,16 @@ public class AI : MonoBehaviour
     public void SeekTarget()
     {
         agent.stoppingDistance = distanceAttack;
-        Seek(target.position);
-        Task.current.Succeed();
+        if (Vector3.Distance(transform.position,target.position) <= distanceSeek)
+        {
+            Seek(target.position);
+            Task.current.Succeed();
+        }
+        else
+        {
+            target = null;
+            Task.current.Succeed();
+        }
     }
 
     [Task]
@@ -194,7 +202,7 @@ public class AI : MonoBehaviour
     [Task]
     public void CastleIsTarget()
     {
-        if (Random.Range(0.0f, 100.0f) < 10.0f)
+        if (Random.Range(0.0f, 500.0f) < 10.0f)
         {
             distanceSeek = 100.0f;
             target = GameController.Instance.robotsCastle.transform;

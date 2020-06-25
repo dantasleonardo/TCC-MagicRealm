@@ -6,12 +6,15 @@ namespace Magic
     {
         [SerializeField] private GameObject mainCrystal;
         [SerializeField] private GameObject brokenCrystal;
+        [SerializeField] private bool useDestroy;
+        [SerializeField] private float timeToDestroy = 5.0f;
 
         public void DestroyCrystal()
         {
             brokenCrystal.SetActive(true);
             mainCrystal.SetActive(false);
-            Destroy(this.gameObject, 5.0f);
+            if(useDestroy)
+                Destroy(this.gameObject, timeToDestroy);
         }
     }
 }

@@ -71,6 +71,9 @@
             </e>
           </e>
         </e>
+        <e p="Editor" t="Include">
+          <e p="MissionEditor.cs" t="Include" />
+        </e>
         <e p="PandaBehaviour" t="Include">
           <e p="ChangeLog.txt" t="Include" />
           <e p="Core" t="Include">
@@ -100,9 +103,6 @@
           </e>
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
-          </e>
-          <e p="Editor" t="Include">
-            <e p="MissionEditor.cs" t="Include" />
           </e>
           <e p="Enum" t="Include">
             <e p="DestroyType.cs" t="Include" />

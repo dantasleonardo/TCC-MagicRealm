@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Magic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -21,10 +22,12 @@ public class RobotsCastle : Building, IUnit {
     
     
     [SerializeField] private GameObject functionsPanel;
+    [SerializeField] private CastleCrystal[] lampsOfCastle;
     public Transform spawnPosition;
     public Transform destinationPosition;
     public int life;
-    [SerializeField] private LifeBar lifeBar;
+    public int totalLife;
+    // [SerializeField] private LifeBar lifeBar;
 
     private bool isSelected = false;
 
@@ -33,13 +36,31 @@ public class RobotsCastle : Building, IUnit {
 
     public void TakeDamage(int damage) {
         life -= damage;
-        lifeBar.UpdateBar((float)life);
+        // lifeBar.UpdateBar((float)life);
+        var lifePercent = (float) life / totalLife;
+        if (lifePercent <= 0.0f)
+        {
+            lampsOfCastle[3].DestroyCrystal();
+        }
+        else if (lifePercent < 0.25f)
+        {
+            lampsOfCastle[2].DestroyCrystal();
+        }
+        else if (lifePercent < 0.5f)
+        {
+            lampsOfCastle[1].DestroyCrystal();
+        }
+        else if (lifePercent < 0.75f)
+        {
+            lampsOfCastle[0].DestroyCrystal();
+        }
     }
 
 
     public override void InitItems() {
         FunctionsPanelIsActive();
-        lifeBar.totalValue = life;
+        // lifeBar.totalValue = life;
+        totalLife = life;
     }
 
     public override void SelectionObjectIsActive(bool isActive) {

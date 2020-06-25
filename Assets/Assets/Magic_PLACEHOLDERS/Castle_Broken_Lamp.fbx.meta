@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: 23f982d35bb8e544a8875dec60cdd2ce
+guid: 6aea8b2c026e45e46bfb046abc4cd9a2
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: 5073340981154913038
-    second: Lamp_Armature|Turning_Lamp
+      74: -7851030932667466494
+    second: Broken_Idea|Breaking_Lamp
+  - first:
+      74: 1506629574950751837
+    second: Broken_Idea|Turning_Lamp
   externalObjects:
   - first:
       type: UnityEngine:Material

@@ -5,7 +5,9 @@ using UnityEngine;
 public class MagicCastle : IEnemy
 {
     public int life;
-    [SerializeField] private LifeBar lifeBar;
+
+    public int totalLife;
+    // [SerializeField] private LifeBar lifeBar;
 
     [SerializeField] private float timeSpawn;
     [SerializeField] private float currentTime;
@@ -22,7 +24,8 @@ public class MagicCastle : IEnemy
 
     private void Start()
     {
-        lifeBar.totalValue = life;
+        // lifeBar.totalValue = life;
+        totalLife = life;
     }
 
     public override void Attack(int typeAttack)
@@ -32,8 +35,8 @@ public class MagicCastle : IEnemy
     public override void TakeDamage(int damage)
     {
         life -= damage;
-        lifeBar.UpdateBar((float) life);
-        var lifePercent = (float) life / lifeBar.totalValue;
+        // lifeBar.UpdateBar((float) life);
+        var lifePercent = (float) life / totalLife;
         if (lifePercent <= 0.0f)
         {
             crystalsOfCastle[3].DestroyCrystal();
@@ -54,7 +57,7 @@ public class MagicCastle : IEnemy
 
     private void Update()
     {
-        var lifePercent = (float) life / lifeBar.totalValue;
+        var lifePercent = (float) life / totalLife;
         if (lifePercent <= 0.0f)
         {
             crystalsOfCastle[3].DestroyCrystal();
