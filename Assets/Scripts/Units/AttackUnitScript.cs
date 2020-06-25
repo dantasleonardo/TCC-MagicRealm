@@ -1,4 +1,5 @@
-﻿using Magic;
+﻿using System.Net.Configuration;
+using Magic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -74,7 +75,7 @@ public class AttackUnitScript : Robot
         }
         else if (targetObject.CompareTag("Ground"))
         {
-            agent.stoppingDistance = 0.0f;
+            agent.stoppingDistance = 0.1f;
             currentTarget = null;
             MoveTo(target);
         }
@@ -87,51 +88,48 @@ public class AttackUnitScript : Robot
         animator.SetFloat("Speed", speed);
         if (currentTarget != null)
         {
-            if (Vector3.Distance(transform.position, currentTarget.transform.position) <= attakDistance)
+            if (speed < 0.1f)
             {
-                if (speed < 0.1f)
+                if (currentTarget.CompareTag("Crystal"))
                 {
-                    if (currentTarget.CompareTag("Crystal"))
-                    {
-                        currentTarget = currentTarget.GetComponent<Crystal>().GetCurrentDurability()
-                            ? currentTarget
-                            : null;
-                        if (currentTarget == null)
-                            return;
-                    }
+                    currentTarget = currentTarget.GetComponent<Crystal>().GetCurrentDurability()
+                        ? currentTarget
+                        : null;
+                    if (currentTarget == null)
+                        return;
+                }
 
-                    RaycastHit hit;
-                    LookTarget();
-                    var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
-                    if (Physics.Raycast(position, transform.forward, out hit,
-                        attackUnitProperties.attackDistace + 0.5f))
+                RaycastHit hit;
+                LookTarget();
+                var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
+                if (Physics.Raycast(position, transform.forward, out hit,
+                    attackUnitProperties.attackDistace + 0.5f))
+                {
+                    if (hit.collider.CompareTag("Mages") || hit.collider.CompareTag("Crystal"))
                     {
-                        if (hit.collider.CompareTag("Mages") || hit.collider.CompareTag("Crystal"))
+                        // transform.LookAt(currentTarget.transform);
+                        LookTarget();
+                        currentTimeToFire += Time.deltaTime;
+
+                        if (currentTimeToFire > firerateAttack)
                         {
-                            // transform.LookAt(currentTarget.transform);
-                            LookTarget();
-                            currentTimeToFire += Time.deltaTime;
-
-                            if (currentTimeToFire > firerateAttack)
-                            {
-                                if (attackWithAnimation)
-                                    animator.SetTrigger("Attacking");
-                                else BulletInstantiate();
-                                currentTimeToFire = 0.0f;
-                            }
+                            if (attackWithAnimation)
+                                animator.SetTrigger("Attacking");
+                            else BulletInstantiate();
+                            currentTimeToFire = 0.0f;
                         }
                     }
                 }
             }
             else if (currentTarget.CompareTag("Mages"))
             {
-                MoveTo(currentTarget.transform.position);
                 agent.stoppingDistance = attackUnitProperties.attackDistace;
+                MoveTo(currentTarget.transform.position);
             }
             else if (currentTarget.CompareTag("Crystal"))
             {
-                MoveTo(currentTarget.transform.position);
                 agent.stoppingDistance = attackUnitProperties.attackDistace;
+                MoveTo(currentTarget.transform.position);
             }
         }
     }

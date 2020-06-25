@@ -11,6 +11,7 @@ public class Robot : UnitScript, IUnit
     public RobotType robotType;
     [SerializeField] protected LifeBar lifeBar;
     [SerializeField] private float disableLifeBar = 3.0f;
+    [SerializeField] protected ParticleSystem dustParticle;
 
     protected NavMeshAgent agent;
 
@@ -36,6 +37,20 @@ public class Robot : UnitScript, IUnit
 
     private void FixedUpdate()
     {
+        var speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
+        if (speed > 0.1f)
+        {
+            var emission = dustParticle.emission;
+            var velocity = dustParticle.velocityOverLifetime;
+            velocity.y = speed;
+            emission.rateOverTime = Random.Range(15.0f, 50.0f);
+        }
+        else
+        {
+            var emission = dustParticle.emission;
+            emission.rateOverTime = 0.0f;
+        }
+        
         float fillAmount = lifeBar.foregroundBar.fillAmount;
 
         if (life <= 0 && fillAmount <= 0.0f)

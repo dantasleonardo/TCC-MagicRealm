@@ -20,82 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AI/Scirpts/Attacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AI/Scirpts/Attacking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AI/Scirpts/Seek.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AI/Scirpts/Seek.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AI/Scirpts/Waypoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AI/Scirpts/Waypoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Units/Nova pasta.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alpha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alpha.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AttackMagics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AttackMagics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BaseAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/BaseAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/BotAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/BotAi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ManagerWaypoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/ManagerWaypoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enum/DestroyType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemCreation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemCreation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GathererUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Cannon_Robot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Cannon_Robot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utils.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/CannonRobotLvl1.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,12 +163,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
       </list>
     </option>
   </component>
