@@ -25,6 +25,10 @@ namespace LocalizationSystem
                 textInHud = GetComponent<Text>();
                 UpdateText();
             }
+            else
+            {
+                UpdateText();
+            }
         }
 
         public void UpdateText()

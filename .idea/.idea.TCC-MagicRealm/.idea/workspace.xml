@@ -21,14 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Golem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Golem.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Magics/Golem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Magics/Golem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/DestroyDomeCustscene.playable" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/DestroyDomeCustscene.playable.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Units/Resources/Golem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Units/Resources/Golem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Others/EndTransition.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Others/EndTransition.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Others/StartTransition.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Others/StartTransition.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" />
@@ -168,10 +163,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
       </list>
     </option>
   </component>
@@ -239,7 +235,7 @@
       <workItem from="1593086556855" duration="6781000" />
       <workItem from="1593097071811" duration="3723000" />
       <workItem from="1593181606188" duration="4593000" />
-      <workItem from="1593195508961" duration="3469000" />
+      <workItem from="1593195508961" duration="4946000" />
     </task>
     <servers />
   </component>
@@ -288,9 +284,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593195580395">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593200607664">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593195580395" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593200607664" />
   </component>
 </project>
