@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1799,8 +1799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Pause game
-  textInPortuguese: Jogo Parado
+  textInEnglish: 'Pause '
+  textInPortuguese: JOGO PARADO
   textInHud: {fileID: 0}
 --- !u!1 &214262535
 GameObject:
@@ -3953,8 +3953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6ea95be36063440ad139983f8d8a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Sound
-  textInPortuguese: Som
+  textInEnglish: SOUND
+  textInPortuguese: SOM
   textInHud: {fileID: 0}
 --- !u!114 &413517163
 MonoBehaviour:
@@ -3974,10 +3974,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Language
+  m_text: SOUND
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b37853b38ffe7b149a8adf4215564bc1, type: 2}
+  m_sharedMaterial: {fileID: -6367787372184251387, guid: b37853b38ffe7b149a8adf4215564bc1,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4043,7 +4044,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 413517163}
-    characterCount: 8
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -4054,7 +4055,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -7438,7 +7439,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 236eddfe7e9227b42abda62f68b18bd5, type: 3}
+    m_Font: {fileID: 12800000, guid: aee0c0d18c68cfa45b0d0cfc07dd6d25, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -7450,7 +7451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Options
+  m_Text: OPTIONS
 --- !u!222 &885011487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7471,8 +7472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Options
-  textInPortuguese: "Op\xE7\xF5es"
+  textInEnglish: OPTIONS
+  textInPortuguese: "OP\xC7\xD5ES"
   textInHud: {fileID: 0}
 --- !u!1 &907550490
 GameObject:
@@ -20936,6 +20937,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559784694183220156, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b37853b38ffe7b149a8adf4215564bc1,
+        type: 2}
+    - target: {fileID: 1559784694183220156, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559784694183220156, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
+        type: 3}
+      propertyPath: m_text
+      value: LANGUAGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559784694183220157, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
+        type: 3}
+      propertyPath: textInPortuguese
+      value: IDIOMA
       objectReference: {fileID: 0}
     - target: {fileID: 1559784694665806892, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
         type: 3}

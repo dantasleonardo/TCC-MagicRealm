@@ -2872,8 +2872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Easy
-  textInPortuguese: "F\xE1cil"
+  textInEnglish: EASY
+  textInPortuguese: "F\xC1CIL"
   textInHud: {fileID: 0}
 --- !u!114 &575962677
 MonoBehaviour:
@@ -3059,7 +3059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textInEnglish: Sound
-  textInPortuguese: Som
+  textInPortuguese: SOM
   textInHud: {fileID: 0}
 --- !u!114 &635087789
 MonoBehaviour:
@@ -3852,7 +3852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textInEnglish: Back
-  textInPortuguese: Voltar
+  textInPortuguese: VOLTAR
   textInHud: {fileID: 0}
 --- !u!114 &713063905
 MonoBehaviour:
@@ -6163,8 +6163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Hard
-  textInPortuguese: "Dif\xEDcil"
+  textInEnglish: HARD
+  textInPortuguese: "DIF\xCDCIL"
   textInHud: {fileID: 0}
 --- !u!114 &1414552626
 MonoBehaviour:
@@ -7430,6 +7430,11 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 1559784694183220157, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
+        type: 3}
+      propertyPath: textInPortuguese
+      value: IDIOMA
+      objectReference: {fileID: 0}
     - target: {fileID: 1559784694665806892, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
         type: 3}
       propertyPath: m_Name
@@ -7890,8 +7895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Medium
-  textInPortuguese: "M\xE9dio"
+  textInEnglish: NORMAL
+  textInPortuguese: NORMAL
   textInHud: {fileID: 0}
 --- !u!114 &1816997695
 MonoBehaviour:
