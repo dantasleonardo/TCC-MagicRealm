@@ -3058,7 +3058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6ea95be36063440ad139983f8d8a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Sound
+  textInEnglish: SOUND
   textInPortuguese: SOM
   textInHud: {fileID: 0}
 --- !u!114 &635087789
@@ -4526,7 +4526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Credits
+  textInEnglish: CREDITS
   textInPortuguese: "CR\xC9DITOS"
   textInHud: {fileID: 0}
 --- !u!1 &952317528
@@ -6054,7 +6054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: New Game
+  textInEnglish: NEW GAME
   textInPortuguese: NOVO JOGO
   textInHud: {fileID: 0}
 --- !u!1 &1359593538
@@ -6736,7 +6736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Press any key
+  textInEnglish: PRES ANY KEY
   textInPortuguese: PRESSIONE QUALQUER TECLA
   textInHud: {fileID: 0}
 --- !u!1 &1500847686
@@ -7174,7 +7174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Quit
+  textInEnglish: QUIT
   textInPortuguese: SAIR
   textInHud: {fileID: 0}
 --- !u!1 &1618729435
@@ -7587,6 +7587,11 @@ PrefabInstance:
       propertyPath: textInPortuguese
       value: IDIOMA
       objectReference: {fileID: 0}
+    - target: {fileID: 1559784694183220157, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
+        type: 3}
+      propertyPath: textInEnglish
+      value: LANGUAGE
+      objectReference: {fileID: 0}
     - target: {fileID: 1559784694665806892, guid: aaec2a95e8b424a4da7a3e4f4a523eda,
         type: 3}
       propertyPath: m_Name
@@ -7938,7 +7943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Continue
+  textInEnglish: CONTINUE
   textInPortuguese: CONTINUAR
   textInHud: {fileID: 0}
 --- !u!114 &1765555843
@@ -8774,7 +8779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f97a02624eaa94080bff2368ded97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textInEnglish: Options
+  textInEnglish: OPTIONS
   textInPortuguese: "OP\xC7\xD5ES"
   textInHud: {fileID: 0}
 --- !u!1 &2085568005
