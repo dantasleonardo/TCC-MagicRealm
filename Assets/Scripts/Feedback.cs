@@ -14,4 +14,10 @@ public class Feedback : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void NextLevel(string Level)
+    {
+        LoadingScene.Instance.scene = Level;
+        LoadingScene.Instance.StartTransition();
+    }
 }
