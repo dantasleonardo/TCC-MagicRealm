@@ -218,6 +218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &44479338 stripped
@@ -367,6 +372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -860,6 +870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &83949380 stripped
@@ -972,6 +987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &118219579 stripped
@@ -1046,6 +1066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -1277,6 +1302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &150802135 stripped
@@ -1351,6 +1381,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -1594,6 +1629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -2112,6 +2152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &234956393 stripped
@@ -2262,6 +2307,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &251797154 stripped
@@ -2411,6 +2461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -2993,6 +3048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -3869,6 +3929,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &404056108 stripped
@@ -4018,6 +4083,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -4691,6 +4761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &558560707 stripped
@@ -4846,6 +4921,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &559611201 stripped
@@ -4920,6 +5000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -5079,6 +5164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -5626,6 +5716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &638544573 stripped
@@ -5725,6 +5820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -6201,6 +6301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &733278637 stripped
@@ -6275,6 +6380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -6621,6 +6731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &805987993 stripped
@@ -6960,6 +7075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -7357,6 +7477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &912044325 stripped
@@ -7432,6 +7557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &925897494 stripped
@@ -7506,6 +7636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -7763,6 +7898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -8312,6 +8452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -8892,6 +9037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -9540,6 +9690,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1151525377 stripped
@@ -9795,6 +9950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -10581,6 +10741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -11769,6 +11934,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1428307339 stripped
@@ -12017,6 +12187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -12411,6 +12586,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1458806244 stripped
@@ -12486,6 +12666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1459803927 stripped
@@ -12560,6 +12745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -12954,6 +13144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1481492613 stripped
@@ -13104,6 +13299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1511797125 stripped
@@ -13179,6 +13379,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1523483666 stripped
@@ -13253,6 +13458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -13933,6 +14143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1601828323 stripped
@@ -14082,6 +14297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -14312,6 +14532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -15347,6 +15572,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1725808268 stripped
@@ -15645,6 +15875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -15968,6 +16203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
@@ -17123,6 +17363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1894074065 stripped
@@ -18011,6 +18256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
 --- !u!4 &1986902045 stripped
@@ -18661,6 +18911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Resource_TreeSmall Variant (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808125361852290665, guid: 502089516bbc1294bae617b9a66411ba,
+        type: 3}
+      propertyPath: amountResources
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 502089516bbc1294bae617b9a66411ba, type: 3}
