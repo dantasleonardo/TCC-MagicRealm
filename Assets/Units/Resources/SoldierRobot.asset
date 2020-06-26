@@ -23,10 +23,10 @@ MonoBehaviour:
   fileNameOfBullet: SoldierBullet
   RobotType: 0
   unitIcon: {fileID: 21300000, guid: 7f3dcebaf8771c840890d47e9b387b3c, type: 3}
-  nameItemShopEn: 
-  nameItemShopPt: 
-  itemDescriptionEn: 
-  itemDescriptionPt: 
+  nameItemShopEn: Soldier
+  nameItemShopPt: Soldado
+  itemDescriptionEn: Attack enemies.
+  itemDescriptionPt: Ataca os inimigos.
   woodCost: 4
   stoneCost: 8
   currentTimeToCreate: 0

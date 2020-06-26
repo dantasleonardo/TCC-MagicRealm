@@ -5118,7 +5118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: 
-  waitTime: 0.5
+  waitTime: 1.5
   withTime: 1
   transition: {fileID: 1107330133}
 --- !u!4 &1107330135
