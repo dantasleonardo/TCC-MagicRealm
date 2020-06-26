@@ -27,7 +27,7 @@ MonoBehaviour:
   nameItemShopPt: 
   itemDescriptionEn: 
   itemDescriptionPt: 
-  woodCost: 5
-  stoneCost: 5
+  woodCost: 4
+  stoneCost: 8
   currentTimeToCreate: 0
   timeToCreate: 2
