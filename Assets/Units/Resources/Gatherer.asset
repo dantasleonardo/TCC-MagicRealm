@@ -27,7 +27,7 @@ MonoBehaviour:
   nameItemShopPt: Coletor
   itemDescriptionEn: Collect Resources in map.
   itemDescriptionPt: Coleta Recursos no mapa.
-  woodCost: 10
-  stoneCost: 5
+  woodCost: 8
+  stoneCost: 4
   currentTimeToCreate: 0
   timeToCreate: 2.5
