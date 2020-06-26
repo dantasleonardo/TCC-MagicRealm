@@ -17,13 +17,14 @@ public class MagicCastle : IEnemy
     [SerializeField] private GameObject magePrefab;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private CastleCrystal[] crystalsOfCastle;
+    [SerializeField] private LifeBar lifeBar;
 
 
     float distanceSeek;
 
     private void Start()
     {
-        // lifeBar.totalValue = life;
+        lifeBar.totalValue = life;
         totalLife = life;
     }
 
@@ -34,7 +35,7 @@ public class MagicCastle : IEnemy
     public override void TakeDamage(int damage)
     {
         life -= damage;
-        // lifeBar.UpdateBar((float) life);
+        lifeBar.UpdateBar((float) life);
         var lifePercent = (float) life / totalLife;
         if (lifePercent <= 0.0f)
         {
@@ -56,24 +57,6 @@ public class MagicCastle : IEnemy
 
     private void Update()
     {
-        var lifePercent = (float) life / totalLife;
-        if (lifePercent <= 0.0f)
-        {
-            crystalsOfCastle[3].DestroyCrystal();
-        }
-        else if (lifePercent < 0.25f)
-        {
-            crystalsOfCastle[2].DestroyCrystal();
-        }
-        else if (lifePercent < 0.5f)
-        {
-            crystalsOfCastle[1].DestroyCrystal();
-        }
-        else if (lifePercent < 0.75f)
-        {
-            crystalsOfCastle[0].DestroyCrystal();
-        }
-
         if (GameController.Instance.enemies.Count < minMageInMap)
         {
             currentTime += Time.deltaTime;

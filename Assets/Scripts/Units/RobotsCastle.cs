@@ -27,7 +27,7 @@ public class RobotsCastle : Building, IUnit
     public int life;
 
     public int totalLife;
-    // [SerializeField] private LifeBar lifeBar;
+    [SerializeField] private LifeBar lifeBar;
 
     private bool isSelected = false;
 
@@ -37,7 +37,7 @@ public class RobotsCastle : Building, IUnit
     public void TakeDamage(int damage)
     {
         life -= damage;
-        // lifeBar.UpdateBar((float)life);
+        lifeBar.UpdateBar((float)life);
         var lifePercent = (float) life / totalLife;
         if (lifePercent <= 0.0f)
         {
@@ -61,7 +61,7 @@ public class RobotsCastle : Building, IUnit
     public override void InitItems()
     {
         FunctionsPanelIsActive();
-        // lifeBar.totalValue = life;
+        lifeBar.totalValue = life;
         totalLife = life;
     }
 
