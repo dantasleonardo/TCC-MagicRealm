@@ -38,6 +38,9 @@ public class GolemScript : IEnemy
 
         if (GetComponent<AI>().target != null) animator.SetBool("Seeking", true);
         else animator.SetBool("Seeking", false);
+        
+        if(Vector3.Distance(transform.position, basePoint.position) < 0.1f)
+            animator.SetBool("AtTheBase", true);
     }
 
     public override void TakeDamage(int damage)
@@ -46,6 +49,12 @@ public class GolemScript : IEnemy
 
     public override void Attack(int typeAttack)
     {
+        animator.SetTrigger("Attack");
+    }
+
+    public void InstantiateAttack()
+    {
+        // Instantiate()
     }
 
     [Task]

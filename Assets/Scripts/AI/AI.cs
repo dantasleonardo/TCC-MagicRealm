@@ -6,10 +6,10 @@ public class AI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform target;
-    [SerializeField] private float distanceSeek;
+    public float distanceSeek;
     [SerializeField] private float distanceAttack;
     [SerializeField] private float distanceAttackCastle = 4.0f;
-    [SerializeField] private float stopDistance;
+    public float stopDistance;
     [SerializeField] private float turningSpeed = 2.5f;
     private int currentWaypoint;
 
@@ -31,9 +31,10 @@ public class AI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
-    public void Seek(Vector3 target)
+    [Task]
+    public void Seek()
     {
-        agent.SetDestination(target);
+        agent.SetDestination(target.position);
     }
 
     private void Update()
@@ -62,7 +63,7 @@ public class AI : MonoBehaviour
         } while (count == currentWaypoint);
 
         Vector3 target = ManagerWaypoints.Instance.waypoints[count].position;
-        Seek(target);
+        agent.SetDestination(target);
         Task.current.Succeed();
     }
 
@@ -86,7 +87,7 @@ public class AI : MonoBehaviour
                 if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
                 {
                     target = u.transform;
-                    Seek(target.position);
+                    Seek();
                     Task.current.Succeed();
                 }
             });
@@ -118,7 +119,7 @@ public class AI : MonoBehaviour
                 if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
                 {
                     target = u.transform;
-                    Seek(target.position);
+                    Seek();
                     Task.current.Succeed();
                 }
             });
@@ -133,7 +134,7 @@ public class AI : MonoBehaviour
         agent.stoppingDistance = distanceAttack;
         if (Vector3.Distance(transform.position, target.position) <= distanceSeek)
         {
-            Seek(target.position);
+            Seek();
             Task.current.Succeed();
         }
         else
