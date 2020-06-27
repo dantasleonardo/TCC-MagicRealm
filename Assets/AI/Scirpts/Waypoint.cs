@@ -1,7 +1,8 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.AI;
 
-public class Waypoint : StateMachineBehaviour {
+public class Waypoint : StateMachineBehaviour
+{
     private BotAi bot;
 
     public float timeNextTarget = 2.0f;
@@ -10,7 +11,8 @@ public class Waypoint : StateMachineBehaviour {
 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
         bot = animator.GetComponent<BotAi>();
         bot.baseAi.Waypoint();
         bot.baseAi.agent.stoppingDistance = 0.0f;
@@ -18,33 +20,41 @@ public class Waypoint : StateMachineBehaviour {
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        if (bot.baseAi.agent.pathStatus == UnityEngine.AI.NavMeshPathStatus.PathComplete && bot.baseAi.agent.remainingDistance == 0) {
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        if (bot.baseAi.agent.pathStatus == NavMeshPathStatus.PathComplete &&
+            bot.baseAi.agent.remainingDistance == 0)
+        {
             timeCount += Time.deltaTime;
-            if (timeCount > timeNextTarget) {
+            if (timeCount > timeNextTarget)
+            {
                 bot.baseAi.Waypoint();
                 timeCount = 0.0f;
             }
         }
 
-        if (GameController.Instance.resources[ResourceType.Stone] > strikeAmount || GameController.Instance.resources[ResourceType.Wood] > strikeAmount) {
+        if (GameController.Instance.resources[ResourceType.Stone] > strikeAmount ||
+            GameController.Instance.resources[ResourceType.Wood] > strikeAmount)
+        {
             bot.distanceSeek = 100;
             bot.target = GameController.Instance.robotsCastle.spawnPosition;
             bot.UpdateAnimation(true, false, false, false);
         }
-        else {
+        else
+        {
             bot.distanceSeek = bot.gameObject.GetComponent<MageScript>().properties.distanceSeek;
-            UnitController.Instance.units.ForEach(u => {
-                if (bot.target == null) {
-                    if (Vector3.Distance(bot.transform.position, u.transform.position) <= bot.distanceSeek) {
+            UnitController.Instance.units.ForEach(u =>
+            {
+                if (bot.target == null)
+                {
+                    if (Vector3.Distance(bot.transform.position, u.transform.position) <= bot.distanceSeek)
+                    {
                         bot.target = u.transform;
                         bot.UpdateAnimation(true, false, false, false);
                     }
                 }
             });
         }
-
-
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

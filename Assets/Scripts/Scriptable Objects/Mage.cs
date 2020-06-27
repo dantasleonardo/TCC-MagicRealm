@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "Mage Character", menuName = "Enemy/Mage/Character")]
 public class Mage : ScriptableObject

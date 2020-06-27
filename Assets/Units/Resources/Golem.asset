@@ -16,8 +16,8 @@ MonoBehaviour:
   totalLife: 200
   totalAttacks: 1
   attacksPrefabs:
-  - {fileID: 0}
-  distanceSeek: 1.5
-  distanceAttack: 0.75
+  - {fileID: 11400000, guid: b7c546f26ce6e9e41ac2ce8c11784d49, type: 2}
+  distanceSeek: 3
+  distanceAttack: 1.5
   stopDistance: 0.2
   Speed: 1

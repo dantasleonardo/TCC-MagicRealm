@@ -71,6 +71,9 @@
             </e>
           </e>
         </e>
+        <e p="Editor" t="Include">
+          <e p="MissionEditor.cs" t="Include" />
+        </e>
         <e p="PandaBehaviour" t="Include">
           <e p="ChangeLog.txt" t="Include" />
           <e p="Core" t="Include">
@@ -101,9 +104,6 @@
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
-          <e p="Editor" t="Include">
-            <e p="MissionEditor.cs" t="Include" />
-          </e>
           <e p="Enum" t="Include">
             <e p="DestroyType.cs" t="Include" />
             <e p="MissionType.cs" t="Include" />
@@ -124,6 +124,10 @@
             <e p="LocalizationTextMeshPro.cs" t="Include" />
           </e>
           <e p="Magic" t="Include">
+            <e p="CastleCrystal.cs" t="Include" />
+            <e p="Crystal.cs" t="Include" />
+            <e p="Dome.cs" t="Include" />
+            <e p="GetCurrentRotation.cs" t="Include" />
             <e p="MagicCastle.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
@@ -186,9 +190,6 @@
             <e p="Robot.cs" t="Include" />
             <e p="RobotsCastle.cs" t="Include" />
             <e p="UnitScript.cs" t="Include" />
-          </e>
-          <e p="Utilities" t="Include">
-            <e p="Utils.cs" t="Include" />
           </e>
         </e>
       </e>

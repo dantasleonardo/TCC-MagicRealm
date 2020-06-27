@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Magic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -59,19 +59,22 @@ public class AttackUnitScript : Robot
             firerateAttack = attackUnitProperties.firerateAttack;
             lifeBar.totalValue = life;
         }
+
+        GameController.Instance.attackUnits.Add(gameObject);
     }
 
     public override void Action(Vector3 target, GameObject targetObject = null)
     {
         print($"Hit: {targetObject.tag}");
-        if (targetObject.CompareTag("Mages"))
+        if (targetObject.CompareTag("Mages") || targetObject.CompareTag("Crystal"))
         {
             agent.stoppingDistance = attakDistance;
             currentTarget = targetObject;
+            MoveTo(target);
         }
         else if (targetObject.CompareTag("Ground"))
         {
-            agent.stoppingDistance = 0.0f;
+            agent.stoppingDistance = 0.1f;
             currentTarget = null;
             MoveTo(target);
         }
@@ -82,32 +85,51 @@ public class AttackUnitScript : Robot
         GetEnemyDistance();
         var speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
         animator.SetFloat("Speed", speed);
-        if (speed < 0.1f && currentTarget != null)
+        if (currentTarget != null)
         {
-            RaycastHit hit;
-            LookTarget();
-            var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
-            if (Physics.Raycast(position, transform.forward, out hit, 50.0f))
+            if (speed < 0.1f)
             {
-                if (hit.collider.CompareTag("Mages"))
+                if (currentTarget.CompareTag("Crystal"))
                 {
-                    // transform.LookAt(currentTarget.transform);
-                    LookTarget();
-                    currentTimeToFire += Time.deltaTime;
+                    currentTarget = currentTarget.GetComponent<Crystal>().GetCurrentDurability()
+                        ? currentTarget
+                        : null;
+                    if (currentTarget == null)
+                        return;
+                }
 
-                    if (currentTimeToFire > firerateAttack)
+                RaycastHit hit;
+                LookTarget();
+                var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
+                if (Physics.Raycast(position, transform.forward, out hit,
+                    attackUnitProperties.attackDistace + 0.5f))
+                {
+                    if (hit.collider.CompareTag("Mages") || hit.collider.CompareTag("Crystal"))
                     {
-                        if (attackWithAnimation)
-                            animator.SetTrigger("Attacking");
-                        else BulletInstantiate();
-                        currentTimeToFire = 0.0f;
+                        // transform.LookAt(currentTarget.transform);
+                        LookTarget();
+                        currentTimeToFire += Time.deltaTime;
+
+                        if (currentTimeToFire > firerateAttack)
+                        {
+                            if (attackWithAnimation)
+                                animator.SetTrigger("Attacking");
+                            else BulletInstantiate();
+                            currentTimeToFire = 0.0f;
+                        }
                     }
                 }
             }
-        }
-        else if (currentTarget != null && currentTarget.CompareTag("Mages"))
-        {
-            MoveTo(currentTarget.transform.position);
+            else if (currentTarget.CompareTag("Mages"))
+            {
+                agent.stoppingDistance = attackUnitProperties.attackDistace;
+                MoveTo(currentTarget.transform.position);
+            }
+            else if (currentTarget.CompareTag("Crystal"))
+            {
+                agent.stoppingDistance = attackUnitProperties.attackDistace;
+                MoveTo(currentTarget.transform.position);
+            }
         }
     }
 

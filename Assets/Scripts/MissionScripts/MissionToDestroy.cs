@@ -9,6 +9,9 @@ public class MissionToDestroy : MonoBehaviour, IMission
     [SerializeField] private Text missionText;
     [SerializeField] private int count;
 
+
+    [SerializeField] private bool cutsceneUsed;
+
     public void Init(Mission mission)
     {
         properties = mission;
@@ -27,6 +30,14 @@ public class MissionToDestroy : MonoBehaviour, IMission
                 {
                     missionText.text = SetLanguageText(DestroyType.Crystals);
                     missionText.color = Color.gray;
+                    // var dome = GameObject.FindWithTag("Dome");
+                    // if(dome != null)
+                    //     dome.GetComponent<Dome>().DestroyDome();
+                    if (!cutsceneUsed)
+                    {
+                        Invoke(nameof(PlayDomeCutscene), 3.1f);
+                        cutsceneUsed = true;
+                    }
                 }
                 else
                 {
@@ -51,6 +62,11 @@ public class MissionToDestroy : MonoBehaviour, IMission
         }
 
         return false;
+    }
+
+    private void PlayDomeCutscene()
+    {
+        MissionsDirector.instance.PlayCutsceneOfDome();
     }
 
     private string SetLanguageText(DestroyType destroyType)

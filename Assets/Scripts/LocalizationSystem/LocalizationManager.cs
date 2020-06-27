@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LocalizationSystem
 {
@@ -13,7 +12,7 @@ namespace LocalizationSystem
         {
             if (instance == null) instance = this;
             else Destroy(this.gameObject);
-            
+
             DontDestroyOnLoad(this.gameObject);
 
             if (SaveSystem.SaveSystem.Load() != null)
@@ -37,9 +36,9 @@ namespace LocalizationSystem
             {
                 var normalText = text.GetComponent<LocalizationText>();
                 var textMeshPro = text.GetComponent<LocalizationTextMeshPro>();
-                if(textMeshPro != null)
+                if (textMeshPro != null)
                     textMeshPro.UpdateText();
-                else if(normalText != null)
+                else if (normalText != null)
                     normalText.UpdateText();
             }
         }

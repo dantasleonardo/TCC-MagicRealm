@@ -1,16 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Panda;
 using UnityEngine;
 using UnityEngine.AI;
-using Panda;
 
 public class AI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform target;
-    [SerializeField] private float distanceSeek;
+    public float distanceSeek;
     [SerializeField] private float distanceAttack;
-    [SerializeField] private float stopDistance;
+    [SerializeField] private float distanceAttackCastle = 4.0f;
+    public float stopDistance;
     [SerializeField] private float turningSpeed = 2.5f;
     private int currentWaypoint;
 
@@ -32,9 +31,25 @@ public class AI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
-    public void Seek(Vector3 target)
+    [Task]
+    public void Seek()
     {
-        agent.SetDestination(target);
+        agent.SetDestination(target.position);
+    }
+
+    private void Update()
+    {
+        if (target != null)
+        {
+            if (target.GetComponent<RobotsCastle>() != null)
+            {
+                agent.stoppingDistance = distanceAttackCastle;
+            }
+            else
+            {
+                agent.stoppingDistance = distanceAttack;
+            }
+        }
     }
 
     [Task]
@@ -48,7 +63,7 @@ public class AI : MonoBehaviour
         } while (count == currentWaypoint);
 
         Vector3 target = ManagerWaypoints.Instance.waypoints[count].position;
-        Seek(target);
+        agent.SetDestination(target);
         Task.current.Succeed();
     }
 
@@ -72,7 +87,7 @@ public class AI : MonoBehaviour
                 if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
                 {
                     target = u.transform;
-                    Seek(target.position);
+                    Seek();
                     Task.current.Succeed();
                 }
             });
@@ -104,7 +119,7 @@ public class AI : MonoBehaviour
                 if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
                 {
                     target = u.transform;
-                    Seek(target.position);
+                    Seek();
                     Task.current.Succeed();
                 }
             });
@@ -117,8 +132,16 @@ public class AI : MonoBehaviour
     public void SeekTarget()
     {
         agent.stoppingDistance = distanceAttack;
-        Seek(target.position);
-        Task.current.Succeed();
+        if (Vector3.Distance(transform.position, target.position) <= distanceSeek)
+        {
+            Seek();
+            Task.current.Succeed();
+        }
+        else
+        {
+            target = null;
+            Task.current.Succeed();
+        }
     }
 
     [Task]
@@ -127,9 +150,15 @@ public class AI : MonoBehaviour
         if (target != null)
         {
             if (Vector3.Distance(transform.position, target.position) <= agent.stoppingDistance)
+            {
+                agent.isStopped = true;
                 return true;
+            }
             else
+            {
+                agent.isStopped = false;
                 return false;
+            }
         }
         else
             return false;
@@ -139,6 +168,7 @@ public class AI : MonoBehaviour
     public void Attack()
     {
         LookTarget();
+
         timeCount += Time.deltaTime;
         if (timeCount > timeFirerate)
         {
@@ -166,10 +196,41 @@ public class AI : MonoBehaviour
         }
     }
 
+    [Task]
+    public void CastleIsTarget()
+    {
+        if (Random.Range(0.0f, 500.0f) < 10.0f)
+        {
+            distanceSeek = 100.0f;
+            target = GameController.Instance.robotsCastle.transform;
+        }
+
+        Task.current.Succeed();
+    }
+
     public void LookTarget()
     {
         Vector3 direction = (target.transform.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turningSpeed);
+    }
+
+    [Task]
+    public void CheckResources()
+    {
+        Debug.Log($"{gameObject.name}  Verificou Resources");
+        if (GameController.Instance.resources[ResourceType.Stone] > 150 ||
+            GameController.Instance.resources[ResourceType.Stone] > 150)
+        {
+            Debug.Log($"{gameObject.name}  está com o castelo como alvo");
+            agent.stoppingDistance = distanceAttackCastle;
+            target = GameController.Instance.robotsCastle.transform;
+            Task.current.Succeed();
+        }
+        else
+        {
+            distanceSeek = GetComponent<MageScript>().properties.distanceSeek;
+            Task.current.Complete(false);
+        }
     }
 }

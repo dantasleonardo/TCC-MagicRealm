@@ -18,13 +18,16 @@ MonoBehaviour:
   attackDistace: 2
   firerateAttack: 0.2
   turningSpeed: 5
-  unitPrefab: {fileID: 0}
+  unitPrefab: {fileID: 7187953135026250225, guid: db2eff9c1c5943b43a306d83208e6c4c,
+    type: 3}
   fileNameOfBullet: SoldierBullet
   RobotType: 0
   unitIcon: {fileID: 21300000, guid: 7f3dcebaf8771c840890d47e9b387b3c, type: 3}
-  nameItemShop: Soldier
-  itemDescription: 
-  woodCost: 5
-  stoneCost: 5
+  nameItemShopEn: Soldier
+  nameItemShopPt: Soldado
+  itemDescriptionEn: Attack enemies.
+  itemDescriptionPt: Ataca os inimigos.
+  woodCost: 4
+  stoneCost: 8
   currentTimeToCreate: 0
   timeToCreate: 2

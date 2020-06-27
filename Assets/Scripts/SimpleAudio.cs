@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SimpleAudio : MonoBehaviour
@@ -20,7 +18,8 @@ public class SimpleAudio : MonoBehaviour
         }
     }
 
-    private void Update() {
+    private void Update()
+    {
         if (SceneManager.GetActiveScene().name != "Menu" && SceneManager.GetActiveScene().name != "Credits")
             Destroy(this.gameObject);
     }

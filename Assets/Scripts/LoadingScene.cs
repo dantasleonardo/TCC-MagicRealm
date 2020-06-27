@@ -1,13 +1,14 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadingScene : MonoBehaviour {
+public class LoadingScene : MonoBehaviour
+{
     public static LoadingScene Instance;
     public string scene;
 
-    private void Awake() {
+    private void Awake()
+    {
         if (Instance == null)
             Instance = this;
         else
@@ -21,33 +22,40 @@ public class LoadingScene : MonoBehaviour {
 
     public Animator transition;
 
-    public void StartTransition() {
+    public void StartTransition()
+    {
         transition.SetBool("Start", true);
     }
-    public void LoadScene() {
+
+    public void LoadScene()
+    {
         if (withTime)
             StartCoroutine(LoadSceneAsync());
         else
             StartCoroutine(LoadSceneAsyncExtraTime());
-
     }
 
-    IEnumerator LoadSceneAsync() {
+    IEnumerator LoadSceneAsync()
+    {
         yield return new WaitForSeconds(waitTime);
         StartCoroutine(LoadSceneAsyncExtraTime());
     }
 
-    IEnumerator LoadSceneAsyncExtraTime() {
+    IEnumerator LoadSceneAsyncExtraTime()
+    {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
-        while (!asyncLoad.isDone) {
+        while (!asyncLoad.isDone)
+        {
             time += Time.deltaTime;
             yield return null;
         }
+
         transition.SetBool("Start", false);
         transition.SetBool("End", true);
     }
 
-    IEnumerator Load(AsyncOperation async) {
+    IEnumerator Load(AsyncOperation async)
+    {
         yield return new WaitForSeconds(waitTime);
         async.allowSceneActivation = true;
     }

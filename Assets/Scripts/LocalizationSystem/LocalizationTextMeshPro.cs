@@ -1,5 +1,4 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace LocalizationSystem
@@ -12,14 +11,14 @@ namespace LocalizationSystem
 
         private void Start()
         {
-            if(textInHud == null)
+            if (textInHud == null)
                 textInHud = GetComponent<TextMeshProUGUI>();
             UpdateText();
         }
 
         private void OnEnable()
         {
-            if(textInHud == null)
+            if (textInHud == null)
                 textInHud = GetComponent<TextMeshProUGUI>();
             UpdateText();
         }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Panda;
+﻿using Panda;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -25,19 +23,24 @@ public class GolemScript : IEnemy
         GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance,
             0.0f);
     }
-    
-    private void Update() {
+
+    private void Update()
+    {
         float fillAmount = lifeBar.foregroundBar.fillAmount;
         speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
         animator.SetFloat("Speed", speed);
 
-        if(life <= 0 && fillAmount <= 0.0f) {
+        if (life <= 0 && fillAmount <= 0.0f)
+        {
             GameController.Instance.enemies.Remove(this.gameObject);
             Destroy(this.gameObject);
         }
-        
-        if(GetComponent<AI>().target != null) animator.SetBool("Seeking", true);
+
+        if (GetComponent<AI>().target != null) animator.SetBool("Seeking", true);
         else animator.SetBool("Seeking", false);
+        
+        if(Vector3.Distance(transform.position, basePoint.position) < 0.1f)
+            animator.SetBool("AtTheBase", true);
     }
 
     public override void TakeDamage(int damage)
@@ -46,12 +49,19 @@ public class GolemScript : IEnemy
 
     public override void Attack(int typeAttack)
     {
+        animator.SetTrigger("Attack");
+    }
+
+    public void InstantiateAttack()
+    {
+        // Instantiate()
     }
 
     [Task]
     private bool GetBaseDistance()
     {
-        Debug.Log($"Distance base: {Vector3.Distance(transform.position, basePoint.position) < baseDistance} {Vector3.Distance(transform.position, basePoint.position)}");
+        Debug.Log(
+            $"Distance base: {Vector3.Distance(transform.position, basePoint.position) < baseDistance} {Vector3.Distance(transform.position, basePoint.position)}");
         if (Vector3.Distance(transform.position, basePoint.position) < baseDistance)
         {
             return true;

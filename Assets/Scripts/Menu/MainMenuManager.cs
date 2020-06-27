@@ -1,5 +1,4 @@
-﻿using System;
-using LocalizationSystem;
+﻿using LocalizationSystem;
 using SaveSystem;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,15 +19,16 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject newGameWarningPopup;
     [SerializeField] private Button continueWarningButton;
-    [SerializeField] private string loadScene = "ProgrammingScene";
+    [SerializeField] private string loadScene = "Nivel1";
     [SerializeField] private GameObject transition;
+
     void Start()
     {
         if (SaveSystem.SaveSystem.Load() != null)
             continueButton.gameObject.SetActive(true);
         else
             continueButton.gameObject.SetActive(false);
-        
+
         continueButton.onClick.AddListener(() =>
         {
             continuePanel.SetActive(true);
@@ -36,12 +36,12 @@ public class MainMenuManager : MonoBehaviour
         });
         newGameButton.onClick.AddListener(() =>
         {
-            if(SaveSystem.SaveSystem.Load() != null)
+            if (SaveSystem.SaveSystem.Load() != null)
                 newGameWarningPopup.SetActive(true);
             else
                 NewGame();
         });
-        
+
         continueWarningButton.onClick.AddListener(() =>
         {
             NewGame();
@@ -51,13 +51,12 @@ public class MainMenuManager : MonoBehaviour
 
     private void NewGame()
     {
-        var user = new User(LocalizationManager.instance.GetLanguageKey(),GameManager.instance.volume,new bool[] {false, false, false});
+        var user = new User(LocalizationManager.instance.GetLanguageKey(), GameManager.instance.volume,
+            new bool[] {true, true, false});
         SaveSystem.SaveSystem.Save(user);
         transition.SetActive(true);
         LoadingScene.Instance.scene = loadScene;
         LoadingScene.Instance.StartTransition();
         this.gameObject.SetActive(false);
     }
-
-    
 }

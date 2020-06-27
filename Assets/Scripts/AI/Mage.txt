@@ -2,13 +2,19 @@ tree("Root")
 	fallback
 		tree ("AttackEnemy")
 		tree ("SeekTarget")
+		tree ("CheckCurrentResource")
 		tree ("NormalActions")
+		
+tree ("CheckCurrentResource")
+    sequence
+        CheckResources
 
 tree ("NormalActions")
 	sequence
 		Waypoint
 		AgentArrivedDestinationWithGetDistance
 		Wait 2.0
+		CastleIsTarget
 
 tree ("SeekTarget")
 	parallel

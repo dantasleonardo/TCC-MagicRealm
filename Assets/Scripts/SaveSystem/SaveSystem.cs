@@ -3,9 +3,6 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-
-#pragma warning disable 168
 
 namespace SaveSystem
 {
@@ -17,7 +14,7 @@ namespace SaveSystem
         {
             var formatter = new BinaryFormatter();
             var stream = new FileStream(SavePath, FileMode.Create);
-            
+
             formatter.Serialize(stream, user);
             stream.Close();
         }

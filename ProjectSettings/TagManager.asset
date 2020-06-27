@@ -13,6 +13,8 @@ TagManager:
   - Attack
   - baseGolem
   - Text
+  - Crystal
+  - Dome
   layers:
   - Default
   - TransparentFX

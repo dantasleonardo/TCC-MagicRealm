@@ -345,6 +345,7 @@ MonoBehaviour:
   target: {fileID: 0}
   distanceSeek: 0
   distanceAttack: 0
+  distanceAttackCastle: 4
   stopDistance: 0
   turningSpeed: 5
   timeFirerate: 2

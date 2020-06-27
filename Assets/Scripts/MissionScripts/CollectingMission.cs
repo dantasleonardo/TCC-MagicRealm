@@ -1,5 +1,4 @@
-﻿using System.Net.Configuration;
-using LocalizationSystem;
+﻿using LocalizationSystem;
 using UnityEngine;
 using UnityEngine.UI;
 

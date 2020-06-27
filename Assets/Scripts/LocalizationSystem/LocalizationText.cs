@@ -11,18 +11,26 @@ namespace LocalizationSystem
 
         private void Start()
         {
-            if(textInHud == null)
+            if (textInHud == null)
+            {
                 textInHud = GetComponent<Text>();
-            UpdateText();
+                UpdateText();
+            }
         }
 
         private void OnEnable()
         {
-            if(textInHud == null)
+            if (textInHud == null)
+            {
                 textInHud = GetComponent<Text>();
-            UpdateText();
+                UpdateText();
+            }
+            else
+            {
+                UpdateText();
+            }
         }
-        
+
         public void UpdateText()
         {
             switch (LocalizationManager.instance.GetLanguageKey())

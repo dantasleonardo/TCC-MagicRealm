@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour
     public Transform itemLoadingParent;
 
     [Header("Manager")] public List<GameObject> enemies = new List<GameObject>();
+    public List<GameObject> attackUnits = new List<GameObject>();
     public int stonesCollected;
     public int woodCollected;
     public int crystalsDestroyed;

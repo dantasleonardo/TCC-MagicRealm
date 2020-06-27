@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(CanvasGroup))]
 public class BlinkUI : MonoBehaviour
@@ -9,11 +7,13 @@ public class BlinkUI : MonoBehaviour
     private CanvasGroup m_CanvasGroup;
 
 
-    private void Awake() {
+    private void Awake()
+    {
         m_CanvasGroup = GetComponent<CanvasGroup>();
     }
 
-    private void Update() {
+    private void Update()
+    {
         m_CanvasGroup.alpha = (Mathf.Sin(Time.time * m_SmoothTime) + 1.0f) * 0.5f;
     }
 }
