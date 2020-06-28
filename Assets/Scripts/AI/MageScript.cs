@@ -37,7 +37,7 @@ public class MageScript : IEnemy
         }
 
         lifeBar.UpdateBar(life);
-        StartCoroutine(DisableLifeBar());
+        var disableBar = StartCoroutine(DisableLifeBar(life));
     }
 
     private void Update()
@@ -53,11 +53,14 @@ public class MageScript : IEnemy
         }
     }
 
-    private IEnumerator DisableLifeBar()
+    private IEnumerator DisableLifeBar(int currentLife)
     {
         yield return new WaitForSeconds(disableLifeBar);
-        lifeBar.BarIsActive(false);
-        lifeBar.isActive = false;
+        if (currentLife == life)
+        {
+            lifeBar.BarIsActive(false);
+            lifeBar.isActive = false;
+        }
     }
 
     void Start()

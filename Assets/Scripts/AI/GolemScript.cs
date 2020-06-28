@@ -4,15 +4,13 @@ using UnityEngine.AI;
 
 public class GolemScript : IEnemy
 {
+    [SerializeField] private int life;
     [SerializeField] private Transform spawnAttack;
     [SerializeField] private LifeBar lifeBar;
     [SerializeField] private float disableLifeBar = 3.0f;
     [SerializeField] private Animator animator;
     [SerializeField] float speed;
     [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private Transform basePoint;
-    [SerializeField] private float baseDistance;
-    private int life;
     [SerializeField] private bool isStanding;
 
     void Start()
@@ -38,9 +36,6 @@ public class GolemScript : IEnemy
 
         if (GetComponent<AI>().target != null) animator.SetBool("Seeking", true);
         else animator.SetBool("Seeking", false);
-        
-        if(Vector3.Distance(transform.position, basePoint.position) < 0.1f)
-            animator.SetBool("AtTheBase", true);
     }
 
     public override void TakeDamage(int damage)
@@ -54,36 +49,7 @@ public class GolemScript : IEnemy
 
     public void InstantiateAttack()
     {
-        // Instantiate()
-    }
-
-    [Task]
-    private bool GetBaseDistance()
-    {
-        Debug.Log(
-            $"Distance base: {Vector3.Distance(transform.position, basePoint.position) < baseDistance} {Vector3.Distance(transform.position, basePoint.position)}");
-        if (Vector3.Distance(transform.position, basePoint.position) < baseDistance)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    [Task]
-    private void SetTargetEqualNUll()
-    {
-        GetComponent<AI>().target = null;
-        Task.current.Succeed();
-    }
-
-    [Task]
-    private void SetTargetIsBasePoint()
-    {
-        GetComponent<AI>().target = basePoint;
-        Task.current.Succeed();
+        Instantiate(properties.attacksPrefabs[0].bulletPrefab, spawnAttack.position, spawnAttack.rotation);
     }
 
     [Task]

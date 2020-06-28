@@ -1,21 +1,13 @@
 tree("Root")
     fallback
-        tree ("GetBaseDistance")
+        tree ("GetEnemyDistance")
         tree ("AttackEnemy")
         tree ("GetTarget")
 
-tree ("GetBaseDistance")
+tree ("GetEnemyDistance")
     fallback
         while not HaveTarget
             GetEnemyDistance
-        while not TargetIsBase
-            while not GetBaseDistance
-                SetTargetIsBasePoint
-        while ArrivedDestination
-            SetTargetEqualNUll
-        while TargetIsBase
-            while not ArrivedDestination
-                SeekTarget
 
 tree("GetTarget")
     fallback

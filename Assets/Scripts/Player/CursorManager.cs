@@ -6,6 +6,7 @@ public class CursorManager : MonoBehaviour
 {
     [SerializeField] private Texture2D attackCursor;
     [SerializeField] private Texture2D collectCursor;
+    [SerializeField] private Texture2D defaultCursor;
     private Camera mainCamera;
 
     void Start()
@@ -30,6 +31,10 @@ public class CursorManager : MonoBehaviour
             else if (hit.collider.CompareTag("Mages"))
             {
                 Cursor.SetCursor(attackCursor,new Vector2(10.0f,10.0f), CursorMode.Auto);
+            }
+            else
+            {
+                Cursor.SetCursor(defaultCursor,new Vector2(10.0f,10.0f), CursorMode.Auto);
             }
         }
     }
