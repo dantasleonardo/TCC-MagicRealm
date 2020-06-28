@@ -177,6 +177,7 @@
           <e p="UI" t="Include">
             <e p="AttackUnitItem.cs" t="Include" />
             <e p="ButtonStoreItem.cs" t="Include" />
+            <e p="CountGatherer.cs" t="Include" />
             <e p="CreationLoading.cs" t="Include" />
             <e p="GathererUnitItem.cs" t="Include" />
             <e p="ItemStore.cs" t="Include" />
