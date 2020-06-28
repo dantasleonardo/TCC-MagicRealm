@@ -153,6 +153,7 @@
             <e p="MissionToDestroy.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="CursorManager.cs" t="Include" />
             <e p="UnitController.cs" t="Include" />
             <e p="UnitSelection.cs" t="Include" />
           </e>

@@ -8725,6 +8725,7 @@ GameObject:
   - component: {fileID: 788781883}
   - component: {fileID: 788781882}
   - component: {fileID: 788781881}
+  - component: {fileID: 788781884}
   m_Layer: 0
   m_Name: UnitControl
   m_TagString: Untagged
@@ -8781,6 +8782,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &788781884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788781880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9733ec300225544825f8954601216d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCursor: {fileID: 2800000, guid: e3de9236323967a4e8e25279ee44eada, type: 3}
+  collectCursor: {fileID: 2800000, guid: 7f27c44f5e0ed394eb76e2d3ad3e4359, type: 3}
 --- !u!1 &793371696
 GameObject:
   m_ObjectHideFlags: 0

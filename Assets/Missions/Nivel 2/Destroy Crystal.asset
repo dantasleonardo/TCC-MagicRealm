@@ -19,4 +19,4 @@ MonoBehaviour:
   resourceType: 0
   amountOfResources: 0
   destroyType: 0
-  amountToDestroyed: 1
+  amountToDestroyed: 3
