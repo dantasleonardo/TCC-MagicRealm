@@ -25,10 +25,12 @@ public class GahtererUnitScript : Robot
     [Header("Animations")] [SerializeField]
     private float distanceStopAnimationPlay = 0.2f;
 
+    [SerializeField] private GameObject countGatherer;
+    [SerializeField] private Transform countGathererSpawn;
+
     public Animator animator;
     private float speed;
-    [Header("Actions")]
-    public bool gathering;
+    [Header("Actions")] public bool gathering;
     public bool goingToBase;
 
     #region UnitRelated
@@ -78,41 +80,52 @@ public class GahtererUnitScript : Robot
 
     private IEnumerator GetResource()
     {
-        yield return new WaitForSeconds(gatheringSpeed);
-
-        var resources = resourceTarget.GetResource(amountResources);
-
-        ResourceType key = ResourceType.Stone;
-        var value = 0;
-
-        foreach (var resource in resources)
+        if (resourceTarget != null)
         {
-            key = resource.Key;
-            value = resource.Value;
-        }
+            yield return new WaitForSeconds(gatheringSpeed / 2.5f);
 
-        if (inventory.ContainsKey(key))
-        {
-            inventory[key] += value;
-        }
-        else
-        {
-            inventory.Add(key, value);
-        }
+            var countG = Instantiate(countGatherer, countGathererSpawn.position, countGathererSpawn.rotation,
+                countGathererSpawn);
+            countG.GetComponent<CountGatherer>().SetCountValue(amountResources);
+            Debug.Log("Está chamando");
+        
+            yield return new WaitForSeconds(gatheringSpeed / 1.5f);
 
-        print($"Key: {key} Value: {inventory[key]}");
-        currentAmountResources += value;
+            var resources = resourceTarget.GetResource(amountResources);
 
-        if (currentAmountResources < maxAmountResources)
-        {
-            StartCoroutine(GetResource());
-        }
-        else
-        {
-            gathering = false;
-            inventoryIsFull = true;
-            GoToBase();
-            goingToBase = true;
+            ResourceType key = ResourceType.Stone;
+            var value = 0;
+
+            foreach (var resource in resources)
+            {
+                key = resource.Key;
+                value = resource.Value;
+            }
+
+            if (inventory.ContainsKey(key))
+            {
+                inventory[key] += value;
+            }
+            else
+            {
+                inventory.Add(key, value);
+            }
+
+            print($"Key: {key} Value: {inventory[key]}");
+            currentAmountResources += value;
+
+
+            if (currentAmountResources < maxAmountResources)
+            {
+                StartCoroutine(GetResource());
+            }
+            else
+            {
+                gathering = false;
+                inventoryIsFull = true;
+                GoToBase();
+                goingToBase = true;
+            }
         }
     }
 
@@ -177,7 +190,8 @@ public class GahtererUnitScript : Robot
     private void GiveResources()
     {
         RobotsCastle.Instance.GetResourcesOfUnit(inventory);
-        GoToResource();
+        if(resourceTarget != null)
+            GoToResource();
         inventoryIsFull = false;
         goingToBase = false;
         currentAmountResources = 0;

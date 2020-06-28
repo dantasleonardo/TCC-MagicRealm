@@ -19037,7 +19037,7 @@ PrefabInstance:
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.548
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
@@ -19047,27 +19047,27 @@ PrefabInstance:
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.01
+      value: 11.69
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7653996
+      value: 0.76040596
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6435554
+      value: 0.6494481
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
@@ -19082,7 +19082,7 @@ PrefabInstance:
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 99.885
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 779786565135781566, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
         type: 3}
@@ -19093,11 +19093,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gatherer
-      objectReference: {fileID: 0}
-    - target: {fileID: 8708285653413907895, guid: cacd5c5b2488ba44fb70fc405ce77fa4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cacd5c5b2488ba44fb70fc405ce77fa4, type: 3}

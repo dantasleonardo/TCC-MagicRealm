@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PressStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PandaBehaviour/Core/Editor/PandaBehaviourEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
@@ -116,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" />
@@ -151,10 +154,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" />
@@ -167,6 +168,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
       </list>
     </option>
   </component>
@@ -235,7 +239,7 @@
       <workItem from="1593097071811" duration="3723000" />
       <workItem from="1593181606188" duration="4593000" />
       <workItem from="1593195508961" duration="9848000" />
-      <workItem from="1593358681562" duration="4374000" />
+      <workItem from="1593358681562" duration="8814000" />
     </task>
     <servers />
   </component>
@@ -284,9 +288,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593361174655">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593368781713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593361174655" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593368781713" />
   </component>
 </project>

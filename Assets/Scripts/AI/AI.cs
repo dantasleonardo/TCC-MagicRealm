@@ -92,8 +92,11 @@ public class AI : MonoBehaviour
                 }
             });
         }
-
         if (Vector3.Distance(transform.position, agent.destination) <= agent.stoppingDistance)
+        {
+            Task.current.Succeed();
+        }
+        else
         {
             Task.current.Succeed();
         }
