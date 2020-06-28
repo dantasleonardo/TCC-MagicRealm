@@ -21283,7 +21283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   director: {fileID: 119978852}
-  cutsceneDome: {fileID: 0}
+  cutsceneDome: {fileID: 2121451729}
   screenText: {fileID: 1353037250}
 --- !u!1001 &1792598272
 PrefabInstance:

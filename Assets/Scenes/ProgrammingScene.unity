@@ -17396,7 +17396,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1787219435}
-  - component: {fileID: 1787219436}
   - component: {fileID: 1787219437}
   - component: {fileID: 1787219438}
   m_Layer: 5
@@ -17427,35 +17426,6 @@ RectTransform:
   m_AnchoredPosition: {x: 480, y: 0}
   m_SizeDelta: {x: -960, y: 540}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1787219436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787219434}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420f6fa38a2559d4ea0d8eaaee57d21e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalStoneResouceCollected: 100
-  totalWoodResouceCollected: 100
-  stoneObjectiveText: {fileID: 1367969869}
-  stoneObjectiveTitle: Collect Stones
-  stoneCompleted: 0
-  woodObjectiveText: {fileID: 1758551563}
-  woodObjectiveTitle: Collect Woods
-  woodCompleted: 0
-  destroyCastleText: {fileID: 185682615}
-  destroyCastleTitle: Destroy Magic Castle
-  destroyCastleCompleted: 0
-  youLose: 0
-  youWin: YOU WIN
-  youLoseString: YOU LOSE
-  objectiveCompletedColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0.8509804}
-  director: {fileID: 119978852}
-  gameoverText: {fileID: 1353037250}
 --- !u!114 &1787219437
 MonoBehaviour:
   m_ObjectHideFlags: 0

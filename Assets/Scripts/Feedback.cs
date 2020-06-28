@@ -17,7 +17,6 @@ public class Feedback : MonoBehaviour
 
     public void NextLevel(string Level)
     {
-        LoadingScene.Instance.scene = Level;
-        LoadingScene.Instance.StartTransition();
+        SceneManager.LoadScene(Level);
     }
 }

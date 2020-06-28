@@ -21,9 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Missions/Nivel 2/Destroy Crystal.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Missions/Nivel 2/Destroy Crystal.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +134,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" />
@@ -163,9 +165,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
       </list>
     </option>
   </component>
@@ -233,7 +236,8 @@
       <workItem from="1593086556855" duration="6781000" />
       <workItem from="1593097071811" duration="3723000" />
       <workItem from="1593181606188" duration="4593000" />
-      <workItem from="1593195508961" duration="8138000" />
+      <workItem from="1593195508961" duration="9848000" />
+      <workItem from="1593358681562" duration="388000" />
     </task>
     <servers />
   </component>
@@ -282,9 +286,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593204917200">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593208309534">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593204917200" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593208309534" />
   </component>
 </project>

@@ -35,7 +35,7 @@ public class MissionToDestroy : MonoBehaviour, IMission
                     //     dome.GetComponent<Dome>().DestroyDome();
                     if (!cutsceneUsed)
                     {
-                        Invoke(nameof(PlayDomeCutscene), 3.1f);
+                        Invoke(nameof(PlayDomeCutscene), 2.6f);
                         cutsceneUsed = true;
                     }
                 }
