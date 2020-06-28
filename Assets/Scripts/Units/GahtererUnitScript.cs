@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,21 +18,26 @@ public class GahtererUnitScript : Robot
     [SerializeField] private Resources resourceTarget;
 
     [SerializeField] private float turningSpeed = 2.5f;
-    [SerializeField] private float magnitudeTurning = 2.5f;
 
     private Dictionary<ResourceType, int> inventory = new Dictionary<ResourceType, int>();
     [SerializeField] private bool inventoryIsFull;
 
     [Header("Animations")] [SerializeField]
-    private float distanceStopAnimationPlay = 0.2f;
+    private GameObject countGatherer;
 
-    [SerializeField] private GameObject countGatherer;
     [SerializeField] private Transform countGathererSpawn;
 
     public Animator animator;
     private float speed;
     [Header("Actions")] public bool gathering;
     public bool goingToBase;
+
+    [Header("Gatherer Idle")] [SerializeField]
+    private GameObject idleIcon;
+
+    [SerializeField] private bool useTime;
+    [SerializeField] private float idleTimeCount;
+    [SerializeField] private float idleTimeWait = 5.0f;
 
     #region UnitRelated
 
@@ -88,7 +94,7 @@ public class GahtererUnitScript : Robot
                 countGathererSpawn);
             countG.GetComponent<CountGatherer>().SetCountValue(amountResources);
             Debug.Log("Está chamando");
-        
+
             yield return new WaitForSeconds(gatheringSpeed / 1.5f);
 
             var resources = resourceTarget.GetResource(amountResources);
@@ -133,6 +139,7 @@ public class GahtererUnitScript : Robot
 
     private void Update()
     {
+        IdleIconRobot();
         speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
         animator.SetFloat("Speed", speed);
         if (resourceTarget != null)
@@ -156,6 +163,30 @@ public class GahtererUnitScript : Robot
         else
         {
             gathering = false;
+        }
+    }
+
+    private void IdleIconRobot()
+    {
+        if (speed < 0.1f)
+        {
+            if (useTime)
+            {
+                idleTimeCount += Time.deltaTime;
+                if (idleTimeCount > idleTimeWait)
+                {
+                    idleIcon.SetActive(true);
+                }
+            }
+            else
+            {
+                idleIcon.SetActive(true);
+            }
+        }
+        else
+        {
+            idleIcon.SetActive(false);
+            idleTimeCount = 0.0f;
         }
     }
 
@@ -190,7 +221,7 @@ public class GahtererUnitScript : Robot
     private void GiveResources()
     {
         RobotsCastle.Instance.GetResourcesOfUnit(inventory);
-        if(resourceTarget != null)
+        if (resourceTarget != null)
             GoToResource();
         inventoryIsFull = false;
         goingToBase = false;

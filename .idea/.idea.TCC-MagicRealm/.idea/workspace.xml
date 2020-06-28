@@ -22,9 +22,8 @@
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/CountGatherer/Going Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UI/CountGatherer/Going Up.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
@@ -59,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/Builder/Scripts/BuilderStoreType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BaseAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/MissionType.cs" root0="FORCE_HIGHLIGHTING" />
@@ -120,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" />
@@ -170,6 +169,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
       </list>
     </option>
@@ -239,7 +239,7 @@
       <workItem from="1593097071811" duration="3723000" />
       <workItem from="1593181606188" duration="4593000" />
       <workItem from="1593195508961" duration="9848000" />
-      <workItem from="1593358681562" duration="8814000" />
+      <workItem from="1593358681562" duration="9974000" />
     </task>
     <servers />
   </component>
