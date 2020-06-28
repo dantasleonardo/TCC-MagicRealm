@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -9482,8 +9482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985acd33a2c62e048ace51e001a5248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startAmountWood: 50
-  startAmountStone: 50
+  startAmountWood: 15
+  startAmountStone: 15
   woodText: {fileID: 2068020176}
   stoneText: {fileID: 214262539}
   stackCreation: []
@@ -12131,7 +12131,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 54, y: 54}
+  m_CellSize: {x: 50, y: 50}
   m_Spacing: {x: 5, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -22391,7 +22391,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: life
-      value: 600
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: ermegencySpawnTime
@@ -22404,6 +22404,18 @@ PrefabInstance:
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: totalLife
       value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
+      propertyPath: timeSpawn
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
+      propertyPath: emergencySpawnTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
+      propertyPath: minMageInMap
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2206422279993216297, guid: d0d6718b531efb4468248476c0ddb92a,
         type: 3}
