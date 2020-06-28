@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Golem
   m_EditorClassIdentifier: 
   name: Golem
-  totalLife: 200
+  totalLife: 350
   totalAttacks: 1
   attacksPrefabs:
   - {fileID: 11400000, guid: b7c546f26ce6e9e41ac2ce8c11784d49, type: 2}
