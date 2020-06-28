@@ -12,9 +12,10 @@ public class LifeBar : MonoBehaviour
 
     private void Update()
     {
-        transform.eulerAngles = new Vector3(Camera.main.transform.eulerAngles.x,
-            Camera.main.transform.parent.gameObject.transform.eulerAngles.y,
-            transform.eulerAngles.z);
+        if (Camera.main != null)
+            transform.eulerAngles = new Vector3(Camera.main.transform.eulerAngles.x,
+                Camera.main.transform.parent.gameObject.transform.eulerAngles.y,
+                transform.eulerAngles.z);
     }
 
     public void UpdateBar(float currentValue)

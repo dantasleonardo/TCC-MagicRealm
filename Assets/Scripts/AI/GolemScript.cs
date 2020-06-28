@@ -1,4 +1,6 @@
-﻿using Panda;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Panda;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,6 +19,8 @@ public class GolemScript : IEnemy
     {
         life = properties.totalLife;
         lifeBar.totalValue = life;
+        lifeBar.isActive = false;
+        lifeBar.gameObject.SetActive(false);
         GameController.Instance.enemies.Add(this.gameObject);
         GetComponent<AI>().Init(properties.distanceSeek, properties.distanceAttack, properties.stopDistance,
             0.0f);
@@ -40,6 +44,26 @@ public class GolemScript : IEnemy
 
     public override void TakeDamage(int damage)
     {
+        life -= damage;
+
+        if (!lifeBar.isActive)
+        {
+            lifeBar.isActive = true;
+            lifeBar.BarIsActive(true);
+        }
+
+        lifeBar.UpdateBar(life);
+        var disableBar = StartCoroutine(DisableLifeBar(life));
+    }
+    
+    private IEnumerator DisableLifeBar(int currentLife)
+    {
+        yield return new WaitForSeconds(disableLifeBar);
+        if (currentLife == life)
+        {
+            lifeBar.BarIsActive(false);
+            lifeBar.isActive = false;
+        }
     }
 
     public override void Attack(int typeAttack)

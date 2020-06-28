@@ -21,19 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Golem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Golem.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Magics/Golem.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Magics/Golem.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cursor/CollectCursor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cursor/CollectCursor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cursor/sword_shieldCursor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cursor/sword_shieldCursor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +142,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" />
@@ -175,8 +164,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
       </list>
     </option>
   </component>
@@ -245,7 +235,7 @@
       <workItem from="1593097071811" duration="3723000" />
       <workItem from="1593181606188" duration="4593000" />
       <workItem from="1593195508961" duration="9848000" />
-      <workItem from="1593358681562" duration="3509000" />
+      <workItem from="1593358681562" duration="4374000" />
     </task>
     <servers />
   </component>
