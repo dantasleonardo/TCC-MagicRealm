@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -513,7 +513,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9e0e187179ab4c1468d6b6d7f6acadff, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 229be5d523c43a04fbb741a7486b535d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4334,7 +4334,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4c021f516a4e1c9478b538f90d81509b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b4a0b9b6b8b6bf04ab7d3315508b564d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6176,7 +6176,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 49f1c0576787fb54db8e3feb6355b557, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 229be5d523c43a04fbb741a7486b535d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

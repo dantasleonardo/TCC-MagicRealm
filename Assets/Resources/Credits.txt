@@ -43,3 +43,8 @@ Tiago Cruz
 t:Sounds
 Andy Ray - Inspiration
 Andy Ray - Dreams of Glory
+
+Este jogo foi desenvolvido como parte das exigências para a
+obtenção do título de Tecnólogo em Jogos Digitais pela Faculdade de Tecnologia
+de Americana (Fatec Americana). Seus autores o disponibilizam livre de direitos
+autorais para fins não comerciais

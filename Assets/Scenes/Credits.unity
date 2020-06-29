@@ -422,7 +422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2000}
+  m_AnchoredPosition: {x: 0, y: -2500}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &206835102
@@ -445,10 +445,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 236eddfe7e9227b42abda62f68b18bd5, type: 3}
-    m_FontSize: 20
+    m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 2
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -493,8 +493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TextFile: {fileID: 4900000, guid: 6f3ced4d6cf6b4741a4b472ecf2d8598, type: 3}
   m_TextUI: {fileID: 206835102}
-  m_RoleSize: 35
-  m_PersonSize: 20
+  m_RoleSize: 40
+  m_PersonSize: 25
   m_Space: 30
   m_Speed: 100
   m_Canvas: {fileID: 1759194036}
@@ -542,7 +542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca19f2c5e28575746ab77443000607b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   slider: {fileID: 0}
 --- !u!1 &274769087
 GameObject:

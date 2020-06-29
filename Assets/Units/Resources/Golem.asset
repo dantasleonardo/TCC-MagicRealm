@@ -17,7 +17,7 @@ MonoBehaviour:
   totalAttacks: 1
   attacksPrefabs:
   - {fileID: 11400000, guid: b7c546f26ce6e9e41ac2ce8c11784d49, type: 2}
-  distanceSeek: 3
+  distanceSeek: 6
   distanceAttack: 1.5
   stopDistance: 0.2
   Speed: 1
