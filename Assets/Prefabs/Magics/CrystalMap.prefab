@@ -86,7 +86,7 @@ MonoBehaviour:
   - {fileID: 53373775076582777, guid: 1681e515bb806b540b49c1233e714dcc, type: 3}
   - {fileID: 6938934987190176546, guid: 0ea4e209c7173c4448836c000d9f5a97, type: 3}
   runeTimeCount: 0
-  timeToSpawnRune: 0
+  timeToSpawnRune: 2
 --- !u!95 &4203011100576054559
 Animator:
   serializedVersion: 3

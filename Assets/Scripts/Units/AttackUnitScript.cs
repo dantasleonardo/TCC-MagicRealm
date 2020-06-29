@@ -119,6 +119,14 @@ public class AttackUnitScript : Robot
                         }
                     }
                 }
+
+                Debug.Log($"Robo {gameObject.name} distance target: {Vector3.Distance(transform.position, currentTarget.transform.position)}");
+                if (Vector3.Distance(transform.position, currentTarget.transform.position) > attakDistance)
+                {
+                    Debug.Log($"Robo {gameObject.name} etrou no if");
+                    agent.stoppingDistance = attackUnitProperties.attackDistace;
+                    MoveTo(currentTarget.transform.position);
+                }
             }
             else if (currentTarget.CompareTag("Mages"))
             {

@@ -24,7 +24,7 @@ public class RuneScript : MonoBehaviour
     {
         if (!markedTarget)
             GetTarget();
-        if(markedTarget && target == null)
+        if (markedTarget && target == null)
             animator.SetTrigger("Boom");
         if (target != null)
         {

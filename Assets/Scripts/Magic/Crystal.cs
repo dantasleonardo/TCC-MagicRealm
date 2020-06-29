@@ -33,8 +33,6 @@ namespace Magic
                     GameController.Instance.crystalsDestroyed += 1;
                 }
             }
-
-            Debug.Log($"Durability: {durability}");
         }
 
         public bool GetCurrentDurability()
@@ -47,14 +45,12 @@ namespace Magic
             var units = UnitController.Instance.units
                 .Where(u => Vector3.Distance(transform.position, u.transform.position) < 3.0f)
                 .OrderBy(u => Vector3.Distance(transform.position, u.transform.position)).ToList();
-            Debug.Log("Count " + units.Count);
             if (units.Count > 0)
             {
                 runeTimeCount += Time.deltaTime;
                 if (runeTimeCount > timeToSpawnRune)
                 {
                     var direction = (units[0].transform.position - transform.position).normalized;
-                    Debug.Log($"direction {direction}");
                     var position = transform.position + new Vector3(direction.x, 0.5f, direction.z);
                     var rand = Random.Range(0, runePrefab.Count);
                     Instantiate(runePrefab[rand], position, Quaternion.identity);

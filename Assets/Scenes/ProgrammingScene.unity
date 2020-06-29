@@ -4385,11 +4385,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mage (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3970917910578650514, guid: b3df86ee5d9d69f4a8c18afae631a76a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3df86ee5d9d69f4a8c18afae631a76a, type: 3}
 --- !u!1001 &475742173
@@ -10298,10 +10293,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 566804634, guid: b3df86ee5d9d69f4a8c18afae631a76a, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1862041293}
     - target: {fileID: 90301884628217729, guid: b3df86ee5d9d69f4a8c18afae631a76a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10361,11 +10352,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mage (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970917910578650514, guid: b3df86ee5d9d69f4a8c18afae631a76a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3df86ee5d9d69f4a8c18afae631a76a, type: 3}
@@ -20401,11 +20387,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mage
       objectReference: {fileID: 0}
-    - target: {fileID: 3970917910578650514, guid: b3df86ee5d9d69f4a8c18afae631a76a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3df86ee5d9d69f4a8c18afae631a76a, type: 3}
 --- !u!1001 &1721549758
@@ -21883,12 +21864,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 559379032315664858, guid: 502089516bbc1294bae617b9a66411ba,
     type: 3}
   m_PrefabInstance: {fileID: 1840353050}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1862041293 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5807874425251940365, guid: f36958053a26179458ae9d16dafab70b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2050869610}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1868504658
 PrefabInstance:
