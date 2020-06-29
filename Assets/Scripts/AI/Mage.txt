@@ -11,10 +11,10 @@ tree ("CheckCurrentResource")
 
 tree ("NormalActions")
 	sequence
+		CastleIsTarget
 		Waypoint
 		AgentArrivedDestinationWithGetDistance
 		Wait 2.0
-		CastleIsTarget
 
 tree ("SeekTarget")
 	parallel

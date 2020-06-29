@@ -11,10 +11,10 @@ TagManager:
   - Ground
   - Mages
   - Attack
-  - baseGolem
   - Text
   - Crystal
   - Dome
+  - Rune
   layers:
   - Default
   - TransparentFX

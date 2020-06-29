@@ -100,6 +100,7 @@
             <e p="Mage.txt" t="Include" />
             <e p="MageScript.cs" t="Include" />
             <e p="ManagerWaypoints.cs" t="Include" />
+            <e p="RuneScript.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
@@ -193,6 +194,9 @@
             <e p="Robot.cs" t="Include" />
             <e p="RobotsCastle.cs" t="Include" />
             <e p="UnitScript.cs" t="Include" />
+          </e>
+          <e p="VideoPlayer" t="Include">
+            <e p="VideoPlayer.cs" t="Include" />
           </e>
         </e>
       </e>

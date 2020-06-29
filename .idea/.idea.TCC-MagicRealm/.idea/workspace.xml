@@ -22,10 +22,21 @@
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/CountGatherer/Going Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UI/CountGatherer/Going Up.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Gatherer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Fbx_Files/Rune1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Fbx_Files/Rune1.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Fbx_Files/Rune2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Fbx_Files/Rune2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Material/Gradients.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Magic_PLACEHOLDERS/Material/Gradients.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Magics/CrystalMap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Magics/CrystalMap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Mage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Mage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/SaveSystem/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PressStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionsDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonStoreItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -120,8 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationTextMeshPro.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/CastleCrystal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Dome.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
@@ -151,8 +162,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
@@ -164,13 +173,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/MageScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Mage.txt" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
       </list>
     </option>
   </component>
@@ -239,7 +252,7 @@
       <workItem from="1593097071811" duration="3723000" />
       <workItem from="1593181606188" duration="4593000" />
       <workItem from="1593195508961" duration="9848000" />
-      <workItem from="1593358681562" duration="9974000" />
+      <workItem from="1593358681562" duration="19978000" />
     </task>
     <servers />
   </component>
@@ -280,17 +293,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592851247207" />
+    <state x="565" y="136" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593379385962">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="565" y="136" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1593379385962" />
     <state x="733" y="399" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1592239678283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="733" y="399" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592239678283" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1592612078507">
+    <state x="616" y="243" key="run.anything.popup" timestamp="1593379071044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1592612078507" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593368781713">
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593379071044" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593394843546">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593368781713" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593394843546" />
   </component>
 </project>

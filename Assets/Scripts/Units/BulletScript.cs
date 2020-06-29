@@ -49,6 +49,13 @@ public class BulletScript : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        if (other.CompareTag("Rune"))
+        {
+            var target = other.gameObject.GetComponent<RuneScript>();
+            target.DamageAndDestroy();
+            Destroy(this.gameObject);
+        }
+
         if (other.CompareTag("Unit") || other.CompareTag("Attack")) return;
         Destroy(this.gameObject);
     }
