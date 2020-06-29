@@ -28,7 +28,7 @@ public class CursorManager : MonoBehaviour
         {
             if(hit.collider.CompareTag("Resources"))
                 Cursor.SetCursor(collectCursor,new Vector2(10.0f,10.0f), CursorMode.Auto);
-            else if (hit.collider.CompareTag("Mages"))
+            else if (hit.collider.CompareTag("Mages") || hit.collider.CompareTag("Crystal"))
             {
                 Cursor.SetCursor(attackCursor,new Vector2(10.0f,10.0f), CursorMode.Auto);
             }

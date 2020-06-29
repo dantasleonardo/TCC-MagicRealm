@@ -152,15 +152,32 @@ public class AI : MonoBehaviour
     {
         if (target != null)
         {
-            if (Vector3.Distance(transform.position, target.position) <= agent.stoppingDistance)
+            if (target.name != GameController.Instance.robotsCastle.name)
             {
-                agent.isStopped = true;
-                return true;
+                if (Vector3.Distance(transform.position, target.position) <= agent.stoppingDistance)
+                {
+                    agent.isStopped = true;
+                    return true;
+                }
+                else
+                {
+                    agent.isStopped = false;
+                    return false;
+                }
             }
             else
             {
-                agent.isStopped = false;
-                return false;
+                var speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
+                if (speed < 0.1f)
+                {
+                    agent.isStopped = true;
+                    return true;
+                }
+                else
+                {
+                    agent.isStopped = false;
+                    return false;
+                }
             }
         }
         else

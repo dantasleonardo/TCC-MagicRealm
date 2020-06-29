@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using Panda;
 using UnityEngine;
 using UnityEngine.AI;
@@ -55,7 +54,7 @@ public class GolemScript : IEnemy
         lifeBar.UpdateBar(life);
         var disableBar = StartCoroutine(DisableLifeBar(life));
     }
-    
+
     private IEnumerator DisableLifeBar(int currentLife)
     {
         yield return new WaitForSeconds(disableLifeBar);
