@@ -196,7 +196,7 @@
             <e p="UnitScript.cs" t="Include" />
           </e>
           <e p="VideoPlayer" t="Include">
-            <e p="VideoPlayer.cs" t="Include" />
+            <e p="VideoPlayerManager.cs" t="Include" />
           </e>
         </e>
       </e>

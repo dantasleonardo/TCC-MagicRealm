@@ -20,7 +20,6 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject newGameWarningPopup;
     [SerializeField] private Button continueWarningButton;
     [SerializeField] private string loadScene = "Nivel1";
-    [SerializeField] private GameObject transition;
 
     void Start()
     {
@@ -54,7 +53,6 @@ public class MainMenuManager : MonoBehaviour
         var user = new User(LocalizationManager.instance.GetLanguageKey(), GameManager.instance.volume,
             new bool[] {true, true, false});
         SaveSystem.SaveSystem.Save(user);
-        transition.SetActive(true);
         LoadingScene.Instance.scene = loadScene;
         LoadingScene.Instance.StartTransition();
         this.gameObject.SetActive(false);

@@ -25,6 +25,7 @@ public class LoadingScene : MonoBehaviour
     public void StartTransition()
     {
         transition.SetBool("Start", true);
+        transition.SetBool("End", false);
     }
 
     public void LoadScene()
@@ -58,5 +59,10 @@ public class LoadingScene : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         async.allowSceneActivation = true;
+    }
+
+    public void DestroyTransition()
+    {
+        Destroy(gameObject);
     }
 }

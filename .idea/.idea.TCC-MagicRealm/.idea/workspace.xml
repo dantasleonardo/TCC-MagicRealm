@@ -20,17 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Magics/CrystalMap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Magics/CrystalMap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgrammingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoPlayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoPlayer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayerManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,7 @@
     <setting file="file://$PROJECT_DIR$/../homework-platform/Assets/SaveSystem/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PressStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MissionScripts/CollectingMission.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,12 +130,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SimpleAnimationX.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MenuAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" />
@@ -147,7 +148,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/AttackUnit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/RockSize.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Resources/Resources.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GathererUnitItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CreationLoading.cs" />
@@ -156,9 +156,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" />
@@ -172,12 +170,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Mage.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/GoToLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayerManager.cs" />
       </list>
     </option>
   </component>
@@ -247,7 +250,7 @@
       <workItem from="1593181606188" duration="4593000" />
       <workItem from="1593195508961" duration="9848000" />
       <workItem from="1593358681562" duration="20628000" />
-      <workItem from="1593434057105" duration="2987000" />
+      <workItem from="1593434057105" duration="6067000" />
     </task>
     <servers />
   </component>
@@ -300,9 +303,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593379071044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593436566625">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593440424925">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593436566625" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593440424925" />
   </component>
 </project>

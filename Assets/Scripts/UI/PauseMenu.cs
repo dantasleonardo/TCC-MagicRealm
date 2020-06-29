@@ -57,7 +57,15 @@ public class PauseMenu : MonoBehaviour
     public void MenuPrincipal()
     {
         Paused();
-        SceneManager.LoadScene("Menu");
+        var transition = LoadingScene.Instance;
+        if(!transition)
+            SceneManager.LoadScene("Menu");
+        else
+        {
+            transition.scene = "Menu";
+            transition.waitTime = 2.5f;
+            transition.StartTransition();
+        }
     }
 
     public void Quit()
