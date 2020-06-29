@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LocalizationSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,6 +19,7 @@ public class VideoPlayerManager : MonoBehaviour
 
     private void Start()
     {
+        languageKey = LocalizationManager.instance.GetLanguageKey();
         switch (languageKey)
         {
             case LanguageKey.Portuguese:

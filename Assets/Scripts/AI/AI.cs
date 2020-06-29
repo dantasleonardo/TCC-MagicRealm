@@ -152,10 +152,12 @@ public class AI : MonoBehaviour
             {
                 if (Vector3.Distance(transform.position, target.position) <= agent.stoppingDistance)
                 {
+                    agent.isStopped = true;
                     return true;
                 }
                 else
                 {
+                    agent.isStopped = false;
                     return false;
                 }
             }
@@ -163,10 +165,12 @@ public class AI : MonoBehaviour
             {
                 if (Vector3.Distance(transform.position, target.position) <= 6.25f)
                 {
+                    agent.isStopped = true;
                     return true;
                 }
                 else
                 {
+                    agent.isStopped = false;
                     return false;
                 }
             }
@@ -210,7 +214,7 @@ public class AI : MonoBehaviour
     [Task]
     public void CastleIsTarget()
     {
-        if (Random.Range(0.0f, 500.0f) < 500.0f)
+        if (Random.Range(0.0f, 500.0f) < 10.0f)
         {
             distanceSeek = 100.0f;
             target = GameController.Instance.robotsCastle.transform;

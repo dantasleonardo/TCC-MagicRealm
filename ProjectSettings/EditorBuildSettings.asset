@@ -27,9 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel3.unity
     guid: 26a3a533582989b47bc37fe34ab62fec
   - enabled: 1
-    path: Assets/Scenes/TurialLevel1.unity
+    path: Assets/Scenes/TutorialLevel1.unity
     guid: 52a8ab84ef3e39d47b40f4811c0cfc42
   - enabled: 1
-    path: Assets/Scenes/TurialLevel2.unity
+    path: Assets/Scenes/TutorialLevel2.unity
     guid: c0f4c899f5a5d124d82ae140e97c6c5d
   m_configObjects: {}

@@ -170,12 +170,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -236,13 +236,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1172468733}
   videoClipsPt:
-  - {fileID: 32900000, guid: 496e96682e8c0124b995375660b52161, type: 3}
+  - {fileID: 32900000, guid: d190d8c2031dcbd478a2f0a7e5513364, type: 3}
+  - {fileID: 32900000, guid: 508b895897c7da047b49e4851ca09d9a, type: 3}
+  - {fileID: 32900000, guid: bc2996d939876ae449aad9358aa7e4e5, type: 3}
   videoClipsEn:
-  - {fileID: 32900000, guid: d1fbe03366505b34b92582473e2743ab, type: 3}
+  - {fileID: 32900000, guid: 18cfee664da7a3f4fbfbb2323640468d, type: 3}
+  - {fileID: 32900000, guid: 2b0d933e84a513743aa631acc04bdfa9, type: 3}
+  - {fileID: 32900000, guid: 4fa9055312e3cc4448e2b234d07fa506, type: 3}
   languageKey: 0
   nextVideoButton: {fileID: 1878391242}
   skipVideoButton: {fileID: 1986190020}
-  sceneName: Nivel2
+  sceneName: Nivel1
 --- !u!1 &1172468732
 GameObject:
   m_ObjectHideFlags: 0

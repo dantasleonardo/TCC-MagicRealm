@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea4572806ab00d45a4954a98fe76c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desiredScene: TurialLevel1
+  desiredScene: TutorialLevel1
 --- !u!1 &43973314
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,7 +5064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea4572806ab00d45a4954a98fe76c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desiredScene: TurialLevel2
+  desiredScene: TutorialLevel2
 --- !u!1001 &1110934655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8069,7 +8069,7 @@ MonoBehaviour:
   mainMenuPanel: {fileID: 952317528}
   newGameWarningPopup: {fileID: 1316003686}
   continueWarningButton: {fileID: 460528022}
-  loadScene: TurialLevel1
+  loadScene: TutorialLevel1
 --- !u!95 &1953460068
 Animator:
   serializedVersion: 3
