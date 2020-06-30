@@ -240,6 +240,7 @@ public class AI : MonoBehaviour
             Debug.Log($"{gameObject.name}  está com o castelo como alvo");
             agent.stoppingDistance = distanceAttackCastle;
             target = GameController.Instance.robotsCastle.transform;
+            Seek();
             Task.current.Succeed();
         }
         else
