@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
 
     public int startAmountWood;
     public int startAmountStone;
-    public Dictionary<ResourceType, int> resources = new Dictionary<ResourceType, int>();
+    [SerializeReference]public Dictionary<ResourceType, int> resources = new Dictionary<ResourceType, int>();
 
     [Header("UI")] public Text woodText;
 

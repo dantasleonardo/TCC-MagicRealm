@@ -23,8 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/CutScenes/DestroyDomeCustscene.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CutScenes/DestroyDomeCustscene.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Rune/BoomRune1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Rune/BoomRune1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Rune/BoomRune2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Rune/BoomRune2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Rune/Rune_2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Rune/Rune_2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/ContinuePanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" />
@@ -140,7 +149,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AttackUnitItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
@@ -152,13 +160,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GahtererUnitScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LookCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/GolemScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CountGatherer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Mage.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
@@ -172,6 +176,12 @@
         <option value="$PROJECT_DIR$/Assets/Resources/Credits English.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Credits.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/Crystal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/RuneScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
       </list>
     </option>
   </component>
@@ -244,6 +254,7 @@
       <workItem from="1593358681562" duration="20628000" />
       <workItem from="1593434057105" duration="6067000" />
       <workItem from="1593458833068" duration="9218000" />
+      <workItem from="1593543417031" duration="3297000" />
     </task>
     <servers />
   </component>
@@ -296,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593379071044" />
-    <state x="443" y="160" width="672" height="477" key="search.everywhere.popup" timestamp="1593475187768">
+    <state x="443" y="160" width="672" height="477" key="search.everywhere.popup" timestamp="1593545723220">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="443" y="160" width="672" height="477" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1593475187768" />
+    <state x="443" y="160" width="672" height="477" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1593545723220" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593440424925" />
   </component>
 </project>

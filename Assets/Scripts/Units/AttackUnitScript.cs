@@ -97,12 +97,13 @@ public class AttackUnitScript : Robot
                     if (currentTarget == null)
                         return;
                 }
+                
 
                 RaycastHit hit;
                 LookTarget();
                 var position = transform.position + new Vector3(0.0f, 0.3f, 0.0f);
                 if (Physics.Raycast(position, transform.forward, out hit,
-                    attackUnitProperties.attackDistace + 0.5f))
+                    attackUnitProperties.attackDistace + 2.0f))
                 {
                     if (hit.collider.CompareTag("Mages") || hit.collider.CompareTag("Crystal"))
                     {
@@ -124,18 +125,23 @@ public class AttackUnitScript : Robot
                 if (Vector3.Distance(transform.position, currentTarget.transform.position) > attakDistance)
                 {
                     Debug.Log($"Robo {gameObject.name} etrou no if");
-                    agent.stoppingDistance = attackUnitProperties.attackDistace;
+                    agent.stoppingDistance = attakDistance;
+                    agent.isStopped = false;
                     MoveTo(currentTarget.transform.position);
                 }
             }
+            if (Vector3.Distance(transform.position, currentTarget.transform.position) <= attakDistance)
+            {
+                agent.isStopped = true;
+            }
             else if (currentTarget.CompareTag("Mages"))
             {
-                agent.stoppingDistance = attackUnitProperties.attackDistace;
+                agent.stoppingDistance = attakDistance;
                 MoveTo(currentTarget.transform.position);
             }
             else if (currentTarget.CompareTag("Crystal"))
             {
-                agent.stoppingDistance = attackUnitProperties.attackDistace;
+                agent.stoppingDistance = attakDistance;
                 MoveTo(currentTarget.transform.position);
             }
         }

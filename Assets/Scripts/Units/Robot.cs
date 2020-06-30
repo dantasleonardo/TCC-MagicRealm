@@ -13,7 +13,7 @@ public class Robot : UnitScript, IUnit
     [SerializeField] private float disableLifeBar = 3.0f;
     [SerializeField] protected ParticleSystem dustParticle;
 
-    protected NavMeshAgent agent;
+    [SerializeField] protected NavMeshAgent agent;
 
     public void MoveTo(Vector3 target)
     {

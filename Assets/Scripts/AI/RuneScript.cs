@@ -52,6 +52,11 @@ public class RuneScript : MonoBehaviour
         }
     }
 
+    public void HeIsBeenHit()
+    {
+        animator.SetTrigger("Boom");
+    }
+
     public void DamageAndDestroy()
     {
         if (target != null)

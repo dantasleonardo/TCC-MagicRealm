@@ -52,7 +52,7 @@ public class BulletScript : MonoBehaviour
         if (other.CompareTag("Rune"))
         {
             var target = other.gameObject.GetComponent<RuneScript>();
-            target.DamageAndDestroy();
+            target.HeIsBeenHit();
             Destroy(this.gameObject);
         }
 

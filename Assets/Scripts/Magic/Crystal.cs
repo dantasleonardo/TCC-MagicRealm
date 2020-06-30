@@ -45,16 +45,19 @@ namespace Magic
             var units = UnitController.Instance.units
                 .Where(u => Vector3.Distance(transform.position, u.transform.position) < 3.0f)
                 .OrderBy(u => Vector3.Distance(transform.position, u.transform.position)).ToList();
-            if (units.Count > 0)
+            if (GetCurrentDurability())
             {
-                runeTimeCount += Time.deltaTime;
-                if (runeTimeCount > timeToSpawnRune)
+                if (units.Count > 0)
                 {
-                    var direction = (units[0].transform.position - transform.position).normalized;
-                    var position = transform.position + new Vector3(direction.x, 0.5f, direction.z);
-                    var rand = Random.Range(0, runePrefab.Count);
-                    Instantiate(runePrefab[rand], position, Quaternion.identity);
-                    runeTimeCount = 0.0f;
+                    runeTimeCount += Time.deltaTime;
+                    if (runeTimeCount > timeToSpawnRune)
+                    {
+                        var direction = (units[0].transform.position - transform.position).normalized;
+                        var position = transform.position + new Vector3(direction.x, 0.5f, direction.z);
+                        var rand = Random.Range(0, runePrefab.Count);
+                        Instantiate(runePrefab[rand], position, Quaternion.identity);
+                        runeTimeCount = 0.0f;
+                    }
                 }
             }
             else
