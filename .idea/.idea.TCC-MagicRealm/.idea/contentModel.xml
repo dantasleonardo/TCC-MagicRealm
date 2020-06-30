@@ -103,6 +103,7 @@
             <e p="ManagerWaypoints.cs" t="Include" />
             <e p="RuneScript.cs" t="Include" />
           </e>
+          <e p="AudioManager.cs" t="Include" />
           <e p="Camera" t="Include">
             <e p="CameraController.cs" t="Include" />
           </e>
@@ -175,7 +176,6 @@
               <e p="RockSize.cs" t="Include" />
             </e>
           </e>
-          <e p="SimpleAudio.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AttackUnitItem.cs" t="Include" />
             <e p="ButtonStoreItem.cs" t="Include" />

@@ -23,8 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +86,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LanguageKey.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationDropdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BotAi.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,8 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/BlinkUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/User.cs" />
@@ -172,6 +174,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/BulletScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Robot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/AI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SimpleAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -244,7 +248,7 @@
       <workItem from="1593358681562" duration="20628000" />
       <workItem from="1593434057105" duration="6067000" />
       <workItem from="1593458833068" duration="9218000" />
-      <workItem from="1593543417031" duration="3754000" />
+      <workItem from="1593543417031" duration="5853000" />
     </task>
     <servers />
   </component>
