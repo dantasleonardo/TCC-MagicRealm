@@ -51,7 +51,7 @@ public class MainMenuManager : MonoBehaviour
     private void NewGame()
     {
         var user = new User(LocalizationManager.instance.GetLanguageKey(), GameManager.instance.volume,
-            new bool[] {true, true, false});
+            new bool[] {true, false, false});
         SaveSystem.SaveSystem.Save(user);
         LoadingScene.Instance.scene = loadScene;
         LoadingScene.Instance.StartTransition();
