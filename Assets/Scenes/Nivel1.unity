@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -17019,8 +17019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missions:
-  - {fileID: 11400000, guid: 28b01a9767f75024384db5a3ccd1dab7, type: 2}
-  - {fileID: 11400000, guid: c21543469ee3a45408e95d91b883094e, type: 2}
   - {fileID: 11400000, guid: aed0b79844461b74889d79b5237be486, type: 2}
   missionPrefab: {fileID: 5524712328310375388, guid: 094932f666697334787cd5548de242cb,
     type: 3}
