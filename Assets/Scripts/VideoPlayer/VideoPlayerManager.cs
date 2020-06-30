@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using LocalizationSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,7 +30,7 @@ public class VideoPlayerManager : MonoBehaviour
                 videoPlayer.Play();
                 break;
         }
-        
+
         nextVideoButton.onClick.AddListener(NextVideo);
         skipVideoButton.onClick.AddListener(SkipVideos);
     }
@@ -49,8 +48,17 @@ public class VideoPlayerManager : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(sceneName);
+                    var transition = LoadingScene.Instance;
+                    if (!transition)
+                        SceneManager.LoadScene(sceneName);
+                    else
+                    {
+                        transition.scene = sceneName;
+                        transition.waitTime = 2.5f;
+                        transition.StartTransition();
+                    }
                 }
+
                 break;
             case LanguageKey.English:
                 if (++count < videoClipsEn.Count)
@@ -62,7 +70,7 @@ public class VideoPlayerManager : MonoBehaviour
                 else
                 {
                     var transition = LoadingScene.Instance;
-                    if(!transition)
+                    if (!transition)
                         SceneManager.LoadScene(sceneName);
                     else
                     {
@@ -71,12 +79,21 @@ public class VideoPlayerManager : MonoBehaviour
                         transition.StartTransition();
                     }
                 }
+
                 break;
         }
     }
 
     private void SkipVideos()
     {
-        SceneManager.LoadScene(sceneName);
+        var transition = LoadingScene.Instance;
+        if (!transition)
+            SceneManager.LoadScene(sceneName);
+        else
+        {
+            transition.scene = sceneName;
+            transition.waitTime = 2.5f;
+            transition.StartTransition();
+        }
     }
 }
