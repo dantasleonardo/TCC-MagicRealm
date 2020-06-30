@@ -24,15 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Menu/correct-answer-chime-02.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Menu/correct-answer-chime-02.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Robos/Tiro canhão.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Robos/Tiro canhão.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Robos/Tiro soldado.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Robos/Tiro soldado.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CutScenes/DestroyDomeCustscene.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CutScenes/DestroyDomeCustscene.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Cannon_Robot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitS/Robots/Cannon_Robot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +244,7 @@
       <workItem from="1593358681562" duration="20628000" />
       <workItem from="1593434057105" duration="6067000" />
       <workItem from="1593458833068" duration="9218000" />
-      <workItem from="1593543417031" duration="7385000" />
+      <workItem from="1593543417031" duration="7865000" />
     </task>
     <servers />
   </component>

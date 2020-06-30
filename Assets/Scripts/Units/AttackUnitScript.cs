@@ -75,6 +75,7 @@ public class AttackUnitScript : Robot
         }
         else if (targetObject.CompareTag("Ground"))
         {
+            agent = GetComponent<NavMeshAgent>();
             agent.stoppingDistance = 0.1f;
             currentTarget = null;
             MoveTo(target);
@@ -137,14 +138,20 @@ public class AttackUnitScript : Robot
             }
             else if (currentTarget.CompareTag("Mages"))
             {
+                agent.isStopped = false;
                 agent.stoppingDistance = attakDistance;
                 MoveTo(currentTarget.transform.position);
             }
             else if (currentTarget.CompareTag("Crystal"))
             {
+                agent.isStopped = false;
                 agent.stoppingDistance = attakDistance;
                 MoveTo(currentTarget.transform.position);
             }
+        }
+        else
+        {
+            agent.isStopped = false;
         }
     }
 
