@@ -1,26 +1,29 @@
-t:Producer
+t:Produtor
 Leonardo Dantas
 
-t:Lead Programmer
+t:Programador Líder
 Gabriel Cassimiro
 
-t:Gameplay Programmer
+t:Programador de Gameplay
 Gabriel Cassimiro
 
-t:UI Programmer
+t:Programador de UI
 Gabriel Cassimiro
 Leonardo Dantas
 
-t:Lead Designer
+t:Designer Líder
 Tiago Cruz
 
-t:2D Artist
+t:Artista 2D
 Tiago Cruz
 
-t:3D Artist
+t:Artista 3D
 Tiago Cruz
 
-t:User Interface
+t:Interface de Usuário
+Leonardo Dantas
+
+t:Game Designer Líder
 Leonardo Dantas
 
 t:Game Designers
@@ -28,21 +31,32 @@ Gabriel Cassimiro
 Leonardo Dantas
 Tiago Cruz
 
-t:Level Designer
+t:Level Designers
 Leonardo Dantas
 Tiago Cruz
 
-t:Tech Artists
+t:Artistas Técnicos
 Gabriel Cassimiro
 Leonardo Dantas
 
-t:Animators
+t:Animadores
 Gabriel Cassimiro
 Tiago Cruz
 
-t:Sounds
-Andy Ray - Inspiration
-Andy Ray - Dreams of Glory
+t:VFX
+Gabriel Cassimiro
+Leonardo Dantas
+Tiago Cruz
+
+t:Sons
+Inspiration
+Mystical Loop
+Medieval Theme
+Trumph
+
+
+t:Orientador
+Prof. Esp. Gustavo Carvalho 
 
 Este jogo foi desenvolvido como parte das exigências para a
 obtenção do título de Tecnólogo em Jogos Digitais pela Faculdade de Tecnologia

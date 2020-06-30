@@ -23,6 +23,9 @@ Tiago Cruz
 t:User Interface
 Leonardo Dantas
 
+t:Lead Game Designer
+Leonardo Dantas
+
 t:Game Designers
 Gabriel Cassimiro
 Leonardo Dantas
@@ -40,9 +43,19 @@ t:Animators
 Gabriel Cassimiro
 Tiago Cruz
 
+t:VFX
+Gabriel Cassimiro
+Leonardo Dantas
+Tiago Cruz
+
 t:Sounds
-Andy Ray - Inspiration
-Andy Ray - Dreams of Glory
+Inspiration
+Mystical Loop
+Medieval Theme
+Trumph
+
+t:Advisor
+Prof. Esp. Gustavo Carvalho 
 
 This game was developed as part of the requirements for the
 obtaining the title of Digital Game Technologist by the Faculty of Technology
