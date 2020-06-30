@@ -322,11 +322,11 @@ RectTransform:
   m_LocalScale: {x: 0.53333336, y: 0.53333336, z: 0.53333336}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 332.66486, y: -251.55066}
+  m_AnchoredPosition: {x: 489.58307, y: 220.55603}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &66072065
@@ -339,7 +339,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 229be5d523c43a04fbb741a7486b535d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fdb223df28844e34385facc3e84734d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1549,14 +1549,14 @@ Transform:
   m_LocalPosition: {x: 179.33516, y: 539.55066, z: 85.23535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 66072064}
-  - {fileID: 859782423}
-  - {fileID: 1368832005}
   - {fileID: 659244433}
   - {fileID: 1856740411}
   - {fileID: 2032759208}
   - {fileID: 1849260821}
   - {fileID: 2060633426}
+  - {fileID: 1368832005}
+  - {fileID: 859782423}
+  - {fileID: 66072064}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3273,7 +3273,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &659244434
 AudioSource:
@@ -4419,11 +4419,11 @@ RectTransform:
   m_LocalScale: {x: 0.53333336, y: 0.53333336, z: 0.53333336}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 332.66486, y: -251.55066}
+  m_AnchoredPosition: {x: 489.58307, y: 220.55603}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &859782424
@@ -4436,7 +4436,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b4a0b9b6b8b6bf04ab7d3315508b564d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fe44710f7c8acc7478b18d3019635bcd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6043,11 +6043,11 @@ RectTransform:
   m_LocalScale: {x: 0.53333336, y: 0.53333336, z: 0.53333336}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 332.66492, y: -251.55064}
+  m_AnchoredPosition: {x: 489.5832, y: 220.55603}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1368832006
@@ -6060,7 +6060,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 229be5d523c43a04fbb741a7486b535d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fe44710f7c8acc7478b18d3019635bcd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7739,7 +7739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1849260822
 AudioSource:
@@ -7866,7 +7866,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1856740412
 AudioSource:
@@ -8462,7 +8462,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2032759209
 AudioSource:
@@ -8589,7 +8589,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 276699213}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2060633427
 AudioSource:

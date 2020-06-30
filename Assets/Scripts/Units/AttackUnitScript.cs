@@ -16,6 +16,7 @@ public class AttackUnitScript : Robot
 
     [SerializeField] private string fileNameOfBullet;
     [SerializeField] private Bullet bulletProperties;
+    [SerializeField] private AudioSource fireSound;
 
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform[] spawnBulletPosition;
@@ -154,11 +155,15 @@ public class AttackUnitScript : Robot
             var bullet = Instantiate(bulletPrefab, spawnBulletPosition[nextSpawn].position, transform.rotation);
             bullet.transform.forward = spawnBulletPosition[nextSpawn].forward;
             nextSpawn = nextSpawn >= 1 ? 0 : 1;
+            if(fireSound)
+                fireSound.Play();
         }
         else
         {
             var bullet = Instantiate(bulletPrefab, spawnBulletPosition[0].position, transform.rotation);
             bullet.transform.forward = spawnBulletPosition[0].forward;
+            if(fireSound)
+                fireSound.Play();
         }
     }
 
