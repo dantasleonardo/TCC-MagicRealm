@@ -87,7 +87,8 @@
           <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Resources" t="Include">
-          <e p="Credits.txt" t="Include" />
+          <e p="Credits English.txt" t="Include" />
+          <e p="Credits Portuguese.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">

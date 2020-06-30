@@ -13,22 +13,27 @@ public class Menu : MonoBehaviour
         {
             var volumeUser = SaveSystem.SaveSystem.Load().volume;
             GameManager.instance.volume = volumeUser;
-            slider.value = volumeUser;
+            if (slider)
+                slider.value = volumeUser;
             AudioListener.volume = volumeUser;
         }
 
-        slider.value = GameManager.instance.volume;
-        slider.onValueChanged.AddListener(value =>
+        if (slider)
         {
-            var user = SaveSystem.SaveSystem.Load();
-            user.volume = value;
-            SaveSystem.SaveSystem.Save(user);
-        });
+            slider.value = GameManager.instance.volume;
+            slider.onValueChanged.AddListener(value =>
+            {
+                var user = SaveSystem.SaveSystem.Load();
+                user.volume = value;
+                SaveSystem.SaveSystem.Save(user);
+            });
+        }
     }
 
     private void Update()
     {
-        GameManager.instance.volume = slider.value;
+        if (slider)
+            GameManager.instance.volume = slider.value;
         AudioListener.volume = GameManager.instance.volume;
     }
 

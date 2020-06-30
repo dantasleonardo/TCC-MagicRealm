@@ -1,0 +1,50 @@
+t:Producer
+Leonardo Dantas
+
+t:Lead Programmer
+Gabriel Cassimiro
+
+t:Gameplay Programmer
+Gabriel Cassimiro
+
+t:UI Programmer
+Gabriel Cassimiro
+Leonardo Dantas
+
+t:Lead Designer
+Tiago Cruz
+
+t:2D Artist
+Tiago Cruz
+
+t:3D Artist
+Tiago Cruz
+
+t:User Interface
+Leonardo Dantas
+
+t:Game Designers
+Gabriel Cassimiro
+Leonardo Dantas
+Tiago Cruz
+
+t:Level Designer
+Leonardo Dantas
+Tiago Cruz
+
+t:Tech Artists
+Gabriel Cassimiro
+Leonardo Dantas
+
+t:Animators
+Gabriel Cassimiro
+Tiago Cruz
+
+t:Sounds
+Andy Ray - Inspiration
+Andy Ray - Dreams of Glory
+
+This game was developed as part of the requirements for the
+obtaining the title of Digital Game Technologist by the Faculty of Technology
+of Americana (Fatec Americana). Its authors make it available free of rights
+non-commercial copyrights
