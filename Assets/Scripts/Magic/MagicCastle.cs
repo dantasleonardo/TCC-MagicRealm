@@ -1,4 +1,6 @@
-﻿using Magic;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Magic;
 using UnityEngine;
 
 public class MagicCastle : IEnemy
@@ -57,7 +59,9 @@ public class MagicCastle : IEnemy
 
     private void Update()
     {
-        if (GameController.Instance.enemies.Count < minMageInMap)
+        List<GameObject> enemiesList = GameController.Instance.enemies.Where(e => e.name
+            .Contains("Mage")).ToList();
+        if (enemiesList.Count < minMageInMap)
         {
             currentTime += Time.deltaTime;
             if (currentTime > emergencySpawnTime)
@@ -66,7 +70,7 @@ public class MagicCastle : IEnemy
                 currentTime = 0.0f;
             }
         }
-        else if (GameController.Instance.enemies.Count >= minMageInMap)
+        else if (enemiesList.Count >= minMageInMap)
         {
             var attackUnits = GameController.Instance.attackUnits.Count;
             if (maxMageInMap > attackUnits && GameController.Instance.enemies.Count <= maxMageInMap)
@@ -78,7 +82,7 @@ public class MagicCastle : IEnemy
                     currentTime = 0.0f;
                 }
             }
-            else if (GameController.Instance.enemies.Count < attackUnits)
+            else if (enemiesList.Count < attackUnits)
             {
                 currentTime += Time.deltaTime;
                 if (currentTime > timeSpawn)

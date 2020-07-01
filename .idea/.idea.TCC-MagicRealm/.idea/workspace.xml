@@ -24,8 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06023a1e-3b6e-4726-b668-5cf1c2b94cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCC-MagicRealm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +138,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Building.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LocalizationSystem/LocalizationText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/RobotsCastle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Feedback.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissionScripts/MissionToDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Golem.txt" />
@@ -173,6 +171,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/VideoPlayer/VideoPlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UnitSelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/AttackUnitScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Magic/MagicCastle.cs" />
       </list>
     </option>
   </component>
@@ -245,7 +244,7 @@
       <workItem from="1593358681562" duration="20628000" />
       <workItem from="1593434057105" duration="6067000" />
       <workItem from="1593458833068" duration="9218000" />
-      <workItem from="1593543417031" duration="12415000" />
+      <workItem from="1593543417031" duration="13515000" />
     </task>
     <servers />
   </component>
