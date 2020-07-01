@@ -23494,7 +23494,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: life
-      value: 3000
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: ermegencySpawnTime
@@ -24787,7 +24787,7 @@ PrefabInstance:
     - target: {fileID: 1577108461444817682, guid: f36958053a26179458ae9d16dafab70b,
         type: 3}
       propertyPath: life
-      value: 500
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 5807874425251940365, guid: f36958053a26179458ae9d16dafab70b,
         type: 3}

@@ -30300,7 +30300,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: life
-      value: 4000
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: ermegencySpawnTime
@@ -30308,7 +30308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: maxMageInMap
-      value: 12
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: totalLife
@@ -30316,15 +30316,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: timeSpawn
-      value: 60
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: emergencySpawnTime
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1833569022, guid: d0d6718b531efb4468248476c0ddb92a, type: 3}
       propertyPath: minMageInMap
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2206422279993216297, guid: d0d6718b531efb4468248476c0ddb92a,
         type: 3}
@@ -32309,7 +32309,7 @@ PrefabInstance:
     - target: {fileID: 1577108461444817682, guid: f36958053a26179458ae9d16dafab70b,
         type: 3}
       propertyPath: life
-      value: 500
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 5807874425251940365, guid: f36958053a26179458ae9d16dafab70b,
         type: 3}
