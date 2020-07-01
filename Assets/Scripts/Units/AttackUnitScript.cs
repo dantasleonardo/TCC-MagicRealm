@@ -30,6 +30,7 @@ public class AttackUnitScript : Robot
     private Animator animator;
 
     [SerializeField] private GameObject currentTarget;
+    [SerializeField] private GameObject groundTarget;
     [SerializeField] private float currentTimeToFire;
 
 
@@ -75,9 +76,12 @@ public class AttackUnitScript : Robot
         }
         else if (targetObject.CompareTag("Ground"))
         {
+            currentTarget = null;
             agent = GetComponent<NavMeshAgent>();
             agent.stoppingDistance = 0.1f;
-            currentTarget = null;
+            var go = new GameObject();
+            go.transform.position = target;
+            groundTarget = go;
             MoveTo(target);
         }
     }
@@ -87,6 +91,26 @@ public class AttackUnitScript : Robot
         GetEnemyDistance();
         var speed = Vector3.Project(agent.desiredVelocity, transform.forward).magnitude;
         animator.SetFloat("Speed", speed);
+        if (groundTarget != null)
+        {
+            Debug.Log($"Distance Ground point: {(groundTarget.transform.position - transform.position).magnitude}");
+            float groundDistance = 1;
+            switch (attackUnitProperties.nameUnit)
+            {
+                case "Soldier":
+                    groundDistance = 0.05f;
+                    break;
+                case "Cannon":
+                    groundDistance = 0.16f;
+                    break;
+            }
+
+            if ((groundTarget.transform.position - transform.position).magnitude < groundDistance)
+            {
+                groundTarget = null;
+            }
+        }
+
         if (currentTarget != null)
         {
             if (speed < 0.1f)
@@ -99,7 +123,7 @@ public class AttackUnitScript : Robot
                     if (currentTarget == null)
                         return;
                 }
-                
+
 
                 RaycastHit hit;
                 LookTarget();
@@ -123,7 +147,8 @@ public class AttackUnitScript : Robot
                     }
                 }
 
-                Debug.Log($"Robo {gameObject.name} distance target: {Vector3.Distance(transform.position, currentTarget.transform.position)}");
+                Debug.Log(
+                    $"Robo {gameObject.name} distance target: {Vector3.Distance(transform.position, currentTarget.transform.position)}");
                 if (Vector3.Distance(transform.position, currentTarget.transform.position) > attakDistance)
                 {
                     Debug.Log($"Robo {gameObject.name} etrou no if");
@@ -132,6 +157,7 @@ public class AttackUnitScript : Robot
                     MoveTo(currentTarget.transform.position);
                 }
             }
+
             if (Vector3.Distance(transform.position, currentTarget.transform.position) <= attakDistance)
             {
                 agent.isStopped = true;
@@ -162,14 +188,14 @@ public class AttackUnitScript : Robot
             var bullet = Instantiate(bulletPrefab, spawnBulletPosition[nextSpawn].position, transform.rotation);
             bullet.transform.forward = spawnBulletPosition[nextSpawn].forward;
             nextSpawn = nextSpawn >= 1 ? 0 : 1;
-            if(fireSound)
+            if (fireSound)
                 fireSound.Play();
         }
         else
         {
             var bullet = Instantiate(bulletPrefab, spawnBulletPosition[0].position, transform.rotation);
             bullet.transform.forward = spawnBulletPosition[0].forward;
-            if(fireSound)
+            if (fireSound)
                 fireSound.Play();
         }
     }
@@ -191,15 +217,18 @@ public class AttackUnitScript : Robot
 
     public void GetEnemyDistance()
     {
-        if (currentTarget == null)
+        if (groundTarget == null)
         {
-            GameController.Instance.enemies.ForEach(u =>
+            if (currentTarget == null)
             {
-                if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
+                GameController.Instance.enemies.ForEach(u =>
                 {
-                    currentTarget = u;
-                }
-            });
+                    if (Vector3.Distance(transform.position, u.transform.position) <= distanceSeek)
+                    {
+                        currentTarget = u;
+                    }
+                });
+            }
         }
     }
 }

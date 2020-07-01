@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -187,7 +188,8 @@ public class UnitSelection : MonoBehaviour
             }
             else
             {
-                foreach (var unit in selectedUnits)
+                var list = selectedUnits.Where(u => u != null);
+                foreach (var unit in list)
                 {
                     if (unit != null)
                     {
@@ -213,7 +215,9 @@ public class UnitSelection : MonoBehaviour
 
         int count = 0;
 
-        foreach (var unit in selectedUnits)
+        var list = selectedUnits.Where(u => u != null);
+
+        foreach (var unit in list)
         {
             var desiredTarget = listOfTargets[count];
             desiredTarget.z -= AxisZ;
