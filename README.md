@@ -15,6 +15,6 @@ Affinity Designer
 
 Affinity Photo
 
-# Download Alpha
+# Versão final
 https://leodantas.itch.io/magic-realm-tcc
 
